@@ -1,0 +1,234 @@
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Regular.woff2') format('woff2'),
+	url('../fonts/Intro-Regular.woff') format('woff'),
+	url('../fonts/Intro-Regular.svg#Intro-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Bold Alt';
+	src: url('../fonts/Intro-Bold-Alt.woff2') format('woff2'),
+	url('../fonts/Intro-Bold-Alt.woff') format('woff'),
+	url('../fonts/Intro-Bold-Alt.svg#Intro-Bold-Alt') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Light.woff2') format('woff2'),
+	url('../fonts/Intro-Light.woff') format('woff'),
+	url('../fonts/Intro-Light.svg#Intro-Light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Thin';
+	src: url('../fonts/Intro-Thin-Italic.woff2') format('woff2'),
+	url('../fonts/Intro-Thin-Italic.woff') format('woff'),
+	url('../fonts/Intro-Thin-Italic.svg#Intro-Thin-Italic') format('svg');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Intro Book';
+	src: url('../fonts/Intro-Book-Italic.woff2') format('woff2'),
+	url('../fonts/Intro-Book-Italic.woff') format('woff'),
+	url('../fonts/Intro-Book-Italic.svg#Intro-Book-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Intro Regular Alt';
+	src: url('../fonts/Intro-Regular-Alt.woff2') format('woff2'),
+	url('../fonts/Intro-Regular-Alt.woff') format('woff'),
+	url('../fonts/Intro-Regular-Alt.svg#Intro-Regular-Alt') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Regular';
+	src: url('../fonts/Intro-Regular-Italic.woff2') format('woff2'),
+	url('../fonts/Intro-Regular-Italic.woff') format('woff'),
+	url('../fonts/Intro-Regular-Italic.svg#Intro-Regular-Italic') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Intro Book Caps';
+	src: url('../fonts/Intro-Book-Caps.woff2') format('woff2'),
+	url('../fonts/Intro-Book-Caps.woff') format('woff'),
+	url('../fonts/Intro-Book-Caps.svg#Intro-Book-Caps') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Light Caps';
+	src: url('../fonts/Intro-Light-Caps.woff2') format('woff2'),
+	url('../fonts/Intro-Light-Caps.woff') format('woff'),
+	url('../fonts/Intro-Light-Caps.svg#Intro-Light-Caps') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Thin.woff2') format('woff2'),
+	url('../fonts/Intro-Thin.woff') format('woff'),
+	url('../fonts/Intro-Thin.svg#Intro-Thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Regular Caps';
+	src: url('../fonts/Intro-Regular-Caps.woff2') format('woff2'),
+	url('../fonts/Intro-Regular-Caps.woff') format('woff'),
+	url('../fonts/Intro-Regular-Caps.svg#Intro-Regular-Caps') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Thin Alt';
+	src: url('../fonts/Intro-Thin-Alt.woff2') format('woff2'),
+	url('../fonts/Intro-Thin-Alt.woff') format('woff'),
+	url('../fonts/Intro-Thin-Alt.svg#Intro-Thin-Alt') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Inline';
+	src: url('../fonts/Intro-Inline.woff2') format('woff2'),
+	url('../fonts/Intro-Inline.woff') format('woff'),
+	url('../fonts/Intro-Inline.svg#Intro-Inline') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Book Alt';
+	src: url('../fonts/Intro-Book-Alt.woff2') format('woff2'),
+	url('../fonts/Intro-Book-Alt.woff') format('woff'),
+	url('../fonts/Intro-Book-Alt.svg#Intro-Book-Alt') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Book';
+	src: url('../fonts/Intro-Book.woff2') format('woff2'),
+	url('../fonts/Intro-Book.woff') format('woff'),
+	url('../fonts/Intro-Book.svg#Intro-Book') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Black';
+	src: url('../fonts/Intro-Black-Italic.woff2') format('woff2'),
+	url('../fonts/Intro-Black-Italic.woff') format('woff'),
+	url('../fonts/Intro-Black-Italic.svg#Intro-Black-Italic') format('svg');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: '../fonts/Intro';
+	src: url('../fonts/Intro.woff2') format('woff2'),
+	url('../fonts/Intro.woff') format('woff'),
+	url('../fonts/Intro.svg#Intro') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Black Caps';
+	src: url('../fonts/Intro-Black-Caps.woff2') format('woff2'),
+	url('../fonts/Intro-Black-Caps.woff') format('woff'),
+	url('../fonts/Intro-Black-Caps.svg#Intro-Black-Caps') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Black.woff2') format('woff2'),
+	url('../fonts/Intro-Black.woff') format('woff'),
+	url('../fonts/Intro-Black.svg#Intro-Black') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url('../fonts/Intro-Bold.woff2') format('woff2'),
+	url('../fonts/Intro-Bold.woff') format('woff'),
+	url('../fonts/Intro-Bold.svg#Intro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Bold Caps';
+	src: url('../fonts/Intro-Bold-Caps.woff2') format('woff2'),
+	url('../fonts/Intro-Bold-Caps.woff') format('woff'),
+	url('../fonts/Intro-Bold-Caps.svg#Intro-Bold-Caps') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Bold';
+	src: url('../fonts/Intro-Bold-Italic.woff2') format('woff2'),
+	url('../fonts/Intro-Bold-Italic.woff') format('woff'),
+	url('../fonts/Intro-Bold-Italic.svg#Intro-Bold-Italic') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Intro Light';
+	src: url('../fonts/Intro-Light-Italic.woff2') format('woff2'),
+	url('../fonts/Intro-Light-Italic.woff') format('woff'),
+	url('../fonts/Intro-Light-Italic.svg#Intro-Light-Italic') format('svg');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Intro Thin Caps';
+	src: url('../fonts/Intro-Thin-Caps.woff2') format('woff2'),
+	url('../fonts/Intro-Thin-Caps.woff') format('woff'),
+	url('../fonts/Intro-Thin-Caps.svg#Intro-Thin-Caps') format('svg');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Black Alt';
+	src: url('../fonts/Intro-Black-Alt.woff2') format('woff2'),
+	url('../fonts/Intro-Black-Alt.woff') format('woff'),
+	url('../fonts/Intro-Black-Alt.svg#Intro-Black-Alt') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Intro Light Alt';
+	src: url('../fonts/Intro-Light-Alt.woff2') format('woff2'),
+	url('../fonts/Intro-Light-Alt.woff') format('woff'),
+	url('../fonts/Intro-Light-Alt.svg#Intro-Light-Alt') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}

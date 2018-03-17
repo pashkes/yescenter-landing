@@ -54,6 +54,7 @@
     "svg4everybody": "^2.1.9"
   },
   "dependencies": {
+    "git": "^0.1.5",
     "magnify": "^2.1.0"
   }
 }
