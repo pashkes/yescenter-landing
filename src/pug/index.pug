@@ -1,4 +1,28 @@
-extends templates/main
-	
-block title
-	title Главная страница
+include ../blocks/page-top/page-top.pug
+include ../blocks/program/program.pug
+include ../blocks/timetable/timetable.pug
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0')
+
+    //- Edge и ряд мобильных браузеров автоматом преобразуют телефоны в ссылки. Отключить если не нужно.
+    meta(name='format-detection', content='telephone=no')
+
+    block title
+      title Home
+
+    block head
+      link(rel="stylesheet" href="css/template.css")
+
+  body
+    +page-top
+    +program
+    +timetable
+    script(src="js/libs/jquery-3.3.1.min.js")
+    block js_libs
+      script(src="js/libs/slick.js")
+      script(src="js/libs/masonry.pkgd.min.js")
+
+    script(src="js/main.js")

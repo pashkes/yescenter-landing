@@ -8,7 +8,7 @@
 	font-style: normal;
 }
 
-@font-face {
+/*@font-face {
 	font-family: 'Intro Bold Alt';
 	src: url('../fonts/Intro-Bold-Alt.woff2') format('woff2'),
 	url('../fonts/Intro-Bold-Alt.woff') format('woff'),
@@ -231,4 +231,5 @@
 	url('../fonts/Intro-Light-Alt.svg#Intro-Light-Alt') format('svg');
 	font-weight: 300;
 	font-style: normal;
-}
+}*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=cyrillic-ext');

@@ -1,19 +1,13 @@
+@import "mixins";
+$open-sans: 'Open Sans', sans-serif;
 
-//$font-family--headings:       $font-family;
-
-$font-size:                  16px;
+$font-size:                  14px;
 $font-size-h1:               26px;
-$font-size-h2:               26px;
-$font-size-h3:               18px;
-$font-size-h4:               15px;
-$font-size-h5:               1em;
-$font-size-h6:               1em;
+$font-size-h2:               18px;
 $font-size--small:           12px;
 
-$text-color: #37342F;
-
+$black-light: rgba(37, 37, 37, 0.9);
+$text-color: #252525;
 $transition: 0.25s;
 
-$gray: #a0a0a0;
-$primary-color: #60D3D5;
-$black: #505054;
+$primary: #d52833;

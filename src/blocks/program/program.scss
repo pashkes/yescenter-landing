@@ -1,0 +1,131 @@
+// В этом файле должны быть стили для БЭМ-блока .program , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+
+.program {
+	padding-top: 27px;
+	padding-bottom: 27px;
+	@media (min-width: $screen-md) {
+		padding-top: 48px;
+		padding-bottom: 50px;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 78px;
+	}
+	&__top {
+		max-width: 1344px;
+		margin-right: auto;
+		margin-left: auto;
+		padding-right: 25px;
+		padding-left: 25px;
+		@media (min-width: $screen-md) {
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+		@media(min-width: $screen-xl) {
+			padding-left: 96px;
+			padding-right: 96px;
+		}
+	}
+	&__title {
+		text-transform: uppercase;
+		margin-bottom: 18px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 0;
+			font-size: 28px;
+			line-height: 1.43;
+			letter-spacing: 1.1px;
+		}
+		@media(min-width: $screen-xl) {
+			font-size: 30px;
+			line-height: 1.4;
+			letter-spacing: 1.2px;
+		}
+		span {
+			display: block;
+		}
+	}
+	&__text {
+		margin-bottom: 22px;
+		line-height: 22px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 41px;
+			font-size: 15px;
+			line-height: 1.6;
+		}
+		@media(min-width: $screen-xl) {
+			margin-top: 24px;
+			margin-bottom: 81px;
+			font-size: 17px;
+			line-height: 1.65;
+		}
+	}
+	&__slider {
+		padding-left: 24px;
+		overflow: hidden;
+		@media (min-width: $screen-md) {
+		    padding-left: 32px;
+		}
+		@media(min-width: $screen-xl) {
+			padding-left: 96px;
+		}
+	}
+	&__slide {
+		position:relative;
+	}
+	.slick-slide {
+		position:relative;
+		width: auto !important;
+		padding-right: 24px;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 17px;
+			transform: translateY(-50%);
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 8.5px 0 8.5px 8px;
+			border-color: transparent transparent transparent #e1e1e1;
+			@media(min-width: $screen-md) {
+				border-width: 12px 0 12px 12px;
+			}
+		}
+		@media (min-width: $screen-md) {
+			padding-right: 40px;
+		}
+		@media(min-width: $screen-xl) {
+		    padding-right: 48px;
+		}
+		&:not(.slick-active) {
+			opacity: .3;
+		}
+	}
+	.slick-slide > div {
+		width: calc(100vw - 72px);
+		@media (min-width: $screen-md) {
+		    width: calc(100vw / 2 - 72px);
+		}
+		@media(min-width: $screen-xl) {
+			width: calc(100vw / 3 - 96px);
+		}
+	}
+	&__city {
+		position: absolute;
+		font-family: Into, sans-serif;
+		left: 27px;
+		bottom: 25px;
+		margin: 0;
+		font-size: 17px;
+		line-height: 1.1;
+		color: #ffffff;
+		@media (min-width: $screen-md) {
+			font-size: 21px;
+			line-height: 1.1;
+		}
+		@media(min-width: $screen-xl) {
+			left: 31px;
+			bottom: 26px;
+		}
+	}
+}
