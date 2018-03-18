@@ -9,6 +9,10 @@
 	@media (min-width: $screen-md) {
 		padding-right: 32px;
 		padding-left: 32px;
+		padding-bottom: 50px;
+	}
+	@media(min-width: $screen-xl) {
+	    padding-bottom: 90px;
 	}
 	&::before {
 		content: '';
@@ -21,7 +25,7 @@
 		background-color: #ebebeb;
 	}
 	&__inner {
-		position:relative;
+		position: relative;
 		max-width: 1344px;
 		margin-right: auto;
 		margin-left: auto;
@@ -112,7 +116,12 @@
 		background-color: #fff;
 		padding-top: 27px;
 		min-height: inherit;
+		margin-bottom: 25px;
+		width: 100%;
+		text-transform: uppercase;
+
 		@media (min-width: $screen-md) {
+			width: 50%;
 			display: flex;
 			justify-content: flex-end;
 			padding-top: 54px;
@@ -121,9 +130,9 @@
 			line-height: 0.75;
 			letter-spacing: 1.1px;
 			z-index: 0;
-			text-transform: uppercase;
 		}
 		@media(min-width: $screen-xl) {
+			padding-top: 86px;
 			font-size: 30px;
 			line-height: 1.4;
 			letter-spacing: 1.2px;
@@ -131,6 +140,7 @@
 	}
 	&__footer-text {
 		position: relative;
+		margin-bottom: 0;
 		z-index: 1;
 		background-color: #fff;
 		padding-bottom: 27px;
@@ -138,19 +148,33 @@
 		font-size: 18px;
 		line-height: 1.22;
 		color: $primary;
+
+		@media (min-width: $screen-md) {
+			padding-bottom: 0;
+			font-size: 24px;
+			line-height: 1.08;
+		}
 	}
 	&__photo {
+		position: relative;
 		display: inline-block;
-		width: 81px;
-		height: 81px;
 		margin-bottom: 20px;
-		border-radius: 50%;
-		overflow: hidden;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		background-color: #fff;
+		z-index: 1;
 		img {
 			display: block;
+			width: 81px;
+			height: 81px;
+			border-radius: 50%;
+			overflow: hidden;
 		}
 		@media (min-width: $screen-md) {
+			position: static;
 			flex: none;
+			padding-top: 0;
+			padding-bottom: 0;
 		}
 		@media(min-width: $screen-xl) {
 			width: 136px;
@@ -177,6 +201,7 @@
 		}
 	}
 	&__desc {
+		margin-top: 5px;
 		margin-bottom: 33px;
 		letter-spacing: 0.1px;
 		color: $text-color;
