@@ -12,7 +12,7 @@
 		padding-bottom: 50px;
 	}
 	@media(min-width: $screen-xl) {
-	    padding-bottom: 90px;
+		padding-bottom: 90px;
 	}
 	&::before {
 		content: '';
@@ -38,10 +38,29 @@
 			min-height: 256px;
 			line-height: 1.57;
 			letter-spacing: 0.1px;
+			&::after {
+				content: '';
+				position: absolute;
+				top: 39px;
+				height: 1px;
+				width: 48px;
+				background-color: #ebebeb;
+				@media (min-width: $screen-xl) {
+					top: 74px;
+				}
+			}
+			&:first-child {
+				&::after {
+					display: none;
+				}
+			}
 			&:nth-child(odd) {
 				padding-right: 24px;
 				text-align: right;
 				flex-direction: row-reverse;
+				&::after {
+					right: 0;
+				}
 				.timetable__photo {
 					margin-left: 24px;
 					&::before {
@@ -52,6 +71,9 @@
 			&:nth-child(even) {
 				text-align: left;
 				padding-left: 24px;
+				&::after {
+					left: 0;
+				}
 				.timetable__photo {
 					margin-right: 24px;
 					&::before {
@@ -78,6 +100,14 @@
 			&:nth-child(2) {
 				padding-top: 54px;
 				min-height: 309px;
+				&::after {
+					@media(min-width: $screen-md) {
+						top: 94px;
+					}
+					@media(min-width: $screen-xl) {
+						top: 154px;
+					}
+				}
 				.timetable__photo::before {
 					top: 87px;
 				}
@@ -114,7 +144,7 @@
 		position: relative;
 		z-index: 1;
 		background-color: #fff;
-		padding-top: 27px;
+		padding-top: 26px;
 		min-height: inherit;
 		margin-bottom: 25px;
 		width: 100%;
@@ -125,15 +155,17 @@
 			display: flex;
 			justify-content: flex-end;
 			padding-top: 54px;
-			padding-bottom: 90px;
+			padding-bottom: 80px;
 			font-size: 28px;
 			line-height: 0.75;
 			letter-spacing: 1.1px;
 			z-index: 0;
 		}
 		@media(min-width: $screen-xl) {
-			padding-top: 86px;
-			padding-bottom: 47px;
+			margin-bottom: 22px;
+			padding-left: 64px;
+			padding-top: 78px;
+			padding-bottom: 60px;
 			font-size: 30px;
 			line-height: 1.4;
 			letter-spacing: 1.2px;
@@ -148,18 +180,23 @@
 		font-family: Into, sans-serif;
 		font-size: 18px;
 		line-height: 1.22;
-		color: $primary;
+		color: #B82833;
 
 		@media (min-width: $screen-md) {
+			margin-top: 3px;
 			padding-bottom: 0;
 			font-size: 24px;
 			line-height: 1.08;
+		}
+		@media (min-width: $screen-xl) {
+			margin-top: 44px;
+			padding-bottom: 5px;
 		}
 	}
 	&__photo {
 		position: relative;
 		display: inline-block;
-		margin-bottom: 20px;
+		margin-bottom: 5px;
 		padding-top: 4px;
 		padding-bottom: 4px;
 		background-color: #fff;
@@ -202,14 +239,17 @@
 		}
 	}
 	&__desc {
-		margin-top: 5px;
+		margin-top: 10px;
 		margin-bottom: 33px;
 		letter-spacing: 0.1px;
+		line-height: 22px;
 		color: $text-color;
 		@media (min-width: $screen-md) {
 			margin-bottom: 0;
 		}
 		@media(min-width: $screen-xl) {
+			max-width: 364px;
+			margin-top: 15px;
 			line-height: 1.57;
 			letter-spacing: 0.1px;
 		}

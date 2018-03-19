@@ -1,6 +1,8 @@
 include ../blocks/page-top/page-top.pug
 include ../blocks/program/program.pug
 include ../blocks/timetable/timetable.pug
+include ../blocks/quest/quest.pug
+
 doctype html
 html(lang="ru")
   head
@@ -17,9 +19,12 @@ html(lang="ru")
       link(rel="stylesheet" href="css/template.css")
 
   body
+
     +page-top
     +program
     +timetable
+    +quest
+
     script(src="js/libs/jquery-3.3.1.min.js")
     block js_libs
       script(src="js/libs/slick.js")
