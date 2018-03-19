@@ -4,12 +4,12 @@
 @import "_fonts";
 @import "settings/_variables";
 @import "settings/_mixins";
-//@import "../../node_modules/bootstrap-4-grid/scss/grid.scss";
+//@import "../../node_modules/bootstrap/scss/bootstrap-grid";
 
 
 
 @import "_base";
-@import "_grid";
+//@import "_grid";
 
 @import "libs/slick.css";
 // blocks
@@ -18,3 +18,5 @@
 @import "../blocks/program/program";
 @import "../blocks/timetable/timetable";
 @import "../blocks/quest/quest";
+
+
