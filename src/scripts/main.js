@@ -24,7 +24,7 @@
 			}
 		]
 	});
-	var msnry = new Masonry( '.timetable__inner', {
+	var msnry = new Masonry( '.masonry', {
 		itemSelector: '.timetable__item'
 	});
 })();

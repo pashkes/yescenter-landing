@@ -10,23 +10,9 @@
 	}
 	@media(min-width: $screen-xl) {
 		padding-top: 78px;
-		padding-bottom: 88px;
+		padding-bottom: 82px;
 	}
-	&__top {
-		max-width: 1344px;
-		margin-right: auto;
-		margin-left: auto;
-		padding-right: 25px;
-		padding-left: 25px;
-		@media (min-width: $screen-md) {
-			padding-right: 30px;
-			padding-left: 30px;
-		}
-		@media(min-width: $screen-xl) {
-			padding-left: 96px;
-			padding-right: 96px;
-		}
-	}
+
 	&__title {
 		text-transform: uppercase;
 		margin-bottom: 18px;
@@ -67,7 +53,7 @@
 		    padding-left: 32px;
 		}
 		@media(min-width: $screen-xl) {
-			padding-left: 96px;
+			padding-left: 88px;
 		}
 	}
 	&__slide {
@@ -125,8 +111,8 @@
 			line-height: 1.1;
 		}
 		@media(min-width: $screen-xl) {
-			left: 31px;
-			bottom: 26px;
+			left: 33px;
+			bottom: 29px;
 		}
 	}
 }

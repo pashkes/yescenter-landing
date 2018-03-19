@@ -2,20 +2,14 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
 
 .header {
-	max-width: 1344px;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 8px 24px 5px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	padding-top: 8px;
+	padding-bottom: 5px;
 	@media (min-width: $screen-md) {
-		padding-left: 31px;
-		padding-right: 33px;
 		padding-bottom: 8px;
 	}
 	@media(min-width: $screen-xl) {
-		padding: 23px 96px 21px;
+		padding-top: 23px;
+		padding-bottom: 21px;
 	}
 	&__logo {
 		@media(min-width: $screen-xl) {
@@ -96,19 +90,10 @@
 
 .promo {
 	position: relative;
-	//background: #fff url(../img/content/top-mobile.jpg) right bottom no-repeat;
-	//background-size: cover;
 	color: #fff;
-	@media (min-width: $screen-md) {
-		//padding: 104px 34px 56px;
-		//background-image: url(../img/content/top-table.jpg);
-	}
-	@media(min-width: $screen-xl) {
-		//padding: 94px 97px 97px;
-		//background-image: url(../img/content/top-desctop.jpg);
-	}
+
 	&__bg {
-		max-width: 100%;
+		width: 100%;
 		img {
 			width: 100%;
 			object-position: right bottom;
@@ -120,28 +105,27 @@
 			}
 			@media(min-width: $screen-xl) {
 				max-height: calc(100vh - 120px);
-
+				min-height: 552px;
 			}
 		}
 	}
 	&__inner {
-		display: flex;
-		align-items: center;
 		position: absolute;
 		top: 0;
 		right: 0;
 		left: 0;
-		bottom: 0;
-		max-width: 1344px;
-		margin-right: auto;
-		margin-left: auto;
-		padding: 75px 25px 32px;
+
+		padding-top: 75px;
+		padding-bottom: 32px;
 		@media (min-width: $screen-md) {
-			padding: 104px 34px 56px;
+			padding-top: 104px;
+			padding-bottom: 56px;
 		}
 		@media(min-width: $screen-xl) {
-
-			padding: 94px 97px 97px;
+			top: 50%;
+			transform: translateY(-50%);
+			padding-top: 87px;
+			padding-bottom: 91px;
 		}
 	}
 	&__title {
