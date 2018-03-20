@@ -38,6 +38,22 @@
 
 		]
 	});
+	$('.js-advantage-slider').slick({
+		mobileFirst: true,
+		arrows: false,
+		dots: true,
+		centerPAdding: '0',
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					dots: true,
+					arrows: false
+				}
+			}
+
+		]
+	});
 	var msnry = new Masonry( '.masonry', {
 		itemSelector: '.timetable__item'
 	});
