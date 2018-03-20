@@ -58,7 +58,7 @@
 			display: inline-block;
 			padding-top: 0;
 			vertical-align: middle;
-			margin-right: 30px;
+			margin-right: 27px;
 			font-size: 24px;
 			line-height: 0.92;
 			letter-spacing: 0.5px;
@@ -100,6 +100,7 @@
 			object-fit: cover;
 			height: auto;
 			min-height: 328px;
+			max-height: 328px;
 			@media (min-width: $screen-md) {
 			    min-height: 464px;
 			}
@@ -129,14 +130,16 @@
 		}
 	}
 	&__title {
-		max-width: 270px;
 		margin-bottom: 12px;
 		color: #fff;
 		letter-spacing: 0;
 		line-height: 1.15;
 		font-size: 26px;
+		text-transform: none;
+		span {
+			display: block;
+		}
 		@media (min-width: $screen-md) {
-			max-width: 488px;
 			margin-bottom: 10px;
 			font-size: 48px;
 			line-height: 1.13;

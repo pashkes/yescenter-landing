@@ -1,0 +1,45 @@
+mixin residence()
+	section.residence
+		.container
+			h2.residence__title Проживание
+			.row
+				.col-md-6
+					.residence__item
+						.residence__photo
+							ul.residence__slider.js-residence-slider
+								li
+									picture
+										source(media="(min-width: 768px)" srcset="img/content/residence-1-desctop.jpg")
+										img(src="img/content/photo-mobile-1.jpg" height="184")
+						h3.residence__subject Ambassadors Earls Court Hotel
+							ul.residence__stars
+								li.residence__star
+								li.residence__star
+								li.residence__star
+						p.residence__desc
+							| Отель Ambassadors расположен
+							| в стильном районе Кенсингтон, недалеко от улицы Кромвель-роуд
+							| и знаменитой Музейной мили. Отель находится всего в 5 минутах ходьбы от станции метро Earl’s Court.
+							| Гайд-парк и Альберт-холл расположены всего в 15 минутах ходьбы от отеля.
+				.col-md-6
+					.residence__item.residence__item--last
+						.residence__photo
+							ul.residence__slider.js-residence-slider
+								li
+									picture
+										source(media="(min-width: 768px)" srcset="img/content/residence-dc-2.jpg")
+										img(src="img/content/photo-mobile-2.jpg" height="184")
+								li
+									picture
+										source(media="(min-width: 768px)" srcset="img/content/residence-dc-2..jpg")
+										img(src="img/content/photo-mobile-2.jpg" height="184")
+								li
+									picture
+										source(media="(min-width: 768px)" srcset="img/content/residence-dc-2..jpg")
+										img(src="img/content/photo-mobil-2.jpg" height="184")
+						h3.residence__subject Chancellor’s Court at Pollock Halls
+						p.residence__desc
+							| Отель Ambassadors расположен
+							| в стильном районе Кенсингтон, недалеко от улицы Кромвель-роуд
+							| и знаменитой Музейной мили. Отель находится всего в 5 минутах ходьбы от станции метро Earl’s Court.
+							| Гайд-парк и Альберт-холл расположены всего в 15 минутах ходьбы от отеля.

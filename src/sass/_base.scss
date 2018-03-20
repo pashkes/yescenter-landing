@@ -1,4 +1,5 @@
 @import "settings/variables";
+@import "../../node_modules/bootstrap/scss/mixins/transition";
 
 ::selection {
   background: #60D3D5;
@@ -29,6 +30,16 @@ h2 {
 	line-height: 1.44;
 	letter-spacing: 0.7px;
   color: $text-color;
+	text-transform: uppercase;
+	@media (min-width: $screen-md) {
+		font-size: 28px;
+		letter-spacing: 1.1px;
+	}
+	@media (min-width: $screen-xl) {
+		font-size: 30px;
+		line-height: 1.4;
+		letter-spacing: 1.2px;
+	}
 }
 
 
@@ -79,12 +90,7 @@ p {
 .slick-dots {
 	display: flex;
 	justify-content: center;
-	padding-top: 7px;
-	padding-right: 24px;
-	@media (min-width: $screen-md) {
-		padding-top: 14px;
-		padding-right: 30px;
-	}
+
 	li.slick-active {
 		button {
 			&::before {
@@ -122,6 +128,7 @@ p {
 	border: none;
 	font-size: 0;
 	transition: .4s ease;
+	z-index: 1;
 	&:focus {
 		outline: none;
 	}
@@ -132,7 +139,6 @@ p {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		background-position: center;
 		background-repeat: no-repeat;
 		background-size: 12px 12px;
 	}
@@ -140,8 +146,8 @@ p {
 		border-radius: 0 20px 20px 0;
 		left: 0;
 		transform: translate(-15px, -50%);
-		background-color: #d32a33;
 		&::before {
+			background-position: bottom 50% right 15px;
 			background-image: url(../img/svg/arrow-left.svg);
 		}
 		&:hover {
@@ -151,10 +157,11 @@ p {
 	&.slick-next {
 		border-radius: 20px 0 0 20px;
 		right: -15px;
-		background: url(../img/svg/arrow-right.svg) center no-repeat, #d32a33;
 		background-size: 12px 11px, auto auto;
 		transform: translate(0,-50%);
 		&::before {
+			background-position: bottom 50% left 15px;
+
 			background-image: url(../img/svg/arrow-right.svg);
 
 		}
@@ -166,4 +173,36 @@ p {
 }
 .d-flex {
 	display: flex;
+}
+@media (max-width: 767px) {
+   .container {
+		 padding-right: 24px;
+		 padding-left: 24px;
+	 }
+}
+
+.collapse {
+	display: none;
+	&.show {
+		display: block;
+	}
+}
+
+tr {
+	&.collapse.show {
+		display: table-row;
+	}
+}
+
+tbody {
+	&.collapse.show {
+		display: table-row-group;
+	}
+}
+
+.collapsing {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	@include transition($transition-collapse);
 }

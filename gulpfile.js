@@ -127,7 +127,7 @@ gulp.task('pug', function () {
 gulp.task('js:libs', function () {
     console.log('---------- Обработка внешних JS файлов');
     return gulp.src(PATH.LIBS.JS)
-      .pipe(uglify())
+      // .pipe(uglify())
       .pipe(gulp.dest(PATH.BUILD.JS + 'libs/'))
       .pipe(browserSync.stream());
 });

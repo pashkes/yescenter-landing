@@ -3,13 +3,49 @@
 @import "_reboot";
 @import "_fonts";
 @import "settings/_variables";
-@import "settings/_mixins";
-//@import "../../node_modules/bootstrap/scss/bootstrap-grid";
 
+@at-root {
+	@-ms-viewport { width: device-width; } // stylelint-disable-line at-rule-no-vendor-prefix
+}
 
+html {
+	box-sizing: border-box;
+	-ms-overflow-style: scrollbar;
+}
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+$grid-columns:      12;
+$grid-gutter-width: 32px;
+
+$grid-breakpoints: (
+	// Extra small screen / phone
+	xs: 0,
+	// Small screen / phone
+	sm: 576px,
+	// Medium screen / tablet
+	md: 768px,
+	// Large screen / desktop
+	lg: 992px,
+	// Extra large screen / wide desktop
+	xl: 1345px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 735px,
+	lg: 960px,
+	xl: 1184px
+);
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
+@import "../../node_modules/bootstrap/scss/mixins/grid-framework";
+@import "../../node_modules/bootstrap/scss/mixins/grid";
+@import "../../node_modules/bootstrap/scss/utilities/spacing";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/utilities/display";
+@import "../../node_modules/bootstrap/scss/utilities/flex";
 
 @import "_base";
-@import "_grid";
 
 @import "libs/slick.css";
 // blocks
@@ -18,6 +54,8 @@
 @import "../blocks/program/program";
 @import "../blocks/timetable/timetable";
 @import "../blocks/package/package";
-//@import "../blocks/quest/quest";
+@import "../blocks/quest/quest";
+@import "../blocks/residence/residence";
+@import "../blocks/info/info";
 
 

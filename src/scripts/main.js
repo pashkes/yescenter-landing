@@ -24,6 +24,20 @@
 			}
 		]
 	});
+	$('.js-residence-slider').slick({
+    arrows: true,
+		centerPadding: '0',
+		responsive: [
+			{
+				breakpoint: 1343,
+				settings: {
+          dots: true,
+          arrows: false
+				}
+			}
+
+		]
+	});
 	var msnry = new Masonry( '.masonry', {
 		itemSelector: '.timetable__item'
 	});

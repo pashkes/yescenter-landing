@@ -50,10 +50,10 @@
 		padding-left: 24px;
 		overflow: hidden;
 		@media (min-width: $screen-md) {
-		    padding-left: 32px;
+		    padding-left: 34px;
 		}
 		@media(min-width: $screen-xl) {
-			padding-left: 88px;
+			padding-left: 98px;
 		}
 	}
 	&__slide {
@@ -115,4 +115,13 @@
 			bottom: 29px;
 		}
 	}
+	.slick-dots {
+		padding-top: 7px;
+		padding-right: 24px;
+		@media (min-width: $screen-md) {
+			padding-top: 14px;
+			padding-right: 30px;
+		}
+	}
+
 }

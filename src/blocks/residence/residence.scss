@@ -1,0 +1,131 @@
+// В этом файле должны быть стили для БЭМ-блока .residence , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+
+.residence {
+	padding-top: 25px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #ebebeb;
+	@media (min-width: $screen-md) {
+		padding-top: 48px;
+	}
+	@media (min-width: $screen-xl) {
+		padding-top: 87px;
+		padding-bottom: 44px;
+	}
+	&__title {
+		margin-bottom: 21px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 40px;
+		}
+		@media (min-width: $screen-xl) {
+			margin-bottom: 47px;
+		}
+	}
+	&__item {
+		@media (min-width: $screen-xl) {
+			padding-right: 8px;
+		}
+		&--last {
+			@media (min-width: $screen-md) {
+				padding-right: 0;
+				padding-left: 8px;
+			}
+			.residence__photo {
+				margin-bottom: 13px;
+				@media (min-width: $screen-xl) {
+					margin-bottom: 46px;
+				}
+			}
+			.residence__desc {
+				line-height: 24px;
+				letter-spacing: 0.2px;
+				@media (min-width: $screen-xl) {
+					max-width: 510px;
+					line-height: 24px;
+				}
+			}
+		}
+
+	}
+	&__subject {
+		max-width: 236px;
+		margin-bottom: 12px;
+		line-height: 23px;
+		letter-spacing: 0;
+		font-size: 18px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 17px;
+			font-size: 24px;
+			line-height: 1.08;
+			max-width: 266px;
+		}
+		@media (min-width: $screen-xl) {
+		   max-width: 100%;
+		}
+	}
+	&__stars {
+		display: inline-block;
+		margin-left: 8px;
+		vertical-align: middle;
+		@media (min-width: $screen-md) {
+			margin-left: 12px;
+		}
+		@media (min-width: $screen-xl) {
+			margin-left: 24px;
+		}
+	}
+	&__star {
+		display: inline-block;
+		width: 15px;
+		height: 18px;
+		background: #fff url(../img/svg/mark-as-favorite-star.svg) center no-repeat;
+		background-size: 15px 18px;
+		@media (min-width: $screen-md) {
+			background-size: 20px 23px;
+			width: 18px;
+			height: 20px;
+		}
+	}
+	&__photo {
+		margin-bottom: 9px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 20px;
+		}
+		@media (min-width: $screen-xl) {
+			margin-bottom: 46px;
+		}
+		img {
+			@media (min-width: $screen-md) {
+				height: auto;
+			}
+		}
+	}
+	&__desc {
+		margin-top: 0;
+		margin-bottom: 46px;
+		line-height: 22px;
+		letter-spacing: 0.1px;
+		@media (min-width: $screen-xl) {
+			letter-spacing: 0.2px;
+			line-height: 23px;
+		}
+	}
+	&__slider {
+		position: relative;
+		overflow: hidden;
+		img {
+			width: 100%;
+		}
+		.residence__subject {
+			line-height: 1;
+		}
+	}
+	.slick-dots {
+		padding-top: 7px;
+		@media (min-width: $screen-md) {
+			align-items: flex-end;
+			padding-top: 6px;
+			letter-spacing: 0.1px;
+		}
+	}
+}

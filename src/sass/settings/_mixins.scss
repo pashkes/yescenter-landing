@@ -27,7 +27,7 @@ $screen-xl:                   1344px !default;
 $screen-xxl:                  1800px !default;
 
 $container-sm:                100% !default;
-$container-md:                750px !default;
+$container-md:                752px !default;
 $container-lg:                960px !default;
 $container-xl:                1184px !default;
 $container-xxl:               1680px !default;
@@ -121,8 +121,8 @@ $grid-gutter-width:           32px !default;
   margin-right: auto;
 
   @if ($xs-grid-gutter != 0) {
-    padding-left: (24px);
-    padding-right: (24px);
+    padding-left: (16px);
+    padding-right: (16px);
   }
 
   @media (min-width: $screen-sm) {
