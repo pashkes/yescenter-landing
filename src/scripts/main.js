@@ -34,16 +34,46 @@
           dots: true,
           arrows: false
 				}
+			}, {
+				breakpoint: 767,
+				settings: {
+					dots: true,
+					arrows: false,
+					slidesToShow: 1
+				}
 			}
+
 
 		]
 	});
 
 	$('.js-departure-slider').slick({
-		arrows: false,
-		dots: true,
+		arrows: true,
 		centerPadding: '0',
-    variableWidth: true
+    variableWidth: true,
+		slidesToShow: 3,
+		responsive: [
+			{
+				breakpoint: 959,
+				settings: {
+					slidesToShow: 1,
+					arrows: false
+				}
+			}, {
+				breakpoint: 1600,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 1343,
+				settings: {
+					arrows: false,
+					dots: true
+				}
+			}
+
+		]
 	});
 
   var msnry = new Masonry( '.masonry', {
@@ -58,7 +88,7 @@ var advantageSliderSettigs ={
   dots: true,
   arrows: false,
   centerPAdding: '0',
-  adaptiveHeight: true
+  adaptiveHeight: true,
 };
 
 $(window).on('load resize', function () {

@@ -50,6 +50,7 @@
 	&__slider {
 		padding-left: 24px;
 		overflow: hidden;
+		font-size: 0;
 		@media (min-width: $screen-md) {
 		    padding-left: 34px;
 		}

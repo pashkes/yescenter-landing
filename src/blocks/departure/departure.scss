@@ -5,17 +5,83 @@
 	padding-top: 27px;
 	padding-bottom: 27px;
 	border-bottom: 1px solid #EBEBEB;
+	@media (min-width: $screen-md) {
+		padding-top: 47px;
+		padding-bottom: 49px;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 87px;
+		padding-bottom: 90px;
+	}
 	&__title {
 		line-height: 26px;
+		@media (min-width: $screen-md) {
+			line-height: 40px;
+			letter-spacing: 1.12px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-bottom: 25px;
+			letter-spacing: 1.2px;
+			line-height: 42px;
+		}
+		span {
+			@media (min-width: $screen-md) {
+				display: block;
+			}
+		}
 	}
 	&__subtitle {
 		margin-bottom: 14px;
 		color: rgba(#191919, .6);
 		line-height: 24px;
 		letter-spacing: 0.28px;
+		padding-right: 30px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 28px;
+		}
+		@media(min-width: $screen-xl) {
+			max-width: 1020px;
+			margin-bottom: 66px;
+			padding-right: 0;
+			font-size: 17px;
+			line-height: 28px;
+			letter-spacing: 0.34px;
+		}
 	}
+
 	&__item-stat {
-		margin-bottom: 10px;
+		margin-bottom: 28px;
+		&--first {
+			.departure__desc {
+				@media(min-width: $screen-xl) {
+					max-width: 120px;
+				}
+			}
+		}
+		&--second {
+			.departure__desc {
+				@media(min-width: $screen-xl) {
+					max-width: 200px;
+				}
+			}
+		}
+		&--thirthy {
+			.departure__desc {
+				@media(min-width: $screen-xl) {
+					max-width: 160px;
+				}
+			}
+		}
+		&--last {
+			@media (min-width: $screen-md) {
+				padding-left: 15px;
+			}
+			@media(min-width: $screen-xl) {
+				padding-left: 0;
+				max-width: 231px;
+			}
+		}
+
 	}
 	&__stat {
 		color: #d32a33;
@@ -23,39 +89,76 @@
 		font-size: 44px;
 		line-height: 1.2;
 		letter-spacing: -0.88px;
+		@media (min-width: $screen-md) {
+			display: block;
+			font-size: 60px;
+			margin-bottom: 9px;
+			white-space: nowrap;
+		}
+		@media(min-width: $screen-xl) {
+			font-size: 80px;
+		}
 	}
 	&__desc {
 		margin: 0;
-		font-size: 14px;
 		line-height: 18px;
 		color: #252525;
+		@media (min-width: $screen-md) {
+			letter-spacing: 0.28px;
+		}
+		@media(min-width: $screen-xl) {
+			font-size: 16px;
+			line-height: 22px;
+			letter-spacing: 0.32px;
+		}
 	}
 	&__features {
 		margin-bottom: 16px;
+		@media(min-width: $screen-xl) {
+			margin-bottom: 63px;
+		}
+	}
+	&__slider {
+		overflow: hidden;
+		font-size: 0;
 	}
 	.slick-slide {
-		width: calc(100vw - 32px - 24px);
-		padding-right: 16px;
+		width: auto;
+		margin-right: 16px;
 		@media (min-width: $screen-md) {
-			padding-right: 32px;
-			width: calc(100vw - 160px - 32px);
+			margin-right: 32px;
+			//width: calc(100vw - 160px - 32px - 32px);
 		}
-		&:not(.slick-current) {
+
+		@media(min-width: $screen-xl) {
+			margin-right: 50px;
+			width: auto;
+		}
+		&:not(.slick-active) {
 			opacity: .3;
 		}
 	}
 	.slick-slide img {
 		height: auto;
 		min-height: 160px;
+		@media (min-width: $screen-md) {
+			min-height: 360px;
+		}
 	}
 	.slick-list {
 		margin-left: 24px;
 		@media (min-width: $screen-md) {
-			margin-right: 32px;
+			margin-left: 32px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-left: 96px;
 		}
 	}
 	.slick-dots {
 		padding-top: 6px;
+		@media (min-width: $screen-md) {
+			padding-top: 17px;
+		}
 	}
 
 }
