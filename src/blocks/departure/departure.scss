@@ -1,0 +1,61 @@
+// В этом файле должны быть стили для БЭМ-блока .departure , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+
+.departure {
+	padding-top: 27px;
+	padding-bottom: 27px;
+	border-bottom: 1px solid #EBEBEB;
+	&__title {
+		line-height: 26px;
+	}
+	&__subtitle {
+		margin-bottom: 14px;
+		color: rgba(#191919, .6);
+		line-height: 24px;
+		letter-spacing: 0.28px;
+	}
+	&__item-stat {
+		margin-bottom: 10px;
+	}
+	&__stat {
+		color: #d32a33;
+		font-family: "Intro", sans-serif;
+		font-size: 44px;
+		line-height: 1.2;
+		letter-spacing: -0.88px;
+	}
+	&__desc {
+		margin: 0;
+		font-size: 14px;
+		line-height: 18px;
+		color: #252525;
+	}
+	&__features {
+		margin-bottom: 16px;
+	}
+	.slick-slide {
+		width: calc(100vw - 32px - 24px);
+		padding-right: 16px;
+		@media (min-width: $screen-md) {
+			padding-right: 32px;
+			width: calc(100vw - 160px - 32px);
+		}
+		&:not(.slick-current) {
+			opacity: .3;
+		}
+	}
+	.slick-slide img {
+		height: auto;
+		min-height: 160px;
+	}
+	.slick-list {
+		margin-left: 24px;
+		@media (min-width: $screen-md) {
+			margin-right: 32px;
+		}
+	}
+	.slick-dots {
+		padding-top: 6px;
+	}
+
+}
