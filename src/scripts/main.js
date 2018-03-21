@@ -38,23 +38,41 @@
 
 		]
 	});
-	$('.js-advantage-slider').slick({
-		mobileFirst: true,
+
+	$('.js-departure-slider').slick({
 		arrows: false,
 		dots: true,
-		centerPAdding: '0',
-		responsive: [
-			{
-				breakpoint: 768,
-				settings: {
-					dots: true,
-					arrows: false
-				}
-			}
+		centerPadding: '0',
+    variableWidth: true
+	});
 
-		]
-	});
-	var msnry = new Masonry( '.masonry', {
-		itemSelector: '.timetable__item'
-	});
+  var msnry = new Masonry( '.masonry', {
+    itemSelector: '.timetable__item'
+  });
+
+
+
 })();
+var advantageSlider = 	$('.js-advantage-slider');
+var advantageSliderSettigs ={
+  dots: true,
+  arrows: false,
+  centerPAdding: '0',
+  adaptiveHeight: true
+};
+
+$(window).on('load resize', function () {
+  slickMobile(advantageSlider, advantageSliderSettigs);
+});
+// включение слайдера на мобильном
+function slickMobile(slider, settings) {
+  if ($(window).width() > 767) {
+    if (slider.hasClass('slick-initialized')) {
+      slider.slick('unslick');
+    }
+    return
+  }
+  if (!slider.hasClass('slick-initialized')) {
+    return slider.slick(settings);
+  }
+};
