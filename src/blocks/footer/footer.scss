@@ -1,0 +1,42 @@
+// В этом файле должны быть стили для БЭМ-блока .footer , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+
+.footer {
+	padding-top: 23px;
+	padding-bottom: 31px;
+	@media (min-width: $screen-md) {
+		padding-top: 39px;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 45px;
+	}
+	p {
+		margin: 0;
+		color: #383838;
+		font-size: 15px;
+		line-height: 22px;
+		letter-spacing: 0.3px;
+		@media (min-width: $screen-md) {
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			letter-spacing: 0.32px;
+		}
+		@media(min-width: $screen-xl) {
+			letter-spacing: 0.3px;
+		}
+	}
+	&__logo {
+		margin-top: 11px;
+		opacity: .5;
+		filter: grayscale(100%);
+		@media (min-width: $screen-md) {
+			margin-top: 8px;
+			width: 90px;
+			height: 90px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-top: 5px;
+		}
+	}
+}

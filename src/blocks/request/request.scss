@@ -12,10 +12,12 @@
 		padding-top: 0;
 	}
 	&__form {
+		margin-bottom: -32px;
 		@media (min-width: $screen-md) {
 			position: absolute;
 			top: 55px;
 			left: 0;
+			margin-bottom: 0;
 		}
 		@media(min-width: $screen-xl) {
 			position: relative;
@@ -34,11 +36,12 @@
 		}
 		iframe {
 			width: 100%;
+			min-height: 426px;
 			@media (min-width: $screen-md) {
-				min-height: 680px;
+				min-height: 673px;
 			}
 			@media(min-width: $screen-xl) {
-				min-height: 688px;
+				min-height: 673px;
 			}
 		}
 	}
@@ -58,12 +61,14 @@
 		padding: 7px 53px 49px 46px;
 	}
 	&__title {
+		margin-bottom: 12px;
 		font-family: "Intro", sans-serif;
 		font-size: 22px;
 		line-height: 28px;
 		text-transform: uppercase;
 		letter-spacing: 1.1px;
 		@media (min-width: $screen-md) {
+			margin-bottom: 15px;
 			font-size: 30px;
 			line-height: 42px;
 			letter-spacing: 1.5px;
@@ -75,11 +80,12 @@
 		}
 	}
 	&__subtitle {
+		margin-top: 0;
 		line-height: 18px;
 		letter-spacing: 0.28px;
 		color: #363636;
 		@media (min-width: $screen-md) {
-			margin-bottom: 26px;
+			margin-bottom: 23px;
 			line-height: 18px;
 			letter-spacing: 0.28px;
 		}
@@ -98,10 +104,11 @@
 		font-size: 14px;
 		line-height: 1;
 		letter-spacing: 0.28px;
-		@media (min-width: $screen-md) {
-			margin-bottom: 16px;
+		&:focus {
+			outline: none;
+			border-color: #d52833;
 		}
-		@media(min-width: $screen-xl) {
+		@media (min-width: $screen-md) {
 			margin-bottom: 18px;
 		}
 	}
@@ -113,6 +120,7 @@
 		line-height: 18px;
 		letter-spacing: 0.26px;
 		@media (min-width: $screen-md) {
+			margin-bottom: 41px;
 			margin-top: 38px;
 		}
 		@media(min-width: $screen-xl) {
