@@ -22,6 +22,12 @@
 		}
 	}
 	&__item {
+		max-width: 273px;
+		margin-right: auto;
+		margin-left: auto;
+		@media (min-width: $screen-md) {
+		    max-width: 100%;
+		}
 		@media (min-width: $screen-xl) {
 			padding-right: 8px;
 		}
@@ -130,12 +136,6 @@
 		font-size: 0;
 		.residence__subject {
 			line-height: 1;
-		}
-		li {
-			text-align: center;
-			img {
-				display: inline-block;
-			}
 		}
 	}
 	.slick-dots {

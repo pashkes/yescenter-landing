@@ -93,6 +93,10 @@
 			}
 		}
 		&--breakfast {
+			img {
+				left: 2px;
+				bottom: 1px;
+			}
 			@media (min-width: $screen-md) {
 				img {
 					width: 59px;
@@ -143,10 +147,14 @@
 		font-size: 14px;
 		line-height: 1.43;
 		margin: 0;
-
 		@media (min-width: $screen-md) {
 			font-size: 15px;
 			line-height: 1.47;
+		}
+		span {
+			@media (min-width: $screen-md) {
+				display: block;
+			}
 		}
 	}
 }
