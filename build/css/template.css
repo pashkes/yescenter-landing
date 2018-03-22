@@ -4317,10 +4317,15 @@ tbody.collapse.show {
         width: 96px;
         height: 96px;
         margin-right: 23px; } }
+    .package__icon img {
+      position: relative; }
     .package__icon--flight {
       -webkit-transform: rotate(-45deg);
           -ms-transform: rotate(-45deg);
               transform: rotate(-45deg); }
+      .package__icon--flight img {
+        bottom: 1px;
+        left: 1px; }
       @media (min-width: 768px) {
         .package__icon--flight img {
           width: 58px;
@@ -4331,8 +4336,8 @@ tbody.collapse.show {
         height: 57px; } }
     @media (min-width: 768px) {
       .package__icon--medical img {
-        width: 50px;
-        height: 57px; } }
+        width: 58px;
+        height: 58px; } }
     @media (min-width: 768px) {
       .package__icon--trnasfer-aerport img {
         width: 59px;
@@ -4348,7 +4353,9 @@ tbody.collapse.show {
     @media (min-width: 768px) {
       .package__icon--breakfast img {
         width: 59px;
-        height: 59px; } }
+        height: 59px;
+        bottom: 4px;
+        left: 2px; } }
     .package__icon--price {
       position: relative;
       background-color: #fff;
@@ -4363,14 +4370,16 @@ tbody.collapse.show {
         -webkit-transform: translateX(-50%) rotate(-45deg);
             -ms-transform: translateX(-50%) rotate(-45deg);
                 transform: translateX(-50%) rotate(-45deg);
-        background-color: #b82833; }
+        background-color: #b82833;
+        z-index: 1; }
         @media (min-width: 768px) {
           .package__icon--price::before {
             height: 4px; } }
       @media (min-width: 768px) {
         .package__icon--price img {
           width: 59px;
-          height: 46px; } }
+          height: 46px;
+          bottom: 5px; } }
   .package__title {
     margin-bottom: 12px;
     line-height: 2.33; }
@@ -4698,7 +4707,7 @@ tbody.collapse.show {
     text-align: left;
     color: #d52833;
     cursor: pointer;
-    font-family: "Open Sans", sans-serif; }
+    font-family: "Intro", sans-serif; }
     @media (min-width: 768px) {
       .info__button {
         font-size: 24px;
