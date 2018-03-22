@@ -60,6 +60,7 @@
 		line-height: 23px;
 		letter-spacing: 0;
 		font-size: 18px;
+		font-family: "Open Sans", sans-serif;
 		@media (min-width: $screen-md) {
 			margin-bottom: 17px;
 			font-size: 24px;
@@ -115,6 +116,7 @@
 		letter-spacing: 0.1px;
 		@media (min-width: $screen-md) {
 			margin-bottom: 46px;
+			max-width: 100%;
 		}
 		@media (min-width: $screen-xl) {
 			max-width: 100%;

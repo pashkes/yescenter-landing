@@ -31,6 +31,8 @@ h2 {
 	letter-spacing: 0.7px;
   color: $text-color;
 	text-transform: uppercase;
+	font-family: "Intro", sans-serif;
+	font-weight: 400;
 	@media (min-width: $screen-md) {
 		font-size: 28px;
 		line-height: 26px;
@@ -125,7 +127,7 @@ p {
 	transform: translateY(-50%);
 	width: 55px;
 	height: 40px;
-	background-color: #d32a33;
+	background-color: #d52833;
 	border: none;
 	font-size: 0;
 	transition: .4s ease;
