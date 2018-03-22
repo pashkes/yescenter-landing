@@ -27,6 +27,7 @@
 	$('.js-residence-slider').slick({
 		arrows: true,
 		centerPadding: '0',
+		centerMode: true,
 		responsive: [
 			{
 				breakpoint: 1343,

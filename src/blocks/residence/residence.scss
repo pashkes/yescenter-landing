@@ -114,11 +114,14 @@
 		position: relative;
 		overflow: hidden;
 		font-size: 0;
-		img {
-			width: 100%;
-		}
 		.residence__subject {
 			line-height: 1;
+		}
+		li {
+			text-align: center;
+			img {
+				display: inline-block;
+			}
 		}
 	}
 	.slick-dots {

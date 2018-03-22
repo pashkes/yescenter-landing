@@ -4616,10 +4616,12 @@ tbody.collapse.show {
     position: relative;
     overflow: hidden;
     font-size: 0; }
-    .residence__slider img {
-      width: 100%; }
     .residence__slider .residence__subject {
       line-height: 1; }
+    .residence__slider li {
+      text-align: center; }
+      .residence__slider li img {
+        display: inline-block; }
   .residence .slick-dots {
     padding-top: 7px; }
     @media (min-width: 768px) {
@@ -5125,7 +5127,6 @@ tbody.collapse.show {
         margin-bottom: 36px; } }
   .story-photo__slider {
     overflow: hidden;
-    margin-right: -12px;
     margin-left: -12px; }
     @media (min-width: 1344px) {
       .story-photo__slider {
@@ -5204,7 +5205,7 @@ tbody.collapse.show {
   @media (min-width: 1344px) {
     .reviews {
       padding-top: 94px;
-      padding-bottom: 95px; } }
+      padding-bottom: 89px; } }
   .reviews__title {
     margin-bottom: 28px;
     line-height: 26px;
@@ -5247,3 +5248,118 @@ tbody.collapse.show {
     padding-top: 12px; }
   .reviews .slick-next {
     right: -15px; }
+
+.request {
+  position: relative;
+  background-color: #eff2f4;
+  padding-top: 32px; }
+  @media (min-width: 1344px) {
+    .request {
+      min-height: 688px; } }
+  @media (min-width: 768px) {
+    .request {
+      padding-top: 0; } }
+  @media (min-width: 768px) {
+    .request__form {
+      position: absolute;
+      top: 55px;
+      left: 0; } }
+  @media (min-width: 1344px) {
+    .request__form {
+      position: relative;
+      top: 64px;
+      z-index: 1; } }
+  .request__map {
+    width: 100%; }
+    @media (min-width: 1344px) {
+      .request__map {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0; } }
+    .request__map iframe {
+      width: 100%; }
+      @media (min-width: 768px) {
+        .request__map iframe {
+          min-height: 680px; } }
+      @media (min-width: 1344px) {
+        .request__map iframe {
+          min-height: 688px; } }
+
+.form {
+  max-width: 384px;
+  padding: 5px 16px 32px;
+  background-color: #fff; }
+  @media (min-width: 768px) {
+    .form {
+      padding: 8px 29px 49px; } }
+  @media (min-width: 1344px) {
+    .form {
+      max-width: 440px; } }
+  @media (min-width: 1344px) {
+    .form {
+      padding: 7px 53px 49px 46px; } }
+  .form__title {
+    font-family: "Intro", sans-serif;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px; }
+    @media (min-width: 768px) {
+      .form__title {
+        font-size: 30px;
+        line-height: 42px;
+        letter-spacing: 1.5px; } }
+    @media (min-width: 1344px) {
+      .form__title {
+        font-size: 32px;
+        line-height: 42px;
+        letter-spacing: 1.6px; } }
+  .form__subtitle {
+    line-height: 18px;
+    letter-spacing: 0.28px;
+    color: #363636; }
+    @media (min-width: 768px) {
+      .form__subtitle {
+        margin-bottom: 26px;
+        line-height: 18px;
+        letter-spacing: 0.28px; } }
+    @media (min-width: 1344px) {
+      .form__subtitle {
+        margin-bottom: 29px; } }
+  .form__field {
+    display: block;
+    margin-bottom: 10px;
+    padding: 8px 0;
+    width: 100%;
+    border: none;
+    border-bottom: 3px solid #353535;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.28px; }
+    @media (min-width: 768px) {
+      .form__field {
+        margin-bottom: 16px; } }
+    @media (min-width: 1344px) {
+      .form__field {
+        margin-bottom: 18px; } }
+  .form__conf {
+    color: #363636;
+    margin-top: 27px;
+    margin-bottom: 26px;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0.26px; }
+    @media (min-width: 768px) {
+      .form__conf {
+        margin-top: 38px; } }
+    @media (min-width: 1344px) {
+      .form__conf {
+        margin-top: 36px;
+        margin-bottom: 29px; } }
+    .form__conf a {
+      color: #d32a33; }
+  .form__submit {
+    max-width: 100%; }

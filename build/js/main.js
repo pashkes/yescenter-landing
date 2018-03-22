@@ -18,12 +18,12 @@
 /*$(function() {
 	
 });*/
-// .footer scripts goes here 
+// .info scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .info scripts goes here 
+// .footer scripts goes here 
 
 /*$(function() {
 	
@@ -107,6 +107,7 @@
 	$('.js-residence-slider').slick({
 		arrows: true,
 		centerPadding: '0',
+		centerMode: true,
 		responsive: [
 			{
 				breakpoint: 1343,
