@@ -70,8 +70,7 @@
 			content: counters(section, ".") ". ";
 			position: absolute;
 			left: 0;
-			top: 50%;
-			transform: translateY(-50%);
+			top: 0;
 			font-size: 36px;
 			text-transform: uppercase;
 			color: #d52833;
@@ -79,6 +78,8 @@
 			font-family: "Intro", sans-serif;
 			@media (min-width: $screen-md) {
 				font-size: 46px;
+				top: 50%;
+				transform: translateY(-50%);
 			}
 		}
 	}

@@ -4830,10 +4830,7 @@ tbody.collapse.show {
       content: counters(section, ".") ". ";
       position: absolute;
       left: 0;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-          -ms-transform: translateY(-50%);
-              transform: translateY(-50%);
+      top: 0;
       font-size: 36px;
       text-transform: uppercase;
       color: #d52833;
@@ -4841,7 +4838,11 @@ tbody.collapse.show {
       font-family: "Intro", sans-serif; }
       @media (min-width: 768px) {
         .tours__featur::before {
-          font-size: 46px; } }
+          font-size: 46px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+                  transform: translateY(-50%); } }
   .tours__video {
     margin-bottom: 27px; }
     @media (min-width: 768px) {
