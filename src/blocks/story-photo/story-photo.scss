@@ -27,23 +27,30 @@
 	}
 	&__slider {
 		overflow: hidden;
+		margin-right: -12px;
+		margin-left: -12px;
+		@media(min-width: $screen-xl) {
+			margin-right: 0;
+			margin-left: 0;
+		}
 	}
 	.slick-list {
 		padding-left: 24px;
 		@media (min-width: $screen-md) {
-		    margin-left: 32px;
+		    margin-left: 10px;
 		}
 		@media(min-width: $screen-xl) {
-		    margin-left: 75px;
+		    margin-left: 61px;
 		}
 	}
 	&__slide {
-		margin-right: 24px;
+		margin-right: 12px;
+		margin-left: 12px;
 		@media (min-width: $screen-md) {
 			margin-right: 32px;
 		}
 		@media(min-width: $screen-xl) {
-			margin-right: 48px;
+			margin-right: 35px;
 		}
 		img {
 			max-height: 213px;
@@ -89,7 +96,9 @@
 		}
 	}
 	.slick-dots {
-		padding-top: 10px;
+		@media (min-width: $screen-md) {
+			padding-top: 10px;
+		}
 	}
 	.slick-arrow {
 		top: calc(50% - 57px / 2);

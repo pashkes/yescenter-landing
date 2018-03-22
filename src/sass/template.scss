@@ -7,7 +7,7 @@
 
 //libs
 @import "libs/bootstrap-settings";
-@import "libs/slick.css";
+@import "libs/slick";
 
 //base style
 @import "_base";
@@ -26,3 +26,6 @@
 @import "../blocks/departure/departure";
 @import "../blocks/escort/escort";
 @import "../blocks/story-photo/story-photo";
+@import "../blocks/reviews/reviews";
+@import "../blocks/request/request";
+@import "../blocks/footer/footer";

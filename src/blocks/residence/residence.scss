@@ -33,7 +33,7 @@
 			.residence__photo {
 				margin-bottom: 13px;
 				@media (min-width: $screen-xl) {
-					margin-bottom: 46px;
+					margin-bottom: 52px;
 				}
 			}
 			.residence__desc {
@@ -92,7 +92,7 @@
 			margin-bottom: 20px;
 		}
 		@media (min-width: $screen-xl) {
-			margin-bottom: 46px;
+			margin-bottom: 52px;
 		}
 		img {
 			@media (min-width: $screen-md) {
@@ -128,5 +128,8 @@
 			padding-top: 6px;
 			letter-spacing: 0.1px;
 		}
+	}
+	.slick-arrow {
+		top: 195px;
 	}
 }

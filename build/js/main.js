@@ -18,6 +18,11 @@
 /*$(function() {
 	
 });*/
+// .footer scripts goes here 
+
+/*$(function() {
+	
+});*/
 // .info scripts goes here 
 
 /*$(function() {
@@ -39,6 +44,11 @@
 	
 });*/
 // .quest scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .request scripts goes here 
 
 /*$(function() {
 	
@@ -124,7 +134,6 @@
 		dots: true,
 		mobileFirst: true,
 		arrows: false,
-		infinite: false,
 		responsive: [
 			{
 				breakpoint: 1600,
@@ -181,6 +190,28 @@
 			}
 
 		]
+	});
+
+	$('.js-reviews-slider').slick({
+		centerPadding: '0',
+		slidesToShow: 2,
+		arrows: true,
+		infinite: false,
+		appendArrows: $('.reviews__arrows-wrap'),
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					dots: true,
+					arrows: false,
+					slidesToShow: 1,
+					variableWidth: true,
+					infinite: true
+				}
+			}
+
+		]
+
 	});
 	var msnry = new Masonry('.masonry', {
 		itemSelector: '.timetable__item'
