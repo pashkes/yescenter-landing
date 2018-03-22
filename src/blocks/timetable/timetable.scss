@@ -188,17 +188,21 @@
 	&__photo {
 		position: relative;
 		display: inline-block;
-		margin-bottom: 5px;
+		margin-bottom: 7px;
 		padding-top: 4px;
 		padding-bottom: 4px;
 		background-color: #fff;
 		z-index: 1;
 		img {
 			display: block;
-			width: 81px;
-			height: 81px;
+			width: 79px;
+			height: 79px;
 			border-radius: 50%;
 			overflow: hidden;
+			@media (min-width: $screen-md) {
+				width: 81px;
+				height: 81px;
+			}
 		}
 		@media (min-width: $screen-md) {
 			position: static;
@@ -234,8 +238,8 @@
 		}
 	}
 	&__desc {
-		margin-top: 10px;
-		margin-bottom: 33px;
+		margin-top: 2px;
+		margin-bottom: 25px;
 		letter-spacing: 0.1px;
 		line-height: 22px;
 		color: $text-color;

@@ -5,7 +5,7 @@
 	padding-top: 27px;
 	padding-bottom: 32px;
 	@media (min-width: $screen-md) {
-		padding-top: 47px;
+		padding-top: 54px;
 		padding-bottom: 55px;
 	}
 	@media(min-width: $screen-xl) {
@@ -15,7 +15,7 @@
 	&__title {
 		margin-bottom: 25px;
 		@media (min-width: $screen-md) {
-			margin-bottom: 40px;
+			margin-bottom: 47px;
 		}
 		@media(min-width: $screen-xl) {
 			margin-bottom: 47px;
@@ -28,7 +28,7 @@
 		display: block;
 		width: 100%;
 		border: none;
-		padding: 18px 48px 17px 0;
+		padding: 20px 48px 19px 0;
 		border-bottom: 1px solid #ebebeb;
 		background-color: transparent;
 		font-size: 16px;
@@ -42,7 +42,7 @@
 			letter-spacing: 0.48px;
 			line-height: 24px;
 			padding-top: 19px;
-			padding-bottom: 18px;
+			padding-bottom: 19px;
 		}
 		@media(min-width: $screen-xl) {
 			padding-top: 27px;

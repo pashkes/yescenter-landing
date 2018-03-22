@@ -17,6 +17,7 @@
 		margin-bottom: 4px;
 		letter-spacing: 0.72px;
 		@media (min-width: $screen-md) {
+			max-width: 680px;
 			letter-spacing: 1.12px;
 			font-size: 28px;
 			line-height: 40px;
@@ -88,7 +89,7 @@
 		}
 	}
 	&__submit {
-		margin-top: 15px;
+		margin-top: 13px;
 		@media (min-width: $screen-md) {
 			margin-top: 19px;
 		}

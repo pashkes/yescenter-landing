@@ -6,16 +6,16 @@
 	padding-bottom: 2px;
 	border-bottom: 1px solid #ebebeb;
 	@media (min-width: $screen-md) {
-		padding-top: 48px;
+		padding-top: 57px;
 	}
 	@media (min-width: $screen-xl) {
 		padding-top: 87px;
 		padding-bottom: 44px;
 	}
 	&__title {
-		margin-bottom: 21px;
+		margin-bottom: 22px;
 		@media (min-width: $screen-md) {
-			margin-bottom: 40px;
+			margin-bottom: 46px;
 		}
 		@media (min-width: $screen-xl) {
 			margin-bottom: 47px;
@@ -28,20 +28,27 @@
 		&--last {
 			@media (min-width: $screen-md) {
 				padding-right: 0;
+			}
+			@media(min-width: $screen-xl) {
 				padding-left: 8px;
 			}
 			.residence__photo {
-				margin-bottom: 13px;
+				margin-bottom: 11px;
+				@media (min-width: $screen-md) {
+					margin-bottom: 13px;
+				}
 				@media (min-width: $screen-xl) {
 					margin-bottom: 52px;
 				}
 			}
 			.residence__desc {
 				line-height: 22px;
-				letter-spacing: 0.2px;
+				letter-spacing: 0.14px;
+				@media (min-width: $screen-md) {
+					line-height: 24px;
+				}
 				@media (min-width: $screen-xl) {
 					max-width: 510px;
-					line-height: 24px;
 				}
 			}
 		}
@@ -49,14 +56,14 @@
 	}
 	&__subject {
 		max-width: 236px;
-		margin-bottom: 12px;
+		margin-bottom: 10px;
 		line-height: 23px;
 		letter-spacing: 0;
 		font-size: 18px;
 		@media (min-width: $screen-md) {
 			margin-bottom: 17px;
 			font-size: 24px;
-			line-height: 1.08;
+			line-height: 26px;
 			max-width: 266px;
 		}
 		@media (min-width: $screen-xl) {
@@ -87,9 +94,9 @@
 		}
 	}
 	&__photo {
-		margin-bottom: 9px;
+		margin-bottom: 15px;
 		@media (min-width: $screen-md) {
-			margin-bottom: 20px;
+			margin-bottom: 25px;
 		}
 		@media (min-width: $screen-xl) {
 			margin-bottom: 52px;
@@ -101,11 +108,16 @@
 		}
 	}
 	&__desc {
+		max-width: 253px;
 		margin-top: 0;
-		margin-bottom: 46px;
+		margin-bottom: 26px;
 		line-height: 22px;
 		letter-spacing: 0.1px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 46px;
+		}
 		@media (min-width: $screen-xl) {
+			max-width: 100%;
 			letter-spacing: 0.2px;
 			line-height: 23px;
 		}
@@ -125,10 +137,10 @@
 		}
 	}
 	.slick-dots {
-		padding-top: 7px;
+		padding-top: 17px;
 		@media (min-width: $screen-md) {
 			align-items: flex-end;
-			padding-top: 6px;
+			padding-top: 16px;
 			letter-spacing: 0.1px;
 		}
 	}

@@ -29,7 +29,7 @@
 		height: 48px;
 		margin-right: 16px;
 		border-radius: 50%;
-		background-color: #B82833;
+		background-color: #d52833;
 		flex: none;
 		@media (min-width: $screen-md) {
 			width: 96px;
@@ -119,7 +119,7 @@
 		}
 	}
 	&__title {
-		margin-bottom: 11px;
+		margin-bottom: 12px;
 		line-height: 2.33;
 		@media (min-width: $screen-md) {
 			margin-bottom: 23px;
