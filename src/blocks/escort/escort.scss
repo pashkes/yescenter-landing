@@ -10,7 +10,7 @@
 	}
 	@media(min-width: $screen-xl) {
 		padding-top: 89px;
-		padding-bottom: 95px;
+		padding-bottom: 67px;
 	}
 	&__title {
 		max-width: 167px;
@@ -50,9 +50,11 @@
 		flex-direction: column;
 	}
 	&__slider {
-		margin-bottom: 45px;
+		margin-bottom: 25px;
+		margin-right: -24px;
 		@media (min-width: $screen-md) {
 			margin-bottom: 42px;
+			margin-right: 0;
 		}
 		@media(min-width: $screen-xl) {
 			margin-bottom: 0;
@@ -114,5 +116,6 @@
 	.slick-dots {
 		padding-top: 4px;
 		margin-bottom: 25px;
+		margin-right: 25px;
 	}
 }

@@ -54,6 +54,7 @@
 		dots: true,
 		mobileFirst: true,
 		arrows: false,
+		infinite: false,
 		responsive: [
 			{
 				breakpoint: 1600,
@@ -73,6 +74,30 @@
 		]
 	});
 	$('.js-slider-escort').slick({
+		centerPadding: '0',
+		slidesToShow: 2,
+		variableWidth: true,
+		infinite: false,
+		responsive: [
+			{
+				breakpoint: 1343,
+				settings: {
+					dots: true,
+					arrows: false
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					dots: true,
+					slidesToShow: 1,
+					arrows: false
+				}
+			}
+
+		]
+	});
+	$('.js-story-photo').slick({
 		centerPadding: '0',
 		slidesToShow: 2,
 		variableWidth: true,

@@ -112,10 +112,7 @@
 	}
 	&__submit {
 		margin-bottom: 25px;
-		max-width: 270px;
-		width: 100%;
 		@media (min-width: $screen-md) {
-			max-width: 240px;
 			margin-right: 47px;
 		}
 	}
