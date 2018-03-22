@@ -8,12 +8,17 @@
 /*$(function() {
 	
 });*/
-// .info scripts goes here 
+// .departure scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .departure scripts goes here 
+// .escort scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .info scripts goes here 
 
 /*$(function() {
 	
@@ -43,12 +48,12 @@
 /*$(function() {
 	
 });*/
-// .tours scripts goes here 
+// .timetable scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .timetable scripts goes here 
+// .tours scripts goes here 
 
 /*$(function() {
 	
@@ -117,7 +122,7 @@
 				}
 			},
 			{
-				breakpoint: 1345,
+				breakpoint: 1343,
 				settings: {
 					arrows: true,
 					dots: false,
@@ -127,7 +132,21 @@
 
 		]
 	});
+	$('.js-slider-escort').slick({
+		centerPadding: '0',
+		slidesToShow: 2,
+		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 1343,
+				settings: {
+					dots: true,
+					arrows: false
+				}
+			}
 
+		]
+	});
 	var msnry = new Masonry('.masonry', {
 		itemSelector: '.timetable__item'
 	});

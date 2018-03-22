@@ -62,7 +62,7 @@
 				}
 			},
 			{
-				breakpoint: 1345,
+				breakpoint: 1343,
 				settings: {
 					arrows: true,
 					dots: false,
@@ -72,7 +72,21 @@
 
 		]
 	});
+	$('.js-slider-escort').slick({
+		centerPadding: '0',
+		slidesToShow: 2,
+		variableWidth: true,
+		responsive: [
+			{
+				breakpoint: 1343,
+				settings: {
+					dots: true,
+					arrows: false
+				}
+			}
 
+		]
+	});
 	var msnry = new Masonry('.masonry', {
 		itemSelector: '.timetable__item'
 	});

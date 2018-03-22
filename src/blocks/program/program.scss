@@ -78,6 +78,10 @@
 			border-color: transparent transparent transparent #e1e1e1;
 			@media(min-width: $screen-md) {
 				border-width: 12px 0 12px 12px;
+				right: 13px;
+			}
+			@media(min-width: $screen-xl) {
+			    right: 17px;
 			}
 		}
 		@media (min-width: $screen-md) {
