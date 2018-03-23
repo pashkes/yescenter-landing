@@ -3,12 +3,12 @@
 /*$(function() {
 	
 });*/
-// .call-back scripts goes here 
+// .btn scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .btn scripts goes here 
+// .call-back scripts goes here 
 
 /*$(function() {
 	
@@ -38,17 +38,17 @@
 /*$(function() {
 	
 });*/
-// .page-top scripts goes here 
-
-/*$(function() {
-	
-});*/
 // .program scripts goes here 
 
 /*$(function() {
 	
 });*/
 // .quest scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .page-top scripts goes here 
 
 /*$(function() {
 	
@@ -398,7 +398,7 @@ function init() {
 
 	var myCollection = new ymaps.GeoObjectCollection({}, {
 		iconLayout: 'default#image',
-		iconImageHref: 'assets/img/pin.png',
+		iconImageHref: 'img/pin.png',
 		iconImageSize: [25, 31],
 		iconImageOffset: [-25, -31]
 	});

@@ -313,7 +313,7 @@ function init() {
 
 	var myCollection = new ymaps.GeoObjectCollection({}, {
 		iconLayout: 'default#image',
-		iconImageHref: 'assets/img/pin.png',
+		iconImageHref: 'img/pin.png',
 		iconImageSize: [25, 31],
 		iconImageOffset: [-25, -31]
 	});
