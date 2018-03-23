@@ -50,6 +50,7 @@
 }
 
 .form {
+	max-width: 384px;
 	padding: 5px 16px 32px;
 	background-color: #fff;
 	@media (min-width: $screen-md) {
@@ -62,6 +63,7 @@
 		padding: 7px 53px 49px 46px;
 	}
 	&.call-back {
+		max-width: 100%;
 		@media (min-width: $screen-md) {
 			max-width: 481px;
 			padding: 13px 48px 49px 46px;
@@ -233,7 +235,7 @@
 
 .SumoSelect {
 	width: 100%;
-	max-width: 100%;
+	max-width: 168px;
 }
 .SumoSelect > .CaptionCont {
 	border: none;
