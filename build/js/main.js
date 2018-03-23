@@ -91,7 +91,6 @@
 		infinite: true,
 		arrows: true,
 		slidesToShow: 3,
-		lazyLoad: 'ondemand',
 		responsive: [
 			{
 				breakpoint: 1343,
@@ -141,7 +140,6 @@
 		dots: true,
 		mobileFirst: true,
 		arrows: false,
-		lazyLoad: 'ondemand',
 		responsive: [
 			{
 				breakpoint: 1600,

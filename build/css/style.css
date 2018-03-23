@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400&subset=cyrillic-ext");
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5658,8 +5657,7 @@ tbody.collapse.show {
   position: relative;
   background-color: #eff2f4;
   padding-top: 32px;
-  min-height: 426px;
-  font-size: 0; }
+  min-height: 426px; }
   @media (min-width: 768px) {
     .request {
       min-height: 673px; } }
@@ -5677,6 +5675,7 @@ tbody.collapse.show {
         position: absolute;
         top: 55px;
         left: 0;
+        z-index: 2;
         margin-bottom: 0; } }
     @media (min-width: 1344px) {
       .request__form {

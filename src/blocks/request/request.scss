@@ -6,7 +6,6 @@
 	background-color: #eff2f4;
 	padding-top: 32px;
 	min-height: 426px;
-	font-size: 0;
 	@media (min-width: $screen-md) {
 		min-height: 673px;
 	}
@@ -23,6 +22,7 @@
 			position: absolute;
 			top: 55px;
 			left: 0;
+			z-index: 2;
 			margin-bottom: 0;
 		}
 		@media(min-width: $screen-xl) {
