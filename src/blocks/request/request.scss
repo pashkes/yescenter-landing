@@ -50,7 +50,6 @@
 }
 
 .form {
-	max-width: 384px;
 	padding: 5px 16px 32px;
 	background-color: #fff;
 	@media (min-width: $screen-md) {
@@ -63,8 +62,8 @@
 		padding: 7px 53px 49px 46px;
 	}
 	&.call-back {
-		max-width: 481px;
 		@media (min-width: $screen-md) {
+			max-width: 481px;
 			padding: 13px 48px 49px 46px;
 		}
 		.form__title {
@@ -214,11 +213,27 @@
 	&__submit {
 		max-width: 100%;
 	}
+	&__select-wrap {
+		position:relative;
+		flex-grow: 1;
+		&:first-child {
+			margin-right: 48px;
+			&::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				right: -32px;
+				width: 14px;
+				height: 2px;
+				background-color: #c7c7c7;
+			}
+		}
+	}
 }
 
 .SumoSelect {
 	width: 100%;
-	max-width: 168px;
+	max-width: 100%;
 }
 .SumoSelect > .CaptionCont {
 	border: none;

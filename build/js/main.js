@@ -8,17 +8,22 @@
 /*$(function() {
 	
 });*/
-// .call-back scripts goes here 
-
-/*$(function() {
-	
-});*/
 // .departure scripts goes here 
 
 /*$(function() {
 	
 });*/
+// .call-back scripts goes here 
+
+/*$(function() {
+	
+});*/
 // .escort scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .footer scripts goes here 
 
 /*$(function() {
 	
@@ -33,17 +38,12 @@
 /*$(function() {
 	
 });*/
-// .footer scripts goes here 
+// .page-top scripts goes here 
 
 /*$(function() {
 	
 });*/
 // .program scripts goes here 
-
-/*$(function() {
-	
-});*/
-// .page-top scripts goes here 
 
 /*$(function() {
 	
