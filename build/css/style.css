@@ -5774,10 +5774,6 @@ tbody.collapse.show {
     -o-transition: 0.15s ease-in;
     transition: 0.15s ease-in;
     cursor: pointer; }
-    .form__close:hover {
-      -webkit-transform: rotate(-90deg);
-          -ms-transform: rotate(-90deg);
-              transform: rotate(-90deg); }
   .form__subtitle {
     margin-top: 0;
     line-height: 18px;
