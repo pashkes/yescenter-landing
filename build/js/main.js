@@ -23,17 +23,17 @@
 /*$(function() {
 	
 });*/
-// .footer scripts goes here 
-
-/*$(function() {
-	
-});*/
 // .info scripts goes here 
 
 /*$(function() {
 	
 });*/
 // .package scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .footer scripts goes here 
 
 /*$(function() {
 	
