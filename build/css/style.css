@@ -4309,7 +4309,7 @@ tbody.collapse.show {
       content: '';
       position: absolute;
       top: 50%;
-      right: 17px;
+      right: 9px;
       -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
