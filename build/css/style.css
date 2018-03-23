@@ -4962,6 +4962,7 @@ tbody.collapse.show {
         margin-left: 24px; } }
   .residence__star {
     display: inline-block;
+    margin-right: 5px;
     width: 15px;
     height: 18px;
     background: #fff url(../img/svg/mark-as-favorite-star.svg) center no-repeat;
