@@ -96,7 +96,7 @@ gulp.task('sass', function () {
           require('postcss-flexbugs-fixes'),
           require('postcss-inline-svg')
         ]))
-			  .pipe(gcmq())
+			  // .pipe(gcmq())
         .pipe(autoprefixer({browsers: ['last 10 versions']}))
         .pipe(debug({title: 'обработано less файлов'}))
         .pipe(gulp.dest(PATH.BUILD.CSS))

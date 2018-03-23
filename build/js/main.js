@@ -8,12 +8,12 @@
 /*$(function() {
 	
 });*/
-// .call-back scripts goes here 
+// .departure scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .departure scripts goes here 
+// .call-back scripts goes here 
 
 /*$(function() {
 	
