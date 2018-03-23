@@ -4707,6 +4707,7 @@ tbody.collapse.show {
         width: 130px;
         position: absolute;
         left: 50%;
+        top: 50%;
         height: 2px;
         -webkit-transform: translateX(-50%) rotate(-45deg);
             -ms-transform: translateX(-50%) rotate(-45deg);
