@@ -1,8 +1,3 @@
-// .advantage scripts goes here 
-
-/*$(function() {
-	
-});*/
 // .btn scripts goes here 
 
 /*$(function() {
@@ -13,12 +8,17 @@
 /*$(function() {
 	
 });*/
-// .departure scripts goes here 
+// .advantage scripts goes here 
 
 /*$(function() {
 	
 });*/
 // .escort scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .departure scripts goes here 
 
 /*$(function() {
 	
@@ -48,12 +48,12 @@
 /*$(function() {
 	
 });*/
-// .request scripts goes here 
+// .quest scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .quest scripts goes here 
+// .request scripts goes here 
 
 /*$(function() {
 	
@@ -73,12 +73,12 @@
 /*$(function() {
 	
 });*/
-// .tours scripts goes here 
+// .timetable scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .timetable scripts goes here 
+// .tours scripts goes here 
 
 /*$(function() {
 	

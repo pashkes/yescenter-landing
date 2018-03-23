@@ -4046,7 +4046,7 @@ tbody.collapse.show {
   font-family: "Intro", sans-serif;
   background-color: #d52833;
   color: #FFFFFF;
-  line-height: 1.1;
+  line-height: 12px;
   text-align: center;
   font-size: 11px;
   letter-spacing: 0.8px;
@@ -4142,7 +4142,7 @@ tbody.collapse.show {
         -webkit-border-radius: 20px;
                 border-radius: 20px;
         font-size: 11px;
-        line-height: 2.1;
+        line-height: 22px;
         letter-spacing: 0.8px;
         -webkit-transition: .2s ease-in;
         -o-transition: .2s ease-in;
