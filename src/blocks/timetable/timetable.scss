@@ -24,14 +24,41 @@
 	&__inner {
 		position: relative;
 	}
+	&__title {
+		position: relative;
+		z-index: 1;
+		background-color: #fff;
+		padding-top: 26px;
+		min-height: inherit;
+		margin-bottom: 25px;
+		text-transform: uppercase;
+
+		@media (min-width: $screen-md) {
+			display: flex;
+			justify-content: flex-end;
+			width: 50%;
+			padding-top: 55px;
+			padding-bottom: 80px;
+			font-size: 28px;
+			line-height: 0.75;
+			letter-spacing: 1.1px;
+			z-index: 0;
+		}
+		@media(min-width: $screen-xl) {
+			min-height: inherit;
+			padding-top: 78px;
+			padding-bottom: 58px;
+			font-size: 30px;
+			line-height: 1.4;
+			letter-spacing: 1.2px;
+		}
+	}
 	&__item {
 		position: relative;
 		@media (min-width: $screen-md) {
 			display: flex;
 			min-height: 256px;
 			width: 50%;
-			line-height: 1.57;
-			letter-spacing: 0.1px;
 			&::after {
 				content: '';
 				position: absolute;
@@ -95,8 +122,8 @@
 				padding-top: 54px;
 				min-height: 309px;
 				&::after {
-					@media(min-width: $screen-md) {
-						top: 94px;
+					@media (min-width: $screen-md) {
+					    top: 93px;
 					}
 					@media(min-width: $screen-xl) {
 						top: 154px;
@@ -111,7 +138,9 @@
 			}
 		}
 		@media(min-width: $screen-xl) {
-			min-height: 224px;
+			&:not(.timetable__title) {
+				min-height: 224px;
+			}
 			&:nth-child(odd) {
 				padding-right: 47px;
 				.timetable__photo {
@@ -134,35 +163,7 @@
 		}
 
 	}
-	&__title {
-		position: relative;
-		z-index: 1;
-		background-color: #fff;
-		padding-top: 26px;
-		min-height: inherit;
-		margin-bottom: 25px;
-		text-transform: uppercase;
 
-		@media (min-width: $screen-md) {
-			display: flex;
-			justify-content: flex-end;
-			width: 50%;
-			padding-top: 54px;
-			padding-bottom: 80px;
-			font-size: 28px;
-			line-height: 0.75;
-			letter-spacing: 1.1px;
-			z-index: 0;
-		}
-		@media(min-width: $screen-xl) {
-			margin-bottom: 22px;
-			padding-top: 78px;
-			padding-bottom: 57px;
-			font-size: 30px;
-			line-height: 1.4;
-			letter-spacing: 1.2px;
-		}
-	}
 	&__footer-text {
 		position: relative;
 		margin-bottom: 0;
@@ -181,7 +182,7 @@
 			line-height: 1.08;
 		}
 		@media (min-width: $screen-xl) {
-			margin-top: 42px;
+			margin-top: -12px;
 			padding-bottom: 5px;
 		}
 	}
@@ -230,8 +231,9 @@
 		line-height: 1.44;
 		color: $text-color;
 		@media (min-width: $screen-md) {
-			line-height: 1;
 			font-size: 24px;
+			line-height: 1.57;
+			letter-spacing: 0.1px;
 		}
 		@media(min-width: $screen-xl) {
 			line-height: 1.3;
