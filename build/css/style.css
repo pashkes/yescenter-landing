@@ -5656,7 +5656,12 @@ tbody.collapse.show {
 .request {
   position: relative;
   background-color: #eff2f4;
-  padding-top: 32px; }
+  padding-top: 32px;
+  min-height: 426px;
+  font-size: 0; }
+  @media (min-width: 768px) {
+    .request {
+      min-height: 673px; } }
   @media (min-width: 1344px) {
     .request {
       min-height: 688px; } }
@@ -5678,24 +5683,15 @@ tbody.collapse.show {
         top: 64px;
         z-index: 1; } }
   .request__map {
-    width: 100%;
-    font-size: 0; }
+    position: relative;
+    width: 100%; }
     @media (min-width: 1344px) {
-      .request__map {
+      .request__map .map {
         position: absolute;
         left: 0;
         top: 0;
         right: 0;
         bottom: 0; } }
-    .request__map iframe {
-      width: 100%;
-      min-height: 426px; }
-      @media (min-width: 768px) {
-        .request__map iframe {
-          min-height: 673px; } }
-      @media (min-width: 1344px) {
-        .request__map iframe {
-          min-height: 688px; } }
 
 .form {
   max-width: 384px;
