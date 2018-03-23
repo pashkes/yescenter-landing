@@ -4034,7 +4034,7 @@ tbody.collapse.show {
 
 .btn {
   display: inline-block;
-  padding: 14px 16px;
+  padding: 13px 32px 11px 32px;
   max-width: 272px;
   width: 100%;
   border: none;
@@ -4046,7 +4046,7 @@ tbody.collapse.show {
   font-family: "Intro", sans-serif;
   background-color: #d52833;
   color: #FFFFFF;
-  line-height: 12px;
+  line-height: 1.5;
   text-align: center;
   font-size: 11px;
   letter-spacing: 0.8px;
@@ -4137,12 +4137,12 @@ tbody.collapse.show {
     cursor: pointer; }
     @media (min-width: 768px) {
       .header__order {
-        padding: 8px 29px;
+        padding: 12px 32px 10px 32px;
         border: solid 1px #d7d7d7;
         -webkit-border-radius: 20px;
                 border-radius: 20px;
         font-size: 11px;
-        line-height: 22px;
+        line-height: 1.5;
         letter-spacing: 0.8px;
         -webkit-transition: .2s ease-in;
         -o-transition: .2s ease-in;

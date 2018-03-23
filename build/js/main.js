@@ -38,17 +38,17 @@
 /*$(function() {
 	
 });*/
+// .page-top scripts goes here 
+
+/*$(function() {
+	
+});*/
 // .program scripts goes here 
 
 /*$(function() {
 	
 });*/
 // .quest scripts goes here 
-
-/*$(function() {
-	
-});*/
-// .page-top scripts goes here 
 
 /*$(function() {
 	
@@ -91,6 +91,7 @@
 		infinite: true,
 		arrows: true,
 		slidesToShow: 3,
+		lazyLoad: 'ondemand',
 		responsive: [
 			{
 				breakpoint: 1343,
@@ -140,6 +141,7 @@
 		dots: true,
 		mobileFirst: true,
 		arrows: false,
+		lazyLoad: 'ondemand',
 		responsive: [
 			{
 				breakpoint: 1600,

@@ -77,11 +77,11 @@
 		background-color: transparent;
 		cursor: pointer;
 		@media (min-width: $screen-md) {
-			padding: 8px 29px;
+			padding: 12px 32px 10px 32px;
 			border: solid 1px #d7d7d7;
 			border-radius: 20px;
 			font-size: 11px;
-			line-height: 22px;
+			line-height: 1.5;
 			letter-spacing: 0.8px;
 			transition: .2s ease-in;
 			&:hover {
