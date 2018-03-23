@@ -182,6 +182,16 @@ $(function() {
 		}
 	});
 });
+ymaps.ready(init);
+var myMap;
+
+function init(){
+	myMap = new ymaps.Map("map", {
+		center: [55.682285, 37.887211],
+		zoom: 10
+	});
+	myMap.behaviors.disable('scrollZoom')
+}
 
 // Change the speed to whatever you want
 // Personally i think 1000 is too much

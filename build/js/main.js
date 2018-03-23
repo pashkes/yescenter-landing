@@ -8,12 +8,12 @@
 /*$(function() {
 	
 });*/
-// .departure scripts goes here 
+// .call-back scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .call-back scripts goes here 
+// .departure scripts goes here 
 
 /*$(function() {
 	
@@ -48,12 +48,12 @@
 /*$(function() {
 	
 });*/
-// .quest scripts goes here 
+// .request scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .request scripts goes here 
+// .quest scripts goes here 
 
 /*$(function() {
 	
@@ -73,12 +73,12 @@
 /*$(function() {
 	
 });*/
-// .timetable scripts goes here 
+// .tours scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .tours scripts goes here 
+// .timetable scripts goes here 
 
 /*$(function() {
 	
@@ -267,6 +267,16 @@ $(function() {
 		}
 	});
 });
+ymaps.ready(init);
+var myMap;
+
+function init(){
+	myMap = new ymaps.Map("map", {
+		center: [55.682285, 37.887211],
+		zoom: 10
+	});
+	myMap.behaviors.disable('scrollZoom')
+}
 
 // Change the speed to whatever you want
 // Personally i think 1000 is too much
