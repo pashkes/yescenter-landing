@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <title>Home</title>
-    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -17,7 +17,9 @@
             </div>
           </div>
           <div class="col-auto">
-            <div class="header__contact"><a class="header__tel" href="tel:89250066320">8 925 006-63-20</a><a class="header__order" href="#">заказать звонок</a></div>
+            <div class="header__contact"><a class="header__tel" href="tel:89250066320">8 925 006-63-20</a>
+              <button class="header__order" type="button" data-toggle="modal" data-target="#callBack">заказать звонок</button>
+            </div>
           </div>
         </div>
       </div>
@@ -34,7 +36,7 @@
           <div class="row">
             <div class="col-lg-8">
               <h2 class="promo__title">	Интенсивный языковой практикум Англия — Шотландия</h2>
-              <p class="promo__subtitle">Лондон — Эдинбург	Продолжительность: 9 дней (16-24 июня)</p><a class="btn promo__order" href="#">Отправить заявку</a>
+              <p class="promo__subtitle">Лондон — Эдинбург	Продолжительность: 9 дней (16-24 июня)</p><a class="btn promo__order js-go-order" href="#order">Отправить заявку</a>
             </div>
           </div>
         </div>
@@ -359,7 +361,7 @@
               <li class="tours__featur">Мы попадаем в самые интересные места, куда на бесплатных экскурсиях никогда не пустят.</li>
               <li class="tours__featur">Билеты на все экскурсии оплачиваются заранее, так что стоять в очередях не придется.</li>
               <li class="tours__featur">Программа составлена так, чтобы от души насладиться каждой достопримечательностью, а не «скакать галопом по Европам»</li>
-            </ul><a class="btn tours__submit" href="#">Отправить заявку</a>
+            </ul><a class="btn tours__submit js-go-order" href="#order">Отправить заявку</a>
           </div>
         </div>
       </div>
@@ -510,7 +512,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-xl-6 order-xl-2"><a class="escort__submit btn" href="#">Отправить заявку</a></div>
+          <div class="col-xl-6 order-xl-2"><a class="escort__submit btn js-go-order" href="#order">Отправить заявку</a></div>
         </div>
       </div>
     </section>
@@ -555,10 +557,10 @@
     </section>
     <div class="request">
       <div class="container">
-        <form class="form request__form">
+        <form class="form request__form" id="order">
           <p class="form__title">Количество мест ограничено!</p>
           <p class="form__subtitle">Отправьте заявку, прямо сейчас.</p>
-          <input class="form__field" placeholder="Представтесь, пожалуйста" required="required"/>
+          <input class="form__field" placeholder="Представьтесь, пожалуйста" required="required"/>
           <input class="form__field" type="tel" placeholder="Контактный телефон" pattern="^[0-9-+s()]*$" required="required"/>
           <input class="form__field" placeholder="Название компании"/>
           <p class="form__conf">Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c<a href="#">политикой конфиденциальности YES EDUCATION GROUP</a></p>
@@ -566,7 +568,7 @@
         </form>
       </div>
       <div class="request__map">
-        <iframe src="https://yandex.ua/map-widget/v1/-/CBehA4E9CC" width="560" height="400" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBehZ0Vz~D" width="560" height="400" frameborder="0"></iframe>
       </div>
     </div>
     <div class="footer">
@@ -582,10 +584,64 @@
         </div>
       </div>
     </div>
-    <script src="js/libs/jquery-3.3.1.min.js"></script>
-    <script src="js/libs/slick.js"></script>
-    <script src="js/libs/masonry.pkgd.min.js"></script>
-    <script src="js/libs/bootstrap.js"></script>
+    <div class="call-back">
+      <div class="modal fade" id="callBack" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <button class="form__close" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <form class="form call-back">
+              <p class="form__title">Оставьте ваш номер</p>
+              <p class="form__subtitle">и мы перезвоним в удобное для вас время</p>
+              <input class="form__field" placeholder="Представьтесь, пожалуйста" required="required"/>
+              <input class="form__field" type="tel" placeholder="Ваш номер телефона" pattern="^[0-9-+s()]*$" required="required"/>
+              <p class="form__label">Время</p>
+              <div class="form__field-group">
+                <select class="form__select js-custom-select">
+                  <option>10:00</option>
+                  <option>11:00</option>
+                  <option>12:00</option>
+                  <option>13:00</option>
+                  <option>14:00</option>
+                  <option>15:00</option>
+                  <option>16:00</option>
+                  <option>17:00</option>
+                  <option>18:00</option>
+                  <option>19:00</option>
+                </select>
+                <select class="form__select js-custom-select">
+                  <option>11:00</option>
+                  <option>12:00</option>
+                  <option>13:00</option>
+                  <option>14:00</option>
+                  <option>15:00</option>
+                  <option>16:00</option>
+                  <option>17:00</option>
+                  <option>18:00</option>
+                  <option>19:00</option>
+                </select>
+              </div>
+              <p class="form__conf">Нажимая на кнопку «Перезвоните мне», я даю согласие на обработку персональных данных и соглашаюсь c<a href="#">политикой конфиденциальности YES EDUCATION GROUP</a></p>
+              <button class="btn form__submit">перезвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Модалка после успешной отправки-->
+      <div class="modal fade" id="success-order" tabindex="-1" role="dialog" aria-labelledby="success-order" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <button class="form__close" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <form class="form call-back success-order">
+              <p class="form__title">Спасибо, Ваша заявка отправлена</p>
+              <p class="form__subtitle">Ближайшее время<span>наш менедер свяжется с вами.</span></p>
+              <button class="btn form__submit" type="button" data-dismiss="modal">Закрыть</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/libs.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

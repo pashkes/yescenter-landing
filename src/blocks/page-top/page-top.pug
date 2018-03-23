@@ -9,7 +9,7 @@ mixin page-top()
 				.col-auto
 					.header__contact
 						a(href="tel:89250066320").header__tel 8 925 006-63-20
-						a(href="#").header__order заказать звонок
+						button(type="button" data-toggle="modal" data-target="#callBack").header__order заказать звонок
 	section.promo
 		.promo__bg
 			picture
@@ -24,4 +24,4 @@ mixin page-top()
 							|	Интенсивный языковой практикум Англия — Шотландия
 						p.promo__subtitle
 							| Лондон — Эдинбург	Продолжительность: 9 дней (16-24 июня)
-						a(href="#").btn.promo__order Отправить заявку
+						a(href="#order").btn.promo__order.js-go-order Отправить заявку

@@ -1,0 +1,33 @@
+
+
+@import "_reboot";
+@import "_fonts";
+@import "settings/_variables";
+
+
+//libs
+@import "libs/bootstrap-settings";
+@import "libs/slick";
+@import "libs/sumoselect";
+
+//base style
+@import "_base";
+
+// blocks
+@import "../blocks/btn/btn";
+@import "../blocks/page-top/page-top";
+@import "../blocks/program/program";
+@import "../blocks/timetable/timetable";
+@import "../blocks/package/package";
+@import "../blocks/quest/quest";
+@import "../blocks/residence/residence";
+@import "../blocks/info/info";
+@import "../blocks/tours/tours";
+@import "../blocks/advantage/advantage";
+@import "../blocks/departure/departure";
+@import "../blocks/escort/escort";
+@import "../blocks/story-photo/story-photo";
+@import "../blocks/reviews/reviews";
+@import "../blocks/call-back/call-back";
+@import "../blocks/request/request";
+@import "../blocks/footer/footer";

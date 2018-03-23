@@ -13,6 +13,8 @@ include ../blocks/story-photo/story-photo
 include ../blocks/reviews/reviews
 include ../blocks/request/request
 include ../blocks/footer/footer
+include  ../blocks/call-back/call-back
+
 doctype html
 html(lang="ru")
   head
@@ -26,7 +28,7 @@ html(lang="ru")
       title Home
 
     block head
-      link(rel="stylesheet" href="css/template.css")
+      link(rel="stylesheet" href="css/style.css")
 
   body
 
@@ -45,11 +47,9 @@ html(lang="ru")
     +reviews
     +request
     +footer
+    +call-back
 
-    script(src="js/libs/jquery-3.3.1.min.js")
     block js_libs
-      script(src="js/libs/slick.js")
-      script(src="js/libs/masonry.pkgd.min.js")
-      script(src="js/libs/bootstrap.js")
-
+      script(src="js/jquery-3.3.1.min.js")
+      script(src="js/libs.js")
     script(src="js/main.js")

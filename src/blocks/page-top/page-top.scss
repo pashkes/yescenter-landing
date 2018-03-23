@@ -73,6 +73,8 @@
 		color: #383838;
 		text-transform: uppercase;
 		border-bottom: 1px dashed #383838;
+		background-color: transparent;
+		cursor: pointer;
 		@media (min-width: $screen-md) {
 			padding: 8px 29px;
 			border: solid 1px #d7d7d7;
@@ -85,6 +87,10 @@
 				border-color: #d52833;
 				background-color: #b82730;
 				color: #fff;
+			}
+			&:focus {
+				outline: none;
+				border-color: #d52833;
 			}
 		}
 	}
