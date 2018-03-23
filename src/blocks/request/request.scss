@@ -32,10 +32,10 @@
 		}
 	}
 	&__map {
-		position:relative;
 		width: 100%;
 		.map {
-			@media(min-width: $screen-xl) {
+			min-height: 432px;
+			@media(min-width: $screen-md) {
 				position: absolute;
 				left: 0;
 				top: 0;

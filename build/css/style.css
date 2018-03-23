@@ -5683,15 +5683,16 @@ tbody.collapse.show {
         top: 64px;
         z-index: 1; } }
   .request__map {
-    position: relative;
     width: 100%; }
-    @media (min-width: 1344px) {
-      .request__map .map {
-        position: absolute;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0; } }
+    .request__map .map {
+      min-height: 432px; }
+      @media (min-width: 768px) {
+        .request__map .map {
+          position: absolute;
+          left: 0;
+          top: 0;
+          right: 0;
+          bottom: 0; } }
 
 .form {
   max-width: 384px;
