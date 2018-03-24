@@ -48,7 +48,6 @@
 		width: calc(100vw - 24px - 24px);
 	}
 	&__slide {
-		min-height: 160px;
 		padding-right: 12px;
 		padding-left: 12px;
 		@media (min-width: $screen-md) {
@@ -61,7 +60,10 @@
 		}
 	}
 	.slick-dots {
-		padding-top: 12px;
+		padding-top: 6px;
+		@media (min-width: $screen-md) {
+			padding-top: 12px;
+		}
 	}
 	.slick-next {
 		right: -15px;
