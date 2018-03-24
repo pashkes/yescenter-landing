@@ -3322,6 +3322,7 @@ tbody.collapse.show {
   -o-transition: 0.15s ease-in;
   transition: 0.15s ease-in;
   cursor: pointer;
+  z-index: 3;
 }
 
 .form__subtitle {
