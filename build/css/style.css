@@ -3212,12 +3212,15 @@ tbody.collapse.show {
 .reviews__slider {
   margin-right: -24px;
   margin-left: -12px;
-  overflow: hidden;
 }
 
 .reviews__arrows-wrap {
   position: relative;
-  overflow: hidden;
+}
+
+.reviews .slick-slide {
+  width: -webkit-calc(100vw - 24px - 24px);
+  width: calc(100vw - 24px - 24px);
 }
 
 .reviews__slide {
@@ -8137,8 +8140,13 @@ label {
   }
 
   .reviews__slider {
+    overflow: hidden;
     margin-right: -24px;
     margin-left: -24px;
+  }
+
+  .reviews__arrows-wrap {
+    overflow: hidden;
   }
 
   .reviews__slide {

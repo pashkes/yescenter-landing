@@ -3,12 +3,12 @@
 /*$(function() {
 	
 });*/
-// .btn scripts goes here 
+// .call-back scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .call-back scripts goes here 
+// .btn scripts goes here 
 
 /*$(function() {
 	

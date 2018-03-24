@@ -27,19 +27,25 @@
 	&__slider {
 		margin-right: -24px;
 		margin-left: -12px;
-		overflow: hidden;
+
 		@media (min-width: $screen-md) {
 			margin-right: -16px;
 			margin-left: -16px;
 		}
 		@media(min-width: $screen-xl) {
+			overflow: hidden;
 			margin-right: -24px;
 			margin-left: -24px;
 		}
 	}
 	&__arrows-wrap {
-		position:relative;
-		overflow: hidden;
+		position: relative;
+		@media(min-width: $screen-xl) {
+			overflow: hidden;
+		}
+	}
+	.slick-slide {
+		width: calc(100vw - 24px - 24px);
 	}
 	&__slide {
 		min-height: 160px;
@@ -57,5 +63,7 @@
 	.slick-dots {
 		padding-top: 12px;
 	}
-	.slick-next {right: -15px;}
+	.slick-next {
+		right: -15px;
+	}
 }
