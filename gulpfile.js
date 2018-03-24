@@ -60,7 +60,7 @@ var PATH = {
         'src/sass/libs/**'
     ],
     JS: [
-        'src/scripts/jquery-3.3.1.min.js',
+			  'src/scripts/jquery-3.3.1.min.js',
         'src/scripts/libs/**'
     ]
   },
