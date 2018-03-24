@@ -140,6 +140,7 @@
 		background: transparent url(../img/svg/icon-close.png) center no-repeat;
 		transition: 0.15s ease-in;
 		cursor: pointer;
+		z-index: 3;
 		&:hover {
 		}
 	}
