@@ -23,6 +23,7 @@
     "gulp-clean": "^0.3.2",
     "gulp-cli": "^2.0.1",
     "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
     "gulp-debug": "^3.2.0",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^3.4.0",
@@ -56,8 +57,11 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
+    "cssnano": "^3.10.0",
     "debounce": "^1.1.0",
     "git": "^0.1.5",
-    "magnify": "^2.1.0"
+    "gulp-compress": "0.0.9",
+    "magnify": "^2.1.0",
+    "popper.js": "^1.14.1"
   }
 }

@@ -3,22 +3,22 @@
 /*$(function() {
 	
 });*/
-// .call-back scripts goes here 
-
-/*$(function() {
-	
-});*/
 // .btn scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .departure scripts goes here 
+// .call-back scripts goes here 
 
 /*$(function() {
 	
 });*/
 // .escort scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .departure scripts goes here 
 
 /*$(function() {
 	

@@ -28,7 +28,7 @@ const rename = require('gulp-rename');
 const notify = require('gulp-notify');
 const debug = require('gulp-debug');
 // const clean = require('gulp-clean');
-
+const  cssnano = require('gulp-cssnano');
 
 var PATH = {
 	SRC: {
@@ -102,6 +102,7 @@ gulp.task('sass', function () {
         .pipe(gulp.dest(PATH.BUILD.CSS))
         .pipe(browserSync.stream());
 });
+
 
 
 /*--------------------------------------------------------------
