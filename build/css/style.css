@@ -5337,8 +5337,11 @@ label {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    min-height: 256px;
     width: 50%;
+  }
+
+  .timetable__item:not(.timetable__title) {
+    min-height: 256px;
   }
 
   .timetable__item::after {
@@ -6003,7 +6006,7 @@ label {
   }
 
   .timetable__item:nth-child(2)::after {
-    top: 154px;
+    top: 154px !important;
   }
 }
 

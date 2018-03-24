@@ -57,7 +57,9 @@
 		position: relative;
 		@media (min-width: $screen-md) {
 			display: flex;
-			min-height: 256px;
+			&:not(.timetable__title) {
+				min-height: 256px;
+			}
 			width: 50%;
 			&::after {
 				content: '';
@@ -126,7 +128,7 @@
 					    top: 93px;
 					}
 					@media(min-width: $screen-xl) {
-						top: 154px;
+						top: 154px !important;
 					}
 				}
 				.timetable__photo::before {

@@ -1,9 +1,9 @@
-// .btn scripts goes here 
+// .advantage scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .advantage scripts goes here 
+// .btn scripts goes here 
 
 /*$(function() {
 	
@@ -13,12 +13,12 @@
 /*$(function() {
 	
 });*/
-// .escort scripts goes here 
+// .departure scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .departure scripts goes here 
+// .escort scripts goes here 
 
 /*$(function() {
 	
