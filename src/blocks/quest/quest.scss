@@ -4,7 +4,7 @@
 .quest {
 	background-color: #f4f6f7;
 	&__inner {
-		padding-top: 25px;
+		padding-top: 27px;
 		padding-bottom: 32px;
 		@media (min-width: $screen-md) {
 			padding-top: 48px;
@@ -28,11 +28,12 @@
 		margin-top: 0;
 		margin-bottom: 3px;
 		text-transform: uppercase;
+		line-height: 26px;
 		@media (min-width: $screen-md) {
 			margin-bottom: 0;
 			font-size: 28px;
 			line-height: 1.43;
-			letter-spacing: 0.8px;
+			letter-spacing: 0.98px;
 		}
 		@media (min-width: $screen-xl) {
 			margin-bottom: 11px;
@@ -44,7 +45,7 @@
 		}
 	}
 	&__subtitle {
-		margin-bottom: 22px;
+		margin-bottom: 20px;
 		font-size: 14px;
 		line-height: 22px;
 		color: rgba(#252525, .6);
@@ -83,7 +84,7 @@
 		font-size: 44px;
 		line-height: 1;
 		letter-spacing: -0.9px;
-		color: #B62A33;
+		color: #d52833;
 		@media (min-width: $screen-md) {
 			margin-bottom: 11px;
 			white-space: nowrap;
@@ -102,6 +103,7 @@
 		margin: 0;
 		line-height: 2.14;
 		color: $text-color;
+		letter-spacing: 0;
 		@media (min-width: $screen-md) {
 			line-height: 1.29;
 		}
@@ -112,10 +114,7 @@
 	}
 	&__submit {
 		margin-bottom: 25px;
-		max-width: 270px;
-		width: 100%;
 		@media (min-width: $screen-md) {
-			max-width: 240px;
 			margin-right: 47px;
 		}
 	}
@@ -124,6 +123,7 @@
 		font-family: Intro, sans-serif;
 		font-size: 16px;
 		line-height: 1.25;
+		letter-spacing: 0;
 		color: $text-color;
 		@media (min-width: $screen-md) {
 			width: 100%;

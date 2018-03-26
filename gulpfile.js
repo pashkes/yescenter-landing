@@ -17,7 +17,7 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 
 const pug = require('gulp-pug');
-
+const gcmq = require('gulp-group-css-media-queries');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
 const inlineSVG = require('postcss-inline-svg');
@@ -28,15 +28,15 @@ const rename = require('gulp-rename');
 const notify = require('gulp-notify');
 const debug = require('gulp-debug');
 // const clean = require('gulp-clean');
-
+const  cssnano = require('gulp-cssnano');
 
 var PATH = {
 	SRC: {
         PUG: 'src/pug/*.pug',
-        SASS: 'src/sass/template.scss',
+        SASS: 'src/sass/style.scss',
         JS: [
-          'src/blocks/**/*.js',
-          'src/scripts/main.js'
+					'src/blocks/**/*.js',
+					'src/scripts/main.js'
         ],
         IMG: [
           '!src/images/icons/',
@@ -49,7 +49,7 @@ var PATH = {
 	},
 	BUILD: {
         HTML: 'build/',
-            CSS: 'build/css/',
+        CSS: 'build/css/',
         JS: 'build/js/',
         IMG: 'build/img/',
         SVG: 'build/img/svg',
@@ -60,6 +60,7 @@ var PATH = {
         'src/sass/libs/**'
     ],
     JS: [
+			  'src/scripts/jquery-3.3.1.min.js',
         'src/scripts/libs/**'
     ]
   },
@@ -95,11 +96,13 @@ gulp.task('sass', function () {
           require('postcss-flexbugs-fixes'),
           require('postcss-inline-svg')
         ]))
+			  .pipe(gcmq())
         .pipe(autoprefixer({browsers: ['last 10 versions']}))
         .pipe(debug({title: 'обработано less файлов'}))
         .pipe(gulp.dest(PATH.BUILD.CSS))
         .pipe(browserSync.stream());
 });
+
 
 
 /*--------------------------------------------------------------
@@ -127,9 +130,15 @@ gulp.task('pug', function () {
 gulp.task('js:libs', function () {
     console.log('---------- Обработка внешних JS файлов');
     return gulp.src(PATH.LIBS.JS)
-      // .pipe(uglify())
       .pipe(gulp.dest(PATH.BUILD.JS + 'libs/'))
       .pipe(browserSync.stream());
+});
+gulp.task('jsLibs', function () {
+	console.log('---------- Обработка JS проекта');
+	return gulp.src(PATH.LIBS.JS)
+		.pipe(concat('libs.js'))
+		.pipe(gulp.dest(PATH.BUILD.JS))
+		.pipe(browserSync.stream());
 });
 gulp.task('js', function () {
     console.log('---------- Обработка JS проекта');
@@ -191,7 +200,7 @@ gulp.task('clean', function() {
 # All task
 --------------------------------------------------------------*/
 gulp.task('build', gulp.series('clean',
-  gulp.parallel('pug', 'css:libs', 'sass', 'js:libs', 'js', 'img', 'sprite:svg', 'fonts'))
+  gulp.parallel('pug', 'sass', 'jsLibs','js:libs', 'js', 'img', 'sprite:svg', 'fonts'))
 );
 
 

@@ -8,21 +8,27 @@ include ../blocks/info/info
 include ../blocks/tours/tours
 include ../blocks/advantage/advantage
 include ../blocks/departure/departure
+include ../blocks/escort/escort
+include ../blocks/story-photo/story-photo
+include ../blocks/reviews/reviews
+include ../blocks/request/request
+include ../blocks/footer/footer
+include  ../blocks/call-back/call-back
 
 doctype html
 html(lang="ru")
   head
     meta(charset="UTF-8")
-    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0')
+    meta(name='viewport', content="width=device-width, initial-scale=1")
 
     //- Edge и ряд мобильных браузеров автоматом преобразуют телефоны в ссылки. Отключить если не нужно.
     meta(name='format-detection', content='telephone=no')
-
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic-ext" rel="stylesheet")
     block title
       title Home
 
     block head
-      link(rel="stylesheet" href="css/template.css")
+      link(rel="stylesheet" href="css/style.css")
 
   body
 
@@ -36,11 +42,14 @@ html(lang="ru")
     +tours
     +advantage
     +departure
+    +escort
+    +story-photo
+    +reviews
+    +request
+    +footer
+    +call-back
 
-    script(src="js/libs/jquery-3.3.1.min.js")
     block js_libs
-      script(src="js/libs/slick.js")
-      script(src="js/libs/masonry.pkgd.min.js")
-      script(src="js/libs/bootstrap.js")
-
+      script(src="js/libs.js")
+      script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
     script(src="js/main.js")

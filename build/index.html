@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;amp;subset=cyrillic-ext" rel="stylesheet">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col">
+            <div class="header__logo"><img src="img/logo.svg" width="42" height="43" alt="Иностранные языки в Москве"/>
+              <h1 class="header__site-name">Иностранные языки в Москве</h1>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="header__contact"><a class="header__tel" href="tel:89250066320">8 925 006-63-20</a>
+              <button class="header__order" type="button" data-toggle="modal" data-target="#callBack">заказать звонок</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="promo">
+      <div class="promo__bg">
+        <picture>
+          <source media="(min-width: 1344px)" srcset="img/content/top-desctop.jpg"/>
+          <source media="(min-width: 425px)" srcset="img/content/top-table.jpg"/><img src="img/content/top-mobile.jpg" alt="Интенсивный языковой практикум Англия — Шотландия"/>
+        </picture>
+      </div>
+      <div class="promo__inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <h2 class="promo__title">	Интенсивный языковой практикум Англия — Шотландия</h2>
+              <p class="promo__subtitle">Лондон — Эдинбург	Продолжительность: 9 дней (16-24 июня)</p><a class="btn promo__order js-go-order" href="#order">Отправить заявку</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="program">
+      <div class="container">
+        <h2 class="program__title">Программа наших приключений<span>в англии и шотландии</span></h2>
+        <p class="program__text">
+          Языковая практика — это самый лучший способ выучить язык.
+          Это гораздо эффективнее, чем учить его за партой, даже если это аудитория английского колледжа.
+          Фразы, которые Ваш ребенок употребит в реальных диалогах, останутся навсегда в его памяти.
+          Благодаря нашей новой обучающей программе в каждом ребенке проснется активный коммуникатор.
+        </p>
+      </div>
+      <ul class="program__slider js-program-slider">
+        <li class="program__slide"><img src="img/content/london.jpg" alt="Лондон"/>
+          <p class="program__city">Лондон</p>
+        </li>
+        <li class="program__slide"><img src="img/content/no-edinburg.jpg" alt="Эдинбург"/>
+          <p class="program__city">Эдинбург</p>
+        </li>
+        <li class="program__slide"><img src="img/content/oxford.jpg" alt="Оксфорд"/>
+          <p class="program__city">Оксфорд</p>
+        </li>
+        <li class="program__slide"><img src="img/content/oxford.jpg" alt="Оксфорд"/>
+          <p class="program__city">Оксфорд</p>
+        </li>
+      </ul>
+    </section>
+    <section class="timetable">
+      <div class="timetable__inner container">
+        <div class="row no-gutters masonry">
+          <h2 class="col-md-6 timetable__title timetable__item"><span>Расписание</span></h2>
+          <div class="timetable__item col-md-6">
+            <div class="timetable__photo"><img src="img/content/1-day.jpg" width="79" height="80" alt="Прилёт. Начало языкового квеста."/></div>
+            <div class="timetable__info"><span class="timetable__subject">1-й день</span>
+              <p class="timetable__desc">
+                Прилёт. Начало языкового квеста. Посещение блошиного рынка
+                на Портобелло, Гайд-парк, Кенсингтонские сады, мемориал принцу Альберту, королевский Альберт-холл.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 timetable__item">
+            <div class="timetable__photo"><img src="img/content/2-day.jpg" width="79" height="80" alt="Озеро Серпентайн, Букингемский дворец, Биг-Бэн, Трафальгаргская площадь"/></div>
+            <div class="timetable__info"><span class="timetable__subject">2-й день</span>
+              <p class="timetable__desc">
+                Продолжение языкового квеста. Озеро Серпентайн, Букингемский дворец, Биг-Бэн, Трафальгаргская площадь,
+                Национальная галерея, Вестминстерское аббатство, Ковент-Гарден, Чайна таун.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 timetable__item">
+            <div class="timetable__photo"><img src="img/content/3-day.jpg" width="79" height="80" alt="Тауэр, Лондонский глаз"/></div>
+            <div class="timetable__info"><span class="timetable__subject">3-й день</span>
+              <p class="timetable__desc">Продолжение языкового квеста. Тауэр, Лондонский глаз ( англ. London Eye), Монумент (англ. The Monument), Queen's Walk.</p>
+            </div>
+          </div>
+          <div class="col-md-6 timetable__item">
+            <div class="timetable__photo"><img src="img/content/4-day.jpg" width="79" height="80" alt="Стратфорд-на-Эйвоне"/></div>
+            <div class="timetable__info"><span class="timetable__subject">4-й день</span>
+              <p class="timetable__desc">
+                Продолжение языкового квеста. Автобусная экскурсия на целый день, в ходе которой мы посетим: средневековый замок Уорвик,
+                родной город Шекспира - Стратфорд-на-Эйвоне
+                и город-университет Оксфорд
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 timetable__item">
+            <div class="timetable__photo"><img src="img/content/5-day.jpg" width="79" height="80" alt="Поездка в Королевскую резиденцию в Виндзоре, посещение города Итон, прогулка и пикник в Виндзорском парке"/></div>
+            <div class="timetable__info"><span class="timetable__subject">5-й день</span>
+              <p class="timetable__desc">
+                Продолжение языкового квеста. Поездка в Королевскую резиденцию
+                в Виндзоре, посещение города Итон, прогулка и пикник в Виндзорском парке. Шоппинг
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 timetable__item">
+            <div class="timetable__photo"><img src="img/content/6-day.jpg" width="79" height="80" alt="город Эдинбург, посещение Эдинбургского замка, Королевская Миля"/></div>
+            <div class="timetable__info"><span class="timetable__subject">6-й день</span>
+              <p class="timetable__desc">
+                Продолжение языкового квеста. Переезд на поезде в столицу Шотландии- город Эдинбург, посещение Эдинбургского замка, Королевская Миля, дворец Холирудхаус, музей Авторов (Роберт Бернс, Роберт Стивенсон,
+                сэр Вальтер Скотт)
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 timetable__item">
+            <div class="timetable__photo"><img src="img/content/7-day.jpg" width="79" height="80" alt="Кэлтон хилл, Трон Артура, Солсберийские скалы"/></div>
+            <div class="timetable__info"><span class="timetable__subject">7-й день</span>
+              <p class="timetable__desc">Продолжение языкового квеста. Трекинг по Эдинбургским холмам: Кэлтон хилл, Трон Артура, Солсберийские скалы</p>
+            </div>
+          </div>
+          <div class="col-md-6 timetable__item">
+            <div class="timetable__photo"><img src="img/content/8-day.jpg" width="79" height="80" alt="средневековый замок Стерлинг - архитектурную жемчужину Шотландии"/></div>
+            <div class="timetable__info"><span class="timetable__subject">8-й день</span>
+              <p class="timetable__desc">
+                Продолжение языкового квеста. Автобусная экскурсия
+                в средневековый замок Стерлинг —
+                архитектурную жемчужину Шотландии
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 timetable__item">
+            <div class="timetable__photo"><img src="img/content/9-day.jpg" width="79" height="80" alt="Гайд-парк"/></div>
+            <div class="timetable__info"><span class="timetable__subject">9-й день</span>
+              <p class="timetable__desc">Окончание языкового квеста. Переезд в Лондон, прогулка по Гайд-парку. Подведение итогов языкового квеста. Вылет в Москву.</p>
+            </div>
+          </div>
+        </div>
+        <p class="timetable__footer-text">Занятия по языковой практике каждый день!</p>
+      </div>
+    </section>
+    <section class="quest">
+      <div class="quest__inner container">
+        <div class="row">
+          <div class="col-xl-9">
+            <h2 class="quest__title"><span>Пройди языковой квест</span>и получи богатую разговорную практику</h2>
+          </div>
+          <div class="col-xl-10">
+            <p class="quest__subtitle">
+              Приключение для школьников
+              	от YES — это максимум активного времяпрепровождения в дружной
+              компании единомышленников, опытных педагогов и гидов!
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="quest__item"><strong class="quest__requirements">144 400 руб.</strong>
+              <p class="quest__desc-item">Стоимость поездки на 9 дней</p>
+            </div>
+          </div>
+          <div class="col-md-5 col-xl-4">
+            <div class="quest__item quest__item--second"><strong class="quest__requirements">от 7 до 17 лет</strong>
+              <p class="quest__desc-item">Возраст участников интенсива</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-xl-auto ml-xl-auto">
+            <div class="quest__item"><strong class="quest__requirements">Любой</strong>
+              <p class="quest__desc-item">Уровень владения английским языком</p>
+            </div>
+          </div>
+        </div>
+        <div class="quest__footer"><a class="quest__submit btn js-go-order" href="#order">Отправить заявку</a>
+          <p class="quest__limit">
+            Количество мест ограничено. Заполните заявку прямо сейчас!
+            Устройте своему ребенку незабываемые каникулы.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="package">
+      <div class="container">
+        <h2 class="package__title">В пакет включено:</h2>
+        <div class="row">
+          <div class="col-md-6 col-xl-4 order-md-1">
+            <div class="package__item">
+              <div class="package__icon package__icon--flight"><img src="img/svg/enabled-1.svg" width="29" height="30" alt="Прямой перелет Москва—Лондон—Москва"/></div>
+              <p class="package__text">Прямой перелет<span> Москва—Лондон—Москва</span></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 order-md-3 order-xl-4">
+            <div class="package__item">
+              <div class="package__icon package__icon--trnasfer-aerport"><img src="img/svg/enabled-icon-4.svg" width="25" height="29" alt="Проезд на поезде Лондон—Эдинбург—Лондон"/></div>
+              <p class="package__text">Проезд на поезде<span> Лондон—Эдинбург—Лондон</span></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 order-md-5 order-xl-7">
+            <div class="package__item">
+              <div class="package__icon package__icon--medical"><img src="img/svg/enabled-icon-7.svg" width="30" height="30" alt="Медицинская страховка на весь срок поездки"/></div>
+              <p class="package__text">Медицинская страховка на весь срок поездки</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 order-md-2">
+            <div class="package__item pl-md-3 pl-xl-2">
+              <div class="package__icon package__icon--transfer"><img src="img/svg/enabled-icon-2.svg" width="25" height="29" alt="5 трансферов От отеля до аэропорта или вокзала"/></div>
+              <p class="package__text">5 трансферов<span> От отеля до аэропорта или вокзала</span></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 order-md-4">
+            <div class="package__item pl-xl-2 pl-md-3 pl-xl-0">
+              <div class="package__icon package__icon--hotel"><img src="img/svg/enabled-icon-5.svg" width="30" height="27" alt="Проживание в отелях в Лондоне и Эдинбурге"/></div>
+              <p class="package__text">Проживание в отелях в Лондоне и Эдинбурге</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 order-md-6 order-xl-7">
+            <div class="package__item pl-md-3 pl-xl-2">
+              <div class="package__icon package__icon--excursion"><img src="img/svg/enabled-icon-8.svg" width="22" height="30" alt="15 экскурсий с тематическими заданиями на английском языке"/></div>
+              <p class="package__text">15 экскурсий<span> с тематическими заданиями на английском языке</span></p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 order-md-7 order-xl-3">
+            <div class="package__item pl-xl-2">
+              <div class="package__icon package__icon--breakfast"><img src="img/svg/enabled-icon-3.svg" width="30" height="30" alt="Завтраки"/></div>
+              <p class="package__text">Завтраки</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-4 order-md-8 order-xl-6">
+            <div class="package__item pl-md-3 pl-xl-2">
+              <div class="package__icon package__icon--price"><img src="img/svg/enabled-icon-6.svg" width="22" height="32" alt="Обеды и ужины в стоимость не входят"/></div>
+              <p class="package__text">Обеды и ужины в стоимость не входят</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="residence">
+      <div class="container">
+        <h2 class="residence__title">Проживание</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="residence__item">
+              <div class="residence__photo">
+                <ul class="residence__slider js-residence-slider">
+                  <li>
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/content/residence-1-desctop.jpg"/><img src="img/content/photo-mobile-1.jpg" height="184" alt="Ambassadors Earls Court Hotel"/>
+                    </picture>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="residence__subject">Ambassadors Earls Court Hotel<span class="residence__stars"><span class="residence__star"></span><span class="residence__star"></span><span class="residence__star"></span></span></h3>
+              <p class="residence__desc">
+                Отель Ambassadors расположен
+                в стильном районе Кенсингтон, недалеко от улицы Кромвель-роуд
+                и знаменитой Музейной мили. Отель находится всего в 5 минутах ходьбы от станции метро Earl’s Court.
+                Гайд-парк и Альберт-холл расположены всего в 15 минутах ходьбы от отеля.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="residence__item residence__item--last">
+              <div class="residence__photo">
+                <ul class="residence__slider js-residence-slider">
+                  <li>
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/content/residence-dc-2.jpg"/><img src="img/content/photo-mobile-2.jpg" height="184" alt="Chancellor’s Court at Pollock Halls"/>
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/content/residence-dc-2.jpg"/><img src="img/content/photo-mobile-2.jpg" height="184" alt="Chancellor’s Court at Pollock Halls"/>
+                    </picture>
+                  </li>
+                  <li>
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/content/residence-dc-2.jpg"/><img src="img/content/photo-mobile-2.jpg" height="184" alt="Chancellor’s Court at Pollock Halls"/>
+                    </picture>
+                  </li>
+                </ul>
+              </div>
+              <h3 class="residence__subject">Chancellor’s Court at Pollock Halls</h3>
+              <p class="residence__desc">
+                Кампус Pollock Halls находится недалеко от королевского Холирудского парка и холма Трон Артура, а также всего в 2,4 км
+                от Эдинбургского железнодорожного вокзала Уэверли, Старого города
+                и улицы Королевская миля, где проходит множество эдинбургских фестивалей.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <h2 class="info__title">Важная информация</h2>
+        <div class="info__accoardeon" id="parent">
+          <button class="info__button" type="button" data-toggle="collapse" data-target="#info-collapse" aria-expanded="false" aria-controls="info-collapse">Какой авиакомпанией осуществляется перелет?</button>
+          <div class="collapse info__content" id="info-collapse" data-parent="#parent">
+            <p>Аэрофлот - компания с многолетней историей и хорошей репутацией, отличительными чертами которой являются удобство и надежность.</p>
+          </div>
+          <button class="info__button" type="button" data-toggle="collapse" data-target="#info-collapse-2" aria-expanded="false" aria-controls="info-collapse-2">Как осуществляется передвижение по городу?</button>
+          <div class="collapse info__content" id="info-collapse-2" data-parent="#parent">
+            <p>Большую часть времени мы ходим пешком, что позволяет увидеть и почувствовать Англию и Шотландию изнутри и делает путешествие насыщенным и интересным. Большие расстояния между городами мы преодолеваем на комфортабельных автобусах.</p>
+          </div>
+          <button class="info__button" type="button" data-toggle="collapse" data-target="#info-collapse-3" aria-expanded="false" aria-controls="info-collapse-3">Как будет организовано питание детей?</button>
+          <div class="collapse info__content" id="info-collapse-3" data-parent="#parent">
+            <p>Завтраки - в отеле, организованные обеды и ужины - в ресторанах и кафе - в том месте, где проходит экскурсия.</p>
+          </div>
+          <button class="info__button" type="button" data-toggle="collapse" data-target="#info-collapse-4" aria-expanded="false" aria-controls="info-collapse-4">Что входит в страховку?</button>
+          <div class="collapse info__content" id="info-collapse-4" data-parent="#parent">
+            <p>Помимо стандартной страховки выезжающих за рубеж предусмотрена страховка от несчастного случая. Все это включено в стоимость путевки.</p>
+          </div>
+          <button class="info__button" type="button" data-toggle="collapse" data-target="#info-collapse-5" aria-expanded="false" aria-controls="info-collapse-5">Как можно узнать о ребенке и связаться с ним во время путешествия?</button>
+          <div class="collapse info__content" id="info-collapse-5" data-parent="#parent">
+            <p>Мы ведем группу ВКонтакте  и несколько раз в день выкладываем фотографии в режиме онлайн. У родителей складывается впечатление, что они находятся рядом с детьми). Кроме того, дети всегда доступны по телефону.</p>
+          </div>
+          <button class="info__button" type="button" data-toggle="collapse" data-target="#info-collapse-6" aria-expanded="false" aria-controls="info-collapse-6">Как это происходит?</button>
+          <div class="collapse info__content" id="info-collapse-6" data-parent="#parent">
+            <p>
+              Ребята в командах выполняют различные задания, например, проведение соцопроса: «Как оценивают жители Виндзора близкое соседство с королевой?” Такая постановка задачи сама по себе рождает массу обучающих ситуаций, положительно влияющих на пробуждение спящего языкового пассива. Вежливые и расположенные к общению англичане помогают ребятам справиться с заданием и рассказывают им много дополнительной интересной информации. Фокус сдвигается с формального выполнения задачи по получению данных на живое естественное общение и получение удовольствия от самого этого процесса.
+              После девяти дней полного погружения в языковую среду Ваши дети совершат значительный прорыв в изучении английского языка, и абсолютно точно у них появится желание выучить его в совершенстве!
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="tours">
+      <div class="container">
+        <h2 class="tours__title">Чем отличаются наши языковые туры от аналогичных?</h2>
+        <div class="row">
+          <div class="col-xl-11">
+            <p class="tours__subtitle">
+              Ваш ребенок получает самую лучшую мотивацию для изучения английского языка.
+              Мы не просто посещаем множество экскурсий — каждый день ребятам выдаются самые разные задания на общение с местными жителями.
+              Это отличный способ проверить свои языковые способности на практике, улучшить их и развить навыки коммуникаций.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 order-md-2 pl-xl-4">
+            <div class="tours__video embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/5D0OyvlDV6U?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" allowfullscreen="allowfullscreen"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6 order-md-1">
+            <ul class="tours__features">
+              <li class="tours__featur">Мы попадаем в самые интересные места, куда на бесплатных экскурсиях никогда не пустят.</li>
+              <li class="tours__featur">Билеты на все экскурсии оплачиваются заранее, так что стоять в очередях не придется.</li>
+              <li class="tours__featur">Программа составлена так, чтобы от души насладиться каждой достопримечательностью, а не «скакать галопом по Европам»</li>
+            </ul><a class="btn tours__submit js-go-order" href="#order">Отправить заявку</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="advantage">
+      <div class="container">
+        <h2 class="advantage__title">Плюсы для участников тура</h2>
+        <div class="row js-advantage-slider">
+          <div class="col-md-6 col-xl-3">
+            <div class="advantage__item">
+              <h3 class="advantage__subject">Увлекательное обучение</h3>
+              <p class="advantage__desc">
+                	Тур вместе с YES — это интенсивная языковая практика в виде увлекательных квестов.
+                Во время прохождения каждого из них участники узнают много новой информации и смогут лучше закрепить знания.
+                Мы будем тренировать наши языковые навыки с утра до вечера в самых разных ситуациях.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="advantage__item">
+              <h3 class="advantage__subject">Разговорим молчунов</h3>
+              <p class="advantage__desc">
+                Языковой барьер просто растворится в многочисленных заданиях и спонтанных разговорных ситуациях. Ребята научатся спокойно и непринужденно общаться
+                на иностранном языке как со своими товарищами по команде, так
+                и с иностранцами.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="advantage__item">
+              <h3 class="advantage__subject">Финансовая дисциплина</h3>
+              <p class="advantage__desc">
+                Мы научимся правильно тратить наши деньги, отдавая предпочтение первоочередным вещам и экономя
+                на затратах третьестепенных. Наша задача — научиться тратить деньги так, чтобы нам
+                их хватило на весь тур и даже ещё осталось на подарки родственникам и друзьям, а ещё лучше и домой тоже что-то привезти.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="advantage__item">
+              <h3 class="advantage__subject">Обучение<span> на свежем воздухе</span></h3>
+              <p class="advantage__desc">
+                Каждый день нашего тура мы будем проходить в среднем около 20 километров пешком. Мы будем устраивать пикники
+                и подвижные игры в парках и на природе, сходим в небольшой поход по холмам Шотландии.
+                После такой программы ребята вернутся отдохнувшими, посвежевшими, румяными и полными сил!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="advantage__item">
+              <h3 class="advantage__subject">Интерес<span> к новым знаниям</span></h3>
+              <p class="advantage__desc">
+                При помощи языковых заданий каждый участник тура осознает, насколько важно
+                и нужно знать второй язык. Он получит хороший пример от ребят, которые говорят по-английски лучше, увидит, насколько знание английского расширяет возможности. Всё это в конечном итоге увеличит интерес
+                к изучению второго языка.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="advantage__item">
+              <h3 class="advantage__subject">Эффективные экскурсии</h3>
+              <p class="advantage__desc">
+                Сможем значительно глубже, чем в обычных турах, изучить экскурсионные объекты. Выполняя задания специально разработанных квестов, ребята познакомятся и пообщаются со служащими
+                и обслуживающим персоналом отелей, кафе и музеев. Участники узнают то, о чем
+                не говорят на обычных экскурсиях,
+                и запомнят все намного лучше!
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="advantage__item">
+              <h3 class="advantage__subject">Чувство<span> команды</span></h3>
+              <p class="advantage__desc">
+                Мы научимся действовать как единое целое, помогая тем, кто помладше и учась
+                у старших. Мы будем добиваться цели, вместе проходя через трудности и радуясь общим победам.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-xl-3">
+            <div class="advantage__item">
+              <h3 class="advantage__subject">Вспомним<br/>все</h3>
+              <p class="advantage__desc">
+                Мы активируем пассивный словарь и знания, накопленные за годы обучения в школе
+                и на языковых курсах. Пора применить все, что Вы знаете, и узнать еще больше!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="departure">
+      <div class="container">
+        <h2 class="departure__title">Организатор выезда —<span>Центр иностранных языков YES</span></h2>
+        <p class="departure__subtitle">
+          YES — это открытый международный центр по обучению, подготовке к кембриджским экзаменам, где Ваш ребенок выучит язык в соответствии с международными стандартами.
+          Как официальный участник проекта Cambridge English мы гарантируем высоский уровень преподавания, подтвержденный квалификацией педагогов.
+          Подготовим учеников
+          к успешной сдаче IELTS и TOEFL, в том числе в объеме, необходимом для обучения за границей.
+        </p>
+        <div class="departure__features">
+          <div class="row flex-xl-nowrap justify-content-xl-between">
+            <div class="col-md col-xl-auto">
+              <div class="departure__item-stat departure__item-stat--first"><span class="departure__stat">315</span>
+                <p class="departure__desc">Преподавателей в штате</p>
+              </div>
+            </div>
+            <div class="col-md col-xl-auto">
+              <div class="departure__item-stat departure__item-stat--second"><span class="departure__stat">2 315</span>
+                <p class="departure__desc">Учеников занимаются по нашей методике</p>
+              </div>
+            </div>
+            <div class="col-md col-xl-auto">
+              <div class="departure__item-stat departure__item-stat--thirthy"><span class="departure__stat">52 439</span>
+                <p class="departure__desc">Уроков проведено за 2017 год</p>
+              </div>
+            </div>
+            <div class="col-md col-xl-auto">
+              <div class="departure__item-stat departure__item-stat--last"><span class="departure__stat">16</span>
+                <p class="departure__desc">Школ в Москве, Московской и Владимирской областях</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="departure__slider js-departure-slider">
+        <li class="departure__slide"><img src="img/content/departure-photo-1.jpg" alt="Преподавателей в штате"/></li>
+        <li class="departure__slide"><img src="img/content/exit-photo-1-ds.jpg" alt="Учеников занимаются по нашей методике"/></li>
+        <li class="departure__slide"><img src="img/content/departure-photo-1.jpg" alt="Преподавателей в штате"/></li>
+      </ul>
+    </section>
+    <section class="escort">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl order-xl-1">
+            <h2 class="escort__title">Детей будут сопровождать</h2>
+            <p class="escort__subtitle">
+              Руководители с девятьнадцатилетним опытом проведения выездных туров.Очень мало текста, надо дописать. Очень мало текста, надо дописать.
+              Очень мало текста, надо дописать.
+            </p>
+          </div>
+          <div class="col-xl-6 order-xl-2 pl-xl-0">
+            <ul class="escort__slider js-slider-escort">
+              <li class="escort__slide"><img class="escort__img" src="img/content/people-1-ds.jpg" alt="Сергей Афанаскин"/>
+                <cite class="escort__name">Сергей Афанаскин</cite><span class="escort__position">Директор Центра иностранных языков YES</span>
+              </li>
+              <li class="escort__slide"><img class="escort__img" src="img/content/people-2-ds.jpg" alt="Екатерина Афанаскина"/>
+                <cite class="escort__name">Екатерина Афанаскина</cite><span class="escort__position">Заместитель директора Центра иностранных языков YES</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xl-6 order-xl-2"><a class="escort__submit btn js-go-order" href="#order">Отправить заявку</a></div>
+        </div>
+      </div>
+    </section>
+    <div class="story-photo">
+      <div class="container">
+        <h2 class="story-photo__title">Мы провели более 40 выездных туров</h2>
+        <p class="story-photo__subtitle">С нами отправились в путешествие более 850 ребят</p>
+      </div>
+      <ul class="story-photo__slider js-story-photo">
+        <li class="story-photo__slide"><img class="story-photo__img" src="img/content/toor-photo-1-ds.jpg" alt="Сочи, февраль 2015"/>
+          <p class="story-photo__desc">Сочи, февраль 2015</p>
+        </li>
+        <li class="story-photo__slide"><img class="story-photo__img" src="img/content/toor-photo-2-ds.jpg" alt="Языковой практикум в Лондоне, март 2017"/>
+          <p class="story-photo__desc">Языковой практикум в Лондоне, март 2017</p>
+        </li>
+        <li class="story-photo__slide"><img class="story-photo__img" src="img/content/toor-photo-1-ds.jpg" alt="Римские каникулы"/>
+          <p class="story-photo__desc">Римские каникулы</p>
+        </li>
+        <li class="story-photo__slide"><img class="story-photo__img" src="img/content/toor-photo-2-ds.jpg" alt="Языковой практикум в Лондоне, март 2017"/>
+          <p class="story-photo__desc">Языковой практикум в Лондоне, март 2017</p>
+        </li>
+      </ul>
+    </div>
+    <section class="reviews">
+      <div class="container">
+        <h2 class="reviews__title">Видео отзывы</h2>
+        <div class="reviews__arrows-wrap">
+          <ul class="reviews__slider js-reviews-slider">
+            <li class="reviews__slide">
+              <div class="reviews__video embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+            </li>
+            <li class="reviews__slide">
+              <div class="reviews__video embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fUYKHUH1VvI?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" allowfullscreen="allowfullscreen"></iframe>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="request">
+      <div class="container">
+        <form class="form request__form" id="order">
+          <p class="form__title">Количество мест ограничено!</p>
+          <p class="form__subtitle">Отправьте заявку, прямо сейчас.</p>
+          <input class="form__field" placeholder="Представьтесь, пожалуйста" required="required"/>
+          <input class="form__field" type="tel" placeholder="Контактный телефон" pattern="^[0-9-+s()]*$" required="required"/>
+          <input class="form__field" placeholder="Название компании"/>
+          <p class="form__conf">Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c<a href="#"> политикой конфиденциальности YES EDUCATION GROUP</a></p>
+          <button class="btn form__submit">Отправить заявку</button>
+        </form>
+      </div>
+      <div class="request__map">
+        <div class="map" id="map"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row justify-content-md-between">
+          <div class="col-md-9">
+            <p>Частное образовательное учреждение дополнительного образования «Школа английского языка «Ес»</p>
+            <p>Юридический адрес: 140180, Московская область, Жуковский, Гудкова, 21</p>
+            <p>ИНН 5013045939 КПП 501301001</p>
+            <p>ОГРН 1035002607023</p>
+          </div>
+          <div class="col-md-auto"><img class="footer__logo" src="img/logo.svg" width="72" height="72" alt="Иностранные языки в Москве"/></div>
+        </div>
+      </div>
+    </div>
+    <div class="call-back">
+      <div class="modal fade" id="callBack" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <button class="form__close" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <form class="form call-back">
+              <p class="form__title">Оставьте ваш номер</p>
+              <p class="form__subtitle">и мы перезвоним в удобное для вас время</p>
+              <input class="form__field" placeholder="Представьтесь, пожалуйста" required="required"/>
+              <input class="form__field" type="tel" placeholder="Ваш номер телефона" pattern="^[0-9-+s()]*$" required="required"/>
+              <p class="form__label">Время</p>
+              <div class="form__field-group">
+                <div class="form__select-wrap">
+                  <select class="form__select js-custom-select">
+                    <option>10:00</option>
+                    <option>11:00</option>
+                    <option>12:00</option>
+                    <option>13:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
+                    <option>17:00</option>
+                    <option>18:00</option>
+                    <option>19:00</option>
+                  </select>
+                </div>
+                <div class="form__select-wrap">
+                  <select class="form__select js-custom-select">
+                    <option>11:00</option>
+                    <option>12:00</option>
+                    <option>13:00</option>
+                    <option>14:00</option>
+                    <option>15:00</option>
+                    <option>16:00</option>
+                    <option>17:00</option>
+                    <option>18:00</option>
+                    <option>19:00</option>
+                  </select>
+                </div>
+              </div>
+              <p class="form__conf">Нажимая на кнопку «Перезвоните мне», я даю согласие на обработку персональных данных и соглашаюсь c<a href="#"> политикой конфиденциальности YES EDUCATION GROUP</a></p>
+              <button class="btn form__submit">перезвоните мне</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Модалка после успешной отправки-->
+      <div class="modal fade" id="success-order" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <button class="form__close" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <form class="form call-back success-order">
+              <p class="form__title">Спасибо, Ваша заявка отправлена</p>
+              <p class="form__subtitle">Ближайшее время<span>наш менедер свяжется с вами.</span></p>
+              <button class="btn form__submit" type="button" data-dismiss="modal">Закрыть</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/libs.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -17,6 +17,7 @@
 		margin-bottom: 4px;
 		letter-spacing: 0.72px;
 		@media (min-width: $screen-md) {
+			max-width: 680px;
 			letter-spacing: 1.12px;
 			font-size: 28px;
 			line-height: 40px;
@@ -24,7 +25,7 @@
 		@media(min-width: $screen-xl) {
 			max-width: 700px;
 			margin-bottom: 9px;
-			letter-spacing: 2.5px;
+			letter-spacing: 1.2px;
 		}
 	}
 	&__subtitle {
@@ -72,11 +73,13 @@
 			top: 0;
 			font-size: 36px;
 			text-transform: uppercase;
-			color: #d32a33;
+			color: #d52833;
 			line-height: 1;
 			font-family: "Intro", sans-serif;
 			@media (min-width: $screen-md) {
 				font-size: 46px;
+				top: 50%;
+				transform: translateY(-50%);
 			}
 		}
 	}
@@ -84,19 +87,16 @@
 		margin-bottom: 27px;
 		@media (min-width: $screen-md) {
 			margin-bottom: 0;
-			margin-top: 9px;
+			margin-top: 6px;
 		}
 	}
 	&__submit {
-		max-width: 270px;
-		width: 100%;
-		margin-top: 15px;
+		margin-top: 13px;
 		@media (min-width: $screen-md) {
-			max-width: 240px;
 			margin-top: 19px;
 		}
 		@media(min-width: $screen-xl) {
-			margin-top: 36px;
+			margin-top: 21px;
 		}
 	}
 }

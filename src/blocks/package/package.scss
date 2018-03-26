@@ -29,15 +29,22 @@
 		height: 48px;
 		margin-right: 16px;
 		border-radius: 50%;
-		background-color: #B82833;
+		background-color: #d52833;
 		flex: none;
 		@media (min-width: $screen-md) {
 			width: 96px;
 			height: 96px;
 			margin-right: 23px;
 		}
+		img {
+			position:relative;
+		}
 		&--flight {
 			transform: rotate(-45deg);
+			img {
+				bottom: 1px;
+				left: 1px;
+			}
 			@media (min-width: $screen-md) {
 				img {
 					width: 58px;
@@ -56,8 +63,8 @@
 		&--medical {
 			@media (min-width: $screen-md) {
 				img {
-					width: 50px;
-					height: 57px;
+					width: 58px;
+					height: 58px;
 				}
 			}
 		}
@@ -86,10 +93,16 @@
 			}
 		}
 		&--breakfast {
+			img {
+				left: 2px;
+				bottom: 1px;
+			}
 			@media (min-width: $screen-md) {
 				img {
 					width: 59px;
 					height: 59px;
+					bottom: 4px;
+					left: 2px;
 				}
 			}
 		}
@@ -103,9 +116,11 @@
 				width: 130px;
 				position: absolute;
 				left: 50%;
+				top: 50%;
 				height: 2px;
 				transform: translateX(-50%) rotate(-45deg);
 				background-color: #b82833;
+				z-index: 1;
 				@media (min-width: $screen-md) {
 					height: 4px;
 				}
@@ -114,12 +129,13 @@
 				img {
 					width: 59px;
 					height: 46px;
+					bottom: 5px;
 				}
 			}
 		}
 	}
 	&__title {
-		margin-bottom: 11px;
+		margin-bottom: 12px;
 		line-height: 2.33;
 		@media (min-width: $screen-md) {
 			margin-bottom: 23px;
@@ -132,10 +148,14 @@
 		font-size: 14px;
 		line-height: 1.43;
 		margin: 0;
-
 		@media (min-width: $screen-md) {
 			font-size: 15px;
 			line-height: 1.47;
+		}
+		span {
+			@media (min-width: $screen-md) {
+				display: block;
+			}
 		}
 	}
 }

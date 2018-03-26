@@ -2,20 +2,20 @@ mixin page-top()
 	header.header
 		.container
 			.row.justify-content-between.align-items-center
-				.col-xs-4.col-md-4
+				.col
 					.header__logo
-						img(src="img/logo.svg" width=42 height=43)
+						img(src="img/logo.svg" width=42 height=43 alt="Иностранные языки в Москве")
 						h1.header__site-name Иностранные языки в Москве
-				.col-8.ml-auto
+				.col-auto
 					.header__contact
 						a(href="tel:89250066320").header__tel 8 925 006-63-20
-						a(href="#").header__order заказать звонок
+						button(type="button" data-toggle="modal" data-target="#callBack").header__order заказать звонок
 	section.promo
 		.promo__bg
 			picture
 				source(media="(min-width: 1344px)" srcset="img/content/top-desctop.jpg")
 				source(media="(min-width: 425px)" srcset="img/content/top-table.jpg")
-				img(src="img/content/top-mobile.jpg")
+				img(src="img/content/top-mobile.jpg" alt="Интенсивный языковой практикум Англия — Шотландия")
 		.promo__inner
 			.container
 				.row
@@ -24,4 +24,4 @@ mixin page-top()
 							|	Интенсивный языковой практикум Англия — Шотландия
 						p.promo__subtitle
 							| Лондон — Эдинбург	Продолжительность: 9 дней (16-24 июня)
-						a(href="#").btn.promo__order Отправить заявку
+						a(href="#order").btn.promo__order.js-go-order Отправить заявку

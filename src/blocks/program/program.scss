@@ -2,20 +2,21 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
 
 .program {
-	padding-top: 27px;
-	padding-bottom: 24px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	@media (min-width: $screen-md) {
 		padding-top: 48px;
 		padding-bottom: 50px;
 	}
 	@media(min-width: $screen-xl) {
 		padding-top: 78px;
-		padding-bottom: 82px;
+		padding-bottom: 88px;
 	}
 
 	&__title {
 		text-transform: uppercase;
 		margin-bottom: 18px;
+		line-height: 26px;
 		@media (min-width: $screen-md) {
 			margin-bottom: 0;
 			font-size: 28px;
@@ -32,7 +33,7 @@
 		}
 	}
 	&__text {
-		margin-bottom: 22px;
+		margin-bottom: 21px;
 		line-height: 22px;
 		color: rgba(#252525, .6);
 		@media (min-width: $screen-md) {
@@ -50,15 +51,26 @@
 	&__slider {
 		padding-left: 24px;
 		overflow: hidden;
+		font-size: 0;
 		@media (min-width: $screen-md) {
 		    padding-left: 34px;
 		}
 		@media(min-width: $screen-xl) {
-			padding-left: 98px;
+			padding-left: 96px;
 		}
 	}
 	&__slide {
 		position:relative;
+		overflow: hidden;
+		&::before {
+			content:'';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 1005px;
+			height: 100%;
+			background-image: linear-gradient(179deg, rgba(0,0,0,0) 38%, rgba(0,0,0,0.6) 100%);
+		}
 	}
 	.slick-slide {
 		position:relative;
@@ -68,7 +80,7 @@
 			content: '';
 			position: absolute;
 			top: 50%;
-			right: 17px;
+			right: 9px;
 			transform: translateY(-50%);
 			width: 0;
 			height: 0;
@@ -77,6 +89,10 @@
 			border-color: transparent transparent transparent #e1e1e1;
 			@media(min-width: $screen-md) {
 				border-width: 12px 0 12px 12px;
+				right: 13px;
+			}
+			@media(min-width: $screen-xl) {
+			    right: 17px;
 			}
 		}
 		@media (min-width: $screen-md) {
@@ -100,9 +116,9 @@
 	}
 	&__city {
 		position: absolute;
-		font-family: Into, sans-serif;
-		left: 27px;
-		bottom: 25px;
+		font-family: "Intro", sans-serif;
+		left: 24px;
+		bottom: 23px;
 		margin: 0;
 		font-size: 17px;
 		line-height: 1.1;
@@ -117,10 +133,10 @@
 		}
 	}
 	.slick-dots {
-		padding-top: 7px;
+		padding-top: 17px;
 		padding-right: 24px;
 		@media (min-width: $screen-md) {
-			padding-top: 14px;
+			padding-top: 24px;
 			padding-right: 30px;
 		}
 	}

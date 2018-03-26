@@ -1,0 +1,105 @@
+// В этом файле должны быть стили для БЭМ-блока .story-photo , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+
+.story-photo {
+	padding-top: 27px;
+	padding-bottom: 25px;
+	background-color: #f4f6f7;
+	@media (min-width: $screen-md) {
+		padding-top: 54px;
+		padding-bottom: 50px;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 95px;
+		padding-bottom: 90px;
+	}
+	&__title {
+		max-width: 217px;
+		line-height: 26px;
+		letter-spacing: 0.72px;
+		@media (min-width: $screen-md) {
+			max-width: 100%;
+			letter-spacing: 1.12px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-bottom: 36px;
+		}
+	}
+	&__slider {
+		overflow: hidden;
+		margin-left: -12px;
+		@media(min-width: $screen-xl) {
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+	.slick-list {
+		padding-left: 24px;
+		@media (min-width: $screen-md) {
+		    margin-left: 10px;
+		}
+		@media(min-width: $screen-xl) {
+		    margin-left: 61px;
+		}
+	}
+	&__slide {
+		margin-right: 12px;
+		margin-left: 12px;
+		@media (min-width: $screen-md) {
+			margin-right: 32px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-right: 35px;
+		}
+		img {
+			max-height: 213px;
+			@media (min-width: $screen-md) {
+			    max-height: 279px;
+			}
+			@media(min-width: $screen-xl) {
+				min-height: 440px;
+			}
+		}
+	}
+	&__subtitle {
+		max-width: 270px;
+		color: rgba(#191919, .6);
+		line-height: 24px;
+		letter-spacing: 0.28px;
+		@media (min-width: $screen-md) {
+			max-width: inherit;
+			margin-bottom: 43px;
+			font-size: 15px;
+			line-height: 28px;
+			letter-spacing: 0.3px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-bottom: 47px;
+			font-size: 17px;
+			line-height: 28px;
+			letter-spacing: 0.34px;
+		}
+	}
+	&__desc {
+		margin-top: 7px;
+		margin-bottom: 7px;
+		color: rgba(#000000, .5);
+		line-height: 24px;
+		letter-spacing: 0.28px;
+		@media (min-width: $screen-md) {
+			letter-spacing: 0.44px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-top: 15px;
+			margin-bottom: 0;
+		}
+	}
+	.slick-dots {
+		@media (min-width: $screen-md) {
+			padding-top: 10px;
+		}
+	}
+	.slick-arrow {
+		top: calc(50% - 57px / 2);
+	}
+}

@@ -20,12 +20,12 @@ mixin quest()
 					.quest__item.quest__item--second
 						strong.quest__requirements от 7 до 17 лет
 						p.quest__desc-item Возраст участников интенсива
-				.col-md-3.col-xl-4
+				.col-md-3.col-xl-auto.ml-xl-auto
 					.quest__item
 						strong.quest__requirements Любой
 						p.quest__desc-item Уровень владения английским языком
 			.quest__footer
-				button.quest__submit.btn Отправить заявку
+				a(href="#order").quest__submit.btn.js-go-order Отправить заявку
 				p.quest__limit
 					| Количество мест ограничено. Заполните заявку прямо сейчас!
 					| Устройте своему ребенку незабываемые каникулы.

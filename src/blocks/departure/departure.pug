@@ -1,35 +1,37 @@
 mixin departure()
 	section.departure
 		.container
-			h2.departure__title Организатор выезда — Центр инстранных языков YES
+			h2.departure__title Организатор выезда —
+				span Центр иностранных языков YES
 			p.departure__subtitle
 				| YES — это открытый международный центр по обучению, подготовке к кембриджским экзаменам, где Ваш ребенок выучит язык в соответствии с международными стандартами.
 				| Как официальный участник проекта Cambridge English мы гарантируем высоский уровень преподавания, подтвержденный квалификацией педагогов.
 				| Подготовим учеников
 				| к успешной сдаче IELTS и TOEFL, в том числе в объеме, необходимом для обучения за границей.
 			.departure__features
-				.row
-					.col-md-3
-						.departure__item-stat
+				.row.flex-xl-nowrap.justify-content-xl-between
+					.col-md.col-xl-auto
+						.departure__item-stat.departure__item-stat--first
 							span.departure__stat 315
 							p.departure__desc Преподавателей в штате
-					.col-md-3
-						.departure__item-stat
+					.col-md.col-xl-auto
+						.departure__item-stat.departure__item-stat--second
 							span.departure__stat 2 315
 							p.departure__desc Учеников занимаются по нашей методике
-					.col-md-3
-						.departure__item-stat
+					.col-md.col-xl-auto
+						.departure__item-stat.departure__item-stat--thirthy
 							span.departure__stat 52 439
 							p.departure__desc Уроков проведено за 2017 год
-					.col-md-3
-						.departure__item-stat
+					.col-md.col-xl-auto
+						.departure__item-stat.departure__item-stat--last
 							span.departure__stat 16
 							p.departure__desc Школ в Москве, Московской и Владимирской областях
 		ul.departure__slider.js-departure-slider
 			li.departure__slide
-				img(src="img/content/departure-photo-1.jpg")
+				img(src="img/content/departure-photo-1.jpg" alt="Преподавателей в штате")
 			li.departure__slide
-				img(src="img/content/departure-photo-1.jpg")
+				img(src="img/content/exit-photo-1-ds.jpg" alt="Учеников занимаются по нашей методике")
 			li.departure__slide
-				img(src="img/content/departure-photo-1.jpg")
+				img(src="img/content/departure-photo-1.jpg" alt="Преподавателей в штате")
+
 

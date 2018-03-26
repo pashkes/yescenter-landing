@@ -1,0 +1,50 @@
+mixin call-back()
+	.call-back
+		.modal.fade(id="callBack" tabindex="-1" role="dialog" aria-hidden="true")
+			.modal-dialog(role="document")
+				.modal-content
+					button(type="button" class="form__close" data-dismiss="modal" aria-label="Close") Закрыть
+					form.form.call-back
+						p.form__title Оставьте ваш номер
+						p.form__subtitle и мы перезвоним в удобное для вас время
+						input(placeholder="Представьтесь, пожалуйста" required).form__field
+						input(type="tel" placeholder="Ваш номер телефона" pattern="^[0-9\-\+\s\(\)]*$" required).form__field
+						p.form__label Время
+						.form__field-group
+							.form__select-wrap
+								select.form__select.js-custom-select
+									option 10:00
+									option 11:00
+									option 12:00
+									option 13:00
+									option 14:00
+									option 15:00
+									option 16:00
+									option 17:00
+									option 18:00
+									option 19:00
+							.form__select-wrap
+								select.form__select.js-custom-select
+									option 11:00
+									option 12:00
+									option 13:00
+									option 14:00
+									option 15:00
+									option 16:00
+									option 17:00
+									option 18:00
+									option 19:00
+						p.form__conf Нажимая на кнопку «Перезвоните мне», я даю согласие на обработку персональных данных и соглашаюсь c
+							a(href="#")  политикой конфиденциальности YES EDUCATION GROUP
+						button.btn.form__submit перезвоните мне
+
+		// Модалка после успешной отправки
+		.modal.fade(id="success-order" tabindex="-1" role="dialog" aria-hidden="true")
+			.modal-dialog(role="document")
+				.modal-content
+					button(type="button" class="form__close" data-dismiss="modal" aria-label="Close") Закрыть
+					form.form.call-back.success-order
+						p.form__title Спасибо, Ваша заявка отправлена
+						p.form__subtitle Ближайшее время
+							span наш менедер свяжется с вами.
+						button.btn.form__submit(type="button" data-dismiss="modal") Закрыть
