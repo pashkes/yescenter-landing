@@ -2780,6 +2780,10 @@ tbody.collapse.show {
   margin-bottom: 11px;
 }
 
+.residence__item--last .residence__photo img {
+  height: auto;
+}
+
 .residence__item--last .residence__desc {
   line-height: 22px;
   letter-spacing: 0.14px;
@@ -2813,6 +2817,10 @@ tbody.collapse.show {
   margin-bottom: 15px;
 }
 
+.residence__photo img {
+  height: auto;
+}
+
 .residence__desc {
   margin-top: 0;
   margin-bottom: 26px;
@@ -2824,9 +2832,6 @@ tbody.collapse.show {
   position: relative;
   overflow: hidden;
   font-size: 0;
-  max-width: 256px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .residence__slider .residence__subject {
@@ -5641,10 +5646,6 @@ label {
 
   .residence__photo {
     margin-bottom: 25px;
-  }
-
-  .residence__photo img {
-    height: auto;
   }
 
   .residence__desc {

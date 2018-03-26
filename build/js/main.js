@@ -13,12 +13,12 @@
 /*$(function() {
 	
 });*/
-// .departure scripts goes here 
+// .escort scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .escort scripts goes here 
+// .departure scripts goes here 
 
 /*$(function() {
 	

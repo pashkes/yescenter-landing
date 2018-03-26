@@ -44,6 +44,7 @@
 					margin-bottom: 52px;
 				}
 				img	 {
+					height: auto;
 					@media (min-width: $screen-xl) {
 					   min-height: 383px;
 					}
@@ -111,9 +112,8 @@
 			margin-bottom: 52px;
 		}
 		img {
-			@media (min-width: $screen-md) {
-				height: auto;
-			}
+			height: auto;
+
 		}
 	}
 	&__desc {
@@ -135,9 +135,6 @@
 		position: relative;
 		overflow: hidden;
 		font-size: 0;
-		max-width: 256px;
-		margin-right: auto;
-		margin-left: auto;
 		@media (min-width: $screen-md) {
 		   max-width: 100%;
 		}
@@ -156,4 +153,5 @@
 	.slick-arrow {
 		top: 195px;
 	}
+
 }
