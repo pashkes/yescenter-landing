@@ -3038,6 +3038,7 @@ tbody.collapse.show {
   line-height: 18px;
   color: #252525;
   letter-spacing: 0;
+  font-family: "Intro", sans-serif;
 }
 
 .departure__features {
