@@ -2786,7 +2786,6 @@ tbody.collapse.show {
 }
 
 .residence__subject {
-  max-width: 236px;
   margin-bottom: 10px;
   line-height: 23px;
   letter-spacing: 0;
@@ -2980,9 +2979,9 @@ tbody.collapse.show {
 
 .advantage__subject {
   color: #d52833;
-  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 26px;
+  font-weight: 400;
 }
 
 .advantage__desc {

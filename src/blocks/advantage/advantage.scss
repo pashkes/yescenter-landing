@@ -35,9 +35,9 @@
 	}
 	&__subject {
 		color: #d52833;
-		font-family: "Open Sans", sans-serif;
 		font-size: 18px;
 		line-height: 26px;
+		font-weight: 400;
 		span {
 			@media (min-width: $screen-md) {
 				display: block;
