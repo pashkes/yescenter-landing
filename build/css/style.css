@@ -2776,12 +2776,6 @@ tbody.collapse.show {
   margin-bottom: 22px;
 }
 
-.residence__item {
-  max-width: 273px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .residence__item--last .residence__photo {
   margin-bottom: 11px;
 }
@@ -2797,7 +2791,7 @@ tbody.collapse.show {
   line-height: 23px;
   letter-spacing: 0;
   font-size: 18px;
-  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
 }
 
 .residence__stars {
@@ -2821,7 +2815,6 @@ tbody.collapse.show {
 }
 
 .residence__desc {
-  max-width: 253px;
   margin-top: 0;
   margin-bottom: 26px;
   line-height: 22px;
@@ -2832,6 +2825,9 @@ tbody.collapse.show {
   position: relative;
   overflow: hidden;
   font-size: 0;
+  max-width: 256px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .residence__slider .residence__subject {
@@ -5657,6 +5653,10 @@ label {
     max-width: 100%;
   }
 
+  .residence__slider {
+    max-width: 100%;
+  }
+
   .residence .slick-dots {
     -webkit-box-align: end;
     -webkit-align-items: flex-end;
@@ -5985,6 +5985,10 @@ label {
   .form__conf {
     margin-bottom: 41px;
     margin-top: 38px;
+  }
+
+  .form__submit {
+    max-width: 100%;
   }
 
   .footer {
@@ -7923,6 +7927,10 @@ label {
 
   .residence__item--last .residence__photo {
     margin-bottom: 52px;
+  }
+
+  .residence__item--last .residence__photo img {
+    min-height: 383px;
   }
 
   .residence__item--last .residence__desc {

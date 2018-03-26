@@ -1,5 +1,5 @@
-// В этом файле должны быть стили для БЭМ-блока .residence , его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+// В этом файле должны быть стили для БЭМ-блока .residence , его элементов,
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 
 .residence {
 	padding-top: 25px;
@@ -22,9 +22,6 @@
 		}
 	}
 	&__item {
-		max-width: 273px;
-		margin-right: auto;
-		margin-left: auto;
 		@media (min-width: $screen-md) {
 		    max-width: 100%;
 		}
@@ -46,6 +43,11 @@
 				@media (min-width: $screen-xl) {
 					margin-bottom: 52px;
 				}
+				img	 {
+					@media (min-width: $screen-xl) {
+					   min-height: 383px;
+					}
+				}
 			}
 			.residence__desc {
 				line-height: 22px;
@@ -66,7 +68,7 @@
 		line-height: 23px;
 		letter-spacing: 0;
 		font-size: 18px;
-		font-family: "Open Sans", sans-serif;
+		font-weight: 400;
 		@media (min-width: $screen-md) {
 			margin-bottom: 17px;
 			font-size: 24px;
@@ -116,7 +118,6 @@
 		}
 	}
 	&__desc {
-		max-width: 253px;
 		margin-top: 0;
 		margin-bottom: 26px;
 		line-height: 22px;
@@ -135,6 +136,12 @@
 		position: relative;
 		overflow: hidden;
 		font-size: 0;
+		max-width: 256px;
+		margin-right: auto;
+		margin-left: auto;
+		@media (min-width: $screen-md) {
+		   max-width: 100%;
+		}
 		.residence__subject {
 			line-height: 1;
 		}
