@@ -13,12 +13,12 @@
 /*$(function() {
 	
 });*/
-// .departure scripts goes here 
+// .escort scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .escort scripts goes here 
+// .departure scripts goes here 
 
 /*$(function() {
 	
@@ -63,17 +63,17 @@
 /*$(function() {
 	
 });*/
-// .reviews scripts goes here 
-
-/*$(function() {
-	
-});*/
 // .story-photo scripts goes here 
 
 /*$(function() {
 	
 });*/
 // .timetable scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .reviews scripts goes here 
 
 /*$(function() {
 	
@@ -88,7 +88,7 @@
 		dots: false,
 		variableWidth: true,
 		centerPadding: '0',
-		infinite: true,
+		infinite: false,
 		arrows: true,
 		slidesToShow: 3,
 		responsive: [

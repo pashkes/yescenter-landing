@@ -3,7 +3,7 @@
 		dots: false,
 		variableWidth: true,
 		centerPadding: '0',
-		infinite: true,
+		infinite: false,
 		arrows: true,
 		slidesToShow: 3,
 		responsive: [
