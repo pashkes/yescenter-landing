@@ -5294,6 +5294,10 @@ label {
     line-height: 1.5;
   }
 
+  .promo__subtitle span {
+    display: block;
+  }
+
   .promo__order {
     max-width: 240px;
   }
