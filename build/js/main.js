@@ -113,6 +113,7 @@
 		arrows: true,
 		centerPadding: '0',
 		centerMode: true,
+		adaptiveHeight: true,
 		responsive: [
 			{
 				breakpoint: 1343,

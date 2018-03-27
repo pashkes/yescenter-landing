@@ -114,12 +114,13 @@
 		img {
 			height: auto;
 			@media (min-width: $screen-md) {
-				min-height: 233px;
-				max-height: 233px;
+
 				object-fit: cover;
 				object-position: center;
 			}
+			@media (min-width: $screen-xl) {
 
+			}
 		}
 	}
 	&__desc {
