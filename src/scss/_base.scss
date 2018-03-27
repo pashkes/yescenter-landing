@@ -208,30 +208,3 @@ tbody {
 	overflow: hidden;
 	@include transition($transition-collapse);
 }
-.slick-arrow.slick-disabled {
-	display: none;
-}
-.page-wrapper {
-	max-width: 1344px;
-	margin: 0 auto;
-	box-shadow: 0 10px 30px rgba(0,0,0,.15);
-}
-.blur-up {
-	-webkit-filter: blur(5px);
-	filter: blur(5px);
-	transition: filter 400ms, -webkit-filter 400ms;
-}
-
-.blur-up.lazyloaded {
-	-webkit-filter: blur(0);
-	filter: blur(0);
-}
-.fade-box .lazyload,
-.fade-box .lazyloading {
-	opacity: 0;
-	transition: opacity 400ms;
-}
-
-.fade-box img.lazyloaded {
-	opacity: 1;
-}

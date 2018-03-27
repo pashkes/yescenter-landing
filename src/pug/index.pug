@@ -23,7 +23,7 @@ html(lang="ru")
 
     //- Edge и ряд мобильных браузеров автоматом преобразуют телефоны в ссылки. Отключить если не нужно.
     meta(name='format-detection', content='telephone=no')
-    link(href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic-ext" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic-ext" rel="preload" as="font")
     block title
       title Home
 
@@ -31,23 +31,23 @@ html(lang="ru")
       link(rel="stylesheet" href="css/style.css")
 
   body
-
-    +page-top
-    +program
-    +timetable
-    +quest
-    +package
-    +residence
-    +info
-    +tours
-    +advantage
-    +departure
-    +escort
-    +story-photo
-    +reviews
-    +request
-    +footer
-    +call-back
+    .page-wrapper
+      +page-top
+      +program
+      +timetable
+      +quest
+      +package
+      +residence
+      +info
+      +tours
+      +advantage
+      +departure
+      +escort
+      +story-photo
+      +reviews
+      +request
+      +footer
+      +call-back
 
     block js_libs
       script(src="js/libs.js")

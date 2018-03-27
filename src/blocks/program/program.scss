@@ -101,9 +101,6 @@
 		@media(min-width: $screen-xl) {
 		    padding-right: 48px;
 		}
-		&:not(.slick-active) {
-			opacity: .3;
-		}
 	}
 	.slick-slide > div {
 		width: calc(100vw - 72px);

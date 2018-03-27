@@ -3,7 +3,6 @@
 		dots: false,
 		variableWidth: true,
 		centerPadding: '0',
-		infinite: false,
 		arrows: true,
 		slidesToShow: 3,
 		responsive: [
@@ -29,6 +28,7 @@
 		centerPadding: '0',
 		centerMode: true,
 		adaptiveHeight: true,
+		lazyLoad: 'ondemand',
 		responsive: [
 			{
 				breakpoint: 1343,
@@ -57,12 +57,6 @@
 		mobileFirst: true,
 		arrows: false,
 		responsive: [
-			{
-				breakpoint: 1600,
-				settings: {
-					slidesToShow: 3
-				}
-			},
 			{
 				breakpoint: 1343,
 				settings: {
@@ -345,7 +339,9 @@ function init() {
 	myMap.controls.remove('rulerControl');
 }
 ;
+
 ymaps.ready(init);
+
 
 // Change the speed to whatever you want
 // Personally i think 1000 is too much

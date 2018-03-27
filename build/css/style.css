@@ -2305,6 +2305,36 @@ tbody.collapse.show {
   display: none;
 }
 
+.page-wrapper {
+  max-width: 1344px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.blur-up {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transition: filter 400ms, -webkit-filter 400ms;
+}
+
+.blur-up.lazyloaded {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+
+.fade-box .lazyload,
+.fade-box .lazyloading {
+  opacity: 0;
+  -webkit-transition: opacity 400ms;
+  -o-transition: opacity 400ms;
+  transition: opacity 400ms;
+}
+
+.fade-box img.lazyloaded {
+  opacity: 1;
+}
+
 .btn {
   display: inline-block;
   padding: 13px 32px 11px 32px;
@@ -2389,14 +2419,12 @@ tbody.collapse.show {
 .promo__bg img {
   width: 100%;
   -o-object-position: right bottom;
-  object-position: right bottom;
+     object-position: right bottom;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   height: auto;
   min-height: 328px;
   max-height: 328px;
-  object-fit: cover;
-  object-position: right bottom;
 }
 
 .promo__inner {
@@ -2498,10 +2526,6 @@ tbody.collapse.show {
   border-style: solid;
   border-width: 8.5px 0 8.5px 8px;
   border-color: transparent transparent transparent #e1e1e1;
-}
-
-.program .slick-slide:not(.slick-active) {
-  opacity: .3;
 }
 
 .program .slick-slide > div {
@@ -2719,8 +2743,6 @@ tbody.collapse.show {
 .quest__title {
   margin-top: 0;
   margin-bottom: 3px;
-  text-transform: uppercase;
-  line-height: 26px;
 }
 
 .quest__title span {
@@ -8114,10 +8136,6 @@ label {
     margin-bottom: 0;
   }
 
-  .escort__submit {
-    margin-top: -47px;
-  }
-
   .story-photo {
     padding-top: 95px;
     padding-bottom: 90px;
@@ -8142,6 +8160,11 @@ label {
 
   .story-photo__slide img {
     min-height: 440px;
+    max-width: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
   }
 
   .story-photo__subtitle {
