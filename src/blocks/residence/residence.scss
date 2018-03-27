@@ -23,7 +23,7 @@
 	}
 	&__item {
 		@media (min-width: $screen-md) {
-		    max-width: 100%;
+			max-width: 100%;
 		}
 		@media (min-width: $screen-xl) {
 			padding-right: 8px;
@@ -43,10 +43,10 @@
 				@media (min-width: $screen-xl) {
 					margin-bottom: 52px;
 				}
-				img	 {
+				img {
 					height: auto;
 					@media (min-width: $screen-xl) {
-					   min-height: 383px;
+						min-height: 383px;
 					}
 				}
 			}
@@ -76,7 +76,7 @@
 			max-width: 266px;
 		}
 		@media (min-width: $screen-xl) {
-		   max-width: 100%;
+			max-width: 100%;
 		}
 	}
 	&__stars {
@@ -113,6 +113,12 @@
 		}
 		img {
 			height: auto;
+			@media (min-width: $screen-md) {
+				min-height: 233px;
+				max-height: 233px;
+				object-fit: cover;
+				object-position: center;
+			}
 
 		}
 	}
@@ -136,7 +142,7 @@
 		overflow: hidden;
 		font-size: 0;
 		@media (min-width: $screen-md) {
-		   max-width: 100%;
+			max-width: 100%;
 		}
 		.residence__subject {
 			line-height: 1;

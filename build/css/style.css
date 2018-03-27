@@ -5649,6 +5649,15 @@ label {
     margin-bottom: 25px;
   }
 
+  .residence__photo img {
+    min-height: 233px;
+    max-height: 233px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+
   .residence__desc {
     margin-bottom: 46px;
     max-width: 100%;
