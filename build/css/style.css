@@ -5287,7 +5287,7 @@ label {
   }
 
   .promo__subtitle {
-    max-width: 430px;
+    max-width: 100%;
     margin-bottom: 32px;
     font-size: 20px;
     font-weight: 600;
