@@ -2451,7 +2451,7 @@ tbody.collapse.show {
 }
 
 .promo__subtitle {
-  max-width: 296px;
+  max-width: 206x;
   margin: 0 0 28px;
   color: #fff;
   line-height: 1.29;
@@ -5287,7 +5287,7 @@ label {
   }
 
   .promo__subtitle {
-    max-width: 434px;
+    max-width: 430px;
     margin-bottom: 32px;
     font-size: 20px;
     font-weight: 600;
