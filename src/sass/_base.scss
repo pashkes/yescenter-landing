@@ -208,3 +208,6 @@ tbody {
 	overflow: hidden;
 	@include transition($transition-collapse);
 }
+.slick-arrow.slick-disabled {
+	display: none;
+}

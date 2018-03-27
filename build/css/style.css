@@ -2301,6 +2301,10 @@ tbody.collapse.show {
   transition: height 0.35s ease;
 }
 
+.slick-arrow.slick-disabled {
+  display: none;
+}
+
 .btn {
   display: inline-block;
   padding: 13px 32px 11px 32px;
