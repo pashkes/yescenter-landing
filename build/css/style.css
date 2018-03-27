@@ -2389,12 +2389,14 @@ tbody.collapse.show {
 .promo__bg img {
   width: 100%;
   -o-object-position: right bottom;
-     object-position: right bottom;
+  object-position: right bottom;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: auto;
   min-height: 328px;
   max-height: 328px;
+  object-fit: cover;
+  object-position: right bottom;
 }
 
 .promo__inner {

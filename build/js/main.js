@@ -48,12 +48,12 @@
 /*$(function() {
 	
 });*/
-// .request scripts goes here 
+// .quest scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .quest scripts goes here 
+// .request scripts goes here 
 
 /*$(function() {
 	
