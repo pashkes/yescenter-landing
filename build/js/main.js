@@ -63,17 +63,17 @@
 /*$(function() {
 	
 });*/
+// .reviews scripts goes here 
+
+/*$(function() {
+	
+});*/
 // .story-photo scripts goes here 
 
 /*$(function() {
 	
 });*/
 // .timetable scripts goes here 
-
-/*$(function() {
-	
-});*/
-// .reviews scripts goes here 
 
 /*$(function() {
 	
