@@ -61,6 +61,7 @@ var PATH = {
     ],
     JS: [
 			  'src/scripts/jquery-3.3.1.min.js',
+        'src/scripts/libs/lazySizes.min.js',
         'src/scripts/libs/**'
     ]
   },

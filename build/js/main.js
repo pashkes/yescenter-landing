@@ -3,17 +3,17 @@
 /*$(function() {
 	
 });*/
+// .call-back scripts goes here 
+
+/*$(function() {
+	
+});*/
 // .btn scripts goes here 
 
 /*$(function() {
 	
 });*/
 // .departure scripts goes here 
-
-/*$(function() {
-	
-});*/
-// .call-back scripts goes here 
 
 /*$(function() {
 	
