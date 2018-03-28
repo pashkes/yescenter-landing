@@ -18,12 +18,12 @@
 /*$(function() {
 	
 });*/
-// .escort scripts goes here 
+// .footer scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .footer scripts goes here 
+// .escort scripts goes here 
 
 /*$(function() {
 	
@@ -48,12 +48,12 @@
 /*$(function() {
 	
 });*/
-// .request scripts goes here 
+// .quest scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .quest scripts goes here 
+// .request scripts goes here 
 
 /*$(function() {
 	
@@ -68,17 +68,17 @@
 /*$(function() {
 	
 });*/
-// .tours scripts goes here 
-
-/*$(function() {
-	
-});*/
 // .story-photo scripts goes here 
 
 /*$(function() {
 	
 });*/
 // .timetable scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .tours scripts goes here 
 
 /*$(function() {
 	
@@ -434,8 +434,7 @@ $(document).on('submit', '#order', function (event) {
     dataType: 'json',
     url: 'sendmail.php',
     data: $(this).serialize(),
-    done: function (data) {
-      alert(data);
+    done: function () {
       $('#order').modal('hide');
       $('#success-order').modal('show');
     }
@@ -450,8 +449,7 @@ $(document).on('submit', '#call-back', function (event) {
     dataType: 'json',
     url: 'sendmail.php',
     data: $(this).serialize(),
-    done: function (data) {
-    	alert(data);
+    done: function () {
       $('#callBack').modal('hide');
       $('#success-order').modal('show');
     }
