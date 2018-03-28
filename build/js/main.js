@@ -1,9 +1,9 @@
-// .btn scripts goes here 
+// .advantage scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .advantage scripts goes here 
+// .btn scripts goes here 
 
 /*$(function() {
 	
@@ -18,12 +18,12 @@
 /*$(function() {
 	
 });*/
-// .footer scripts goes here 
+// .escort scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .escort scripts goes here 
+// .footer scripts goes here 
 
 /*$(function() {
 	
@@ -429,17 +429,18 @@ $('.js-phone-mask').mask("+7(999) 999-99-99", {placeholder: "+7(___)___ -__-__"}
 
 $(document).on('submit', '#order', function (event) {
   event.preventDefault();
-  $.ajax({
-    type: 'POST',
-    dataType: 'json',
-    url: 'sendmail.php',
-    data: $(this).serialize(),
-    done: function () {
-      $('#order').modal('hide');
-      $('#success-order').modal('show');
-    }
-  });
-  return false;
+	$.ajax({
+		type: 'POST',
+		dataType: 'json',
+		url: 'sendmail.php',
+		data: $(this).serialize(),
+		success: function () {
+			$('#order').modal('hide');
+			$('#success-order').modal('show');
+		}
+	}).fail(function () {
+		alert('Упс, произошла ошибка! Пожалуйста, свяжитесь с нами и мы обязательно Вам поможем');
+	});
 });
 
 $(document).on('submit', '#call-back', function (event) {
@@ -453,7 +454,9 @@ $(document).on('submit', '#call-back', function (event) {
       $('#callBack').modal('hide');
       $('#success-order').modal('show');
     }
-  });
+  }).fail(function () {
+		alert('Упс, произошла ошибка! Пожалуйста, свяжитесь с нами и мы обязательно Вам поможем');
+	});
   return false;
 });
 
