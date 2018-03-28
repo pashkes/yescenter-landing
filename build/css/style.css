@@ -2960,9 +2960,7 @@ tbody.collapse.show {
   line-height: 20px;
 }
 
-.tours__featur::before {
-  counter-increment: section;
-  content: counters(section, ".") ". ";
+.tours__featur span {
   position: absolute;
   left: 0;
   top: 0;
@@ -5736,7 +5734,7 @@ label {
     line-height: 22px;
   }
 
-  .tours__featur::before {
+  .tours__featur span {
     font-size: 46px;
     top: 50%;
     -webkit-transform: translateY(-50%);
