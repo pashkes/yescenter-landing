@@ -1,3 +1,88 @@
+// .advantage scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .btn scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .call-back scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .departure scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .footer scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .escort scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .info scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .package scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .page-top scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .program scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .quest scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .request scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .residence scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .reviews scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .story-photo scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .timetable scripts goes here 
+
+/*$(function() {
+	
+});*/
+// .tours scripts goes here 
+
+/*$(function() {
+	
+});*/
 (function () {
 	$('.js-program-slider').slick({
 		dots: false,
