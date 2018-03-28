@@ -51,33 +51,29 @@
 	}
 	&__featur {
 		position: relative;
+		display: flex;
 		margin-bottom: 17px;
-		padding-left: 40px;
 		font-family: $open-sans;
 		line-height: 20px;
 		@media (min-width: $screen-md) {
 			margin-bottom: 22px;
-			padding-left: 50px;
 			font-size: 15px;
 			line-height: 22px;
 		}
 		@media(min-width: $screen-xl) {
+			align-items: center;
 			margin-bottom: 42px;
-			padding-left: 52px;
 		}
 		span {
-			position: absolute;
-			left: 0;
-			top: 0;
+			margin-right: 14px;
 			font-size: 36px;
 			text-transform: uppercase;
 			color: #d52833;
 			line-height: 1;
 			font-family: "Intro", sans-serif;
 			@media (min-width: $screen-md) {
+				margin-right: 22px;
 				font-size: 46px;
-				top: 50%;
-				transform: translateY(-50%);
 			}
 		}
 	}
