@@ -141,7 +141,9 @@
 		transition: 0.15s ease-in;
 		cursor: pointer;
 		z-index: 3;
-
+		&:hover {
+			background-image: url(../img/svg/icon-close-hover.png);
+		}
 	}
 	&__subtitle {
 		margin-top: 0;
@@ -237,11 +239,15 @@
 .SumoSelect {
 	width: 100%;
 	max-width: 100%;
+	cursor: pointer;
 }
-
+.SelectClass {
+	cursor: pointer;
+}
 .SumoSelect > .CaptionCont {
 	border: none;
 	border-bottom: 3px solid #000;
+	cursor: pointer;
 }
 
 .SelectBox {
@@ -254,6 +260,7 @@
 	font-weight: 700;
 	line-height: 24px;
 	letter-spacing: 0.28px;
+	pointer-events: none;
 }
 
 .SumoSelect:focus > .CaptionCont, .SumoSelect:hover > .CaptionCont {
@@ -268,10 +275,12 @@
 	opacity: 1;
 	right: 0;
 	top: 5px;
+	pointer-events: none;
 }
 
 .SumoSelect > .CaptionCont > label {
 	width: 44px;
+	pointer-events: none;
 }
 
 .SumoSelect > .optWrapper > .options {

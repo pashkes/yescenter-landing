@@ -185,11 +185,6 @@
 		}
 	}
 	&__order {
-		max-width: 271px;
-		width: 100%;
-		@media (min-width: $screen-md) {
-			max-width: 240px;
-		}
 		@media(min-width: $screen-xl) {
 			letter-spacing: 0.8px;
 		}

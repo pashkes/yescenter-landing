@@ -19,7 +19,7 @@
               </div>
             </div>
             <div class="col-auto">
-              <div class="header__contact"><a class="header__tel" href="tel:89250066320">8 925 006-63-20</a>
+              <div class="header__contact"><a class="header__tel" href="tel:+789250066320">8 925 006-63-20</a>
                 <button class="header__order" type="button" data-toggle="modal" data-target="#callBack">заказать звонок</button>
               </div>
             </div>
@@ -262,7 +262,7 @@
           <h2 class="residence__title">Проживание</h2>
           <div class="row">
             <div class="col-md-6">
-              <div class="residence__item">
+              <div class="residence__item residence__item--first">
                 <div class="residence__photo">
                   <ul class="residence__slider js-residence-slider">
                     <li>
@@ -289,7 +289,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <div class="residence__item">
+              <div class="residence__item residence__item--last">
                 <div class="residence__photo">
                   <ul class="residence__slider js-residence-slider">
                     <li><img data-lazy="img/content/Chancellor_01.jpg" height="184" alt="Chancellor’s Court at Pollock Halls"/></li>
@@ -571,9 +571,9 @@
           <form class="form request__form" id="order">
             <p class="form__title">Количество мест ограничено!</p>
             <p class="form__subtitle">Отправьте заявку, прямо сейчас.</p>
-            <input class="form__field" placeholder="Представьтесь, пожалуйста" required="required"/>
-            <input class="form__field" type="tel" placeholder="Контактный телефон" pattern="^[0-9-+s()]*$" required="required"/>
-            <input class="form__field" placeholder="Название компании"/>
+            <input class="form__field" placeholder="Представьтесь, пожалуйста" name="NAME" required="required"/>
+            <input class="form__field js-phone-mask" type="tel" placeholder="Контактный телефон" name="PHONE" required="required"/>
+            <input class="form__field" placeholder="Название компании" name="COMPANY"/>
             <p class="form__conf">Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c<a href="#"> политикой конфиденциальности YES EDUCATION GROUP</a></p>
             <button class="btn form__submit">Отправить заявку</button>
           </form>
@@ -591,7 +591,7 @@
               <p>ИНН 5013045939 КПП 501301001</p>
               <p>ОГРН 1035002607023</p>
             </div>
-            <div class="col-md-auto"><img class="footer__logo lazyload blur-up" data-src="img/logo.svg" width="72" height="72" alt="Иностранные языки в Москве"/></div>
+            <div class="col-md-auto"><img class="footer__logo" src="img/logo.svg" width="72" height="72" alt="Иностранные языки в Москве"/></div>
           </div>
         </div>
       </div>
@@ -600,15 +600,15 @@
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <button class="form__close" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
-              <form class="form call-back">
+              <form class="form call-back" id="call-back">
                 <p class="form__title">Оставьте ваш номер</p>
                 <p class="form__subtitle">и мы перезвоним в удобное для вас время</p>
-                <input class="form__field" placeholder="Представьтесь, пожалуйста" required="required"/>
-                <input class="form__field" type="tel" placeholder="Ваш номер телефона" pattern="^[0-9-+s()]*$" required="required"/>
+                <input class="form__field" placeholder="Представьтесь, пожалуйста" name="NAME" required="required"/>
+                <input class="form__field js-phone-mask" type="tel" placeholder="Ваш номер телефона" name="PHONE" required="required"/>
                 <p class="form__label">Время</p>
                 <div class="form__field-group">
                   <div class="form__select-wrap">
-                    <select class="form__select js-custom-select">
+                    <select class="form__select js-custom-select" name="TIME_FROM">
                       <option>10:00</option>
                       <option>11:00</option>
                       <option>12:00</option>
@@ -622,7 +622,7 @@
                     </select>
                   </div>
                   <div class="form__select-wrap">
-                    <select class="form__select js-custom-select">
+                    <select class="form__select js-custom-select" name="TIME_TO">
                       <option>11:00</option>
                       <option>12:00</option>
                       <option>13:00</option>

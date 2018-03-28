@@ -337,12 +337,42 @@ function init() {
 	myMap.controls.remove('fullscreenControl');
 	myMap.controls.remove('geolocationControl');
 	myMap.controls.remove('rulerControl');
-}
-;
+};
 
+
+$('.js-phone-mask').mask("+7(999) 999-99-99", {placeholder: "+7(___)___ -__-__"});
+
+$(document).on('submit', '#order', function (event) {
+  event.preventDefault();
+  $.ajax({
+    type: 'POST',
+    dataType: 'json',
+    url: 'sendmail.php',
+    data: $(this).serialize(),
+    done: function (data) {
+      alert(data);
+      $('#order').modal('hide');
+      $('#success-order').modal('show');
+    }
+  });
+  return false;
+});
+
+$(document).on('submit', '#call-back', function (event) {
+  event.preventDefault();
+  $.ajax({
+    type: 'POST',
+    dataType: 'json',
+    url: 'sendmail.php',
+    data: $(this).serialize(),
+    done: function (data) {
+    	alert(data);
+      $('#callBack').modal('hide');
+      $('#success-order').modal('show');
+    }
+  });
+  return false;
+});
+
+//Инициализация Яндекс карт
 ymaps.ready(init);
-
-
-// Change the speed to whatever you want
-// Personally i think 1000 is too much
-// Try 800 or below, it seems not too much but it will make a difference

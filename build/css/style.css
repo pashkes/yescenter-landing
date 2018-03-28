@@ -2338,7 +2338,6 @@ tbody.collapse.show {
 .btn {
   display: inline-block;
   padding: 13px 32px 11px 32px;
-  max-width: 272px;
   width: 100%;
   border: none;
   vertical-align: top;
@@ -2456,11 +2455,6 @@ tbody.collapse.show {
   color: #fff;
   line-height: 1.29;
   font-family: "Open Sans", sans-serif;
-}
-
-.promo__order {
-  max-width: 271px;
-  width: 100%;
 }
 
 .program {
@@ -2806,19 +2800,6 @@ tbody.collapse.show {
   margin-bottom: 22px;
 }
 
-.residence__item--last .residence__photo {
-  margin-bottom: 11px;
-}
-
-.residence__item--last .residence__photo img {
-  height: auto;
-}
-
-.residence__item--last .residence__desc {
-  line-height: 22px;
-  letter-spacing: 0.14px;
-}
-
 .residence__subject {
   margin-bottom: 10px;
   line-height: 23px;
@@ -3116,7 +3097,7 @@ tbody.collapse.show {
 .escort__subtitle {
   margin-bottom: 25px;
   opacity: 0.6;
-  color: rgba(25, 25, 25, 0.6);
+  color: #757575;
   line-height: 24px;
   letter-spacing: 0.28px;
 }
@@ -3356,6 +3337,10 @@ tbody.collapse.show {
   z-index: 3;
 }
 
+.form__close:hover {
+  background-image: url(../img/svg/icon-close-hover.png);
+}
+
 .form__subtitle {
   margin-top: 0;
   line-height: 18px;
@@ -3442,11 +3427,17 @@ tbody.collapse.show {
 .SumoSelect {
   width: 100%;
   max-width: 100%;
+  cursor: pointer;
+}
+
+.SelectClass {
+  cursor: pointer;
 }
 
 .SumoSelect > .CaptionCont {
   border: none;
   border-bottom: 3px solid #000;
+  cursor: pointer;
 }
 
 .SelectBox {
@@ -3459,6 +3450,7 @@ tbody.collapse.show {
   font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.28px;
+  pointer-events: none;
 }
 
 .SumoSelect:focus > .CaptionCont,
@@ -3475,10 +3467,12 @@ tbody.collapse.show {
   opacity: 1;
   right: 0;
   top: 5px;
+  pointer-events: none;
 }
 
 .SumoSelect > .CaptionCont > label {
   width: 44px;
+  pointer-events: none;
 }
 
 .SumoSelect > .optWrapper > .options {
@@ -5300,10 +5294,6 @@ label {
     display: block;
   }
 
-  .promo__order {
-    max-width: 240px;
-  }
-
   .program {
     padding-top: 48px;
     padding-bottom: 50px;
@@ -5651,14 +5641,6 @@ label {
 
   .residence__item--last {
     padding-right: 0;
-  }
-
-  .residence__item--last .residence__photo {
-    margin-bottom: 13px;
-  }
-
-  .residence__item--last .residence__desc {
-    line-height: 24px;
   }
 
   .residence__subject {
@@ -7964,19 +7946,11 @@ label {
   }
 
   .residence__item--last {
-    padding-left: 8px;
+    padding-left: 16px;
   }
 
-  .residence__item--last .residence__photo {
-    margin-bottom: 52px;
-  }
-
-  .residence__item--last .residence__photo img {
-    min-height: 383px;
-  }
-
-  .residence__item--last .residence__desc {
-    max-width: 510px;
+  .residence__item--first {
+    padding-right: 16px;
   }
 
   .residence__subject {
