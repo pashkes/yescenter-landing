@@ -2954,16 +2954,17 @@ tbody.collapse.show {
 
 .tours__featur {
   position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 17px;
-  padding-left: 40px;
   font-family: "Open Sans", sans-serif;
   line-height: 20px;
 }
 
 .tours__featur span {
-  position: absolute;
-  left: 0;
-  top: 0;
+  margin-right: 14px;
   font-size: 36px;
   text-transform: uppercase;
   color: #d52833;
@@ -5729,17 +5730,13 @@ label {
 
   .tours__featur {
     margin-bottom: 22px;
-    padding-left: 50px;
     font-size: 15px;
     line-height: 22px;
   }
 
   .tours__featur span {
+    margin-right: 22px;
     font-size: 46px;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
   }
 
   .tours__video {
@@ -8010,8 +8007,11 @@ label {
   }
 
   .tours__featur {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 42px;
-    padding-left: 52px;
   }
 
   .tours__submit {
