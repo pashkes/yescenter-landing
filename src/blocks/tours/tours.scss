@@ -65,9 +65,7 @@
 			margin-bottom: 42px;
 			padding-left: 52px;
 		}
-		&::before {
-			counter-increment: section;
-			content: counters(section, ".") ". ";
+		span {
 			position: absolute;
 			left: 0;
 			top: 0;
