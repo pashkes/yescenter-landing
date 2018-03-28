@@ -1,9 +1,9 @@
-// .advantage scripts goes here 
+// .btn scripts goes here 
 
 /*$(function() {
 	
 });*/
-// .btn scripts goes here 
+// .advantage scripts goes here 
 
 /*$(function() {
 	
