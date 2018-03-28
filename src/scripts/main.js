@@ -349,8 +349,7 @@ $(document).on('submit', '#order', function (event) {
     dataType: 'json',
     url: 'sendmail.php',
     data: $(this).serialize(),
-    done: function (data) {
-      alert(data);
+    done: function () {
       $('#order').modal('hide');
       $('#success-order').modal('show');
     }
@@ -365,8 +364,7 @@ $(document).on('submit', '#call-back', function (event) {
     dataType: 'json',
     url: 'sendmail.php',
     data: $(this).serialize(),
-    done: function (data) {
-    	alert(data);
+    done: function () {
       $('#callBack').modal('hide');
       $('#success-order').modal('show');
     }
