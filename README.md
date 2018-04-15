@@ -1,15 +1,11 @@
-## Yescenter Landing Page
-
-**Pages of list:** 
-
- 1. [Home](https://pashkes.github.io/bosch/)
- 
-**How to start dev server?**  
- - you should install npm dependencies `npm i`
- - start dev server `npm run start`
- 
-**How to build the project?**  
-Just enter  `npm run build`
-
-![
-](https://lh3.googleusercontent.com/WHT3JCOrXJVP-uYvLUd80uJni2QsaZlWJ0S_jl7Bn8-JgqodJ3YVGifPfudrT1urQHtJkGpwonUg=s800 "preview")
+Установить все зависимости командой: npm i
+                                                                                                                              Запуск локального сервера с лайв релоадом: npm run start
+                                                                                                                              Папка с общими стилями: src/scss
+                                                                                                                              Стили для библиотек: src/scss/libs
+                                                                                                                              Папки для pug блока создавать командой: node CreateBlock blockName
+                                                                                                                              Все блоки подключаются в файле src/pug/index.pug
+                                                                                                                              Сначало экстендится файл нового созданного блока, а затем в нужном месте инициализируешь миксин pug блока
+                                                                                                                              Стили можно писать в папке с блоком src/block/** либо в src/sass/base.scss
+                                                                                                                              Скрипты можно писать либо в файле в папке с блоком, либо в файле src/scripts/main.js
+                                                                                                                              JS библиотеки кидать в папку src/scripts/libs сборщик сам их потом конкатенирует и собирает в файл libs.js
+                                                                                                                              jQuery сборщик вставляет в самое начала файла libs.js поэтому не стоит беспокоится о неправильном порядке подключения скриптов
