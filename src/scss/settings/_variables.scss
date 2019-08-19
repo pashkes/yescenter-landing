@@ -1,0 +1,21 @@
+@import "mixins";
+
+$open-sans: 'Open Sans', sans-serif;
+$font-size:                  14px;
+$font-size-h1:               26px;
+$font-size-h2:               18px;
+$font-size--small:           12px;
+
+$screen-xs:                   0 !default;
+$screen-sm:                   480px !default;
+$screen-md:                   768px !default;
+$screen-lg:                   992px !default;
+$screen-xl:                   1344px !default;
+$screen-xxl:                  1800px !default;
+
+
+$black-light: #191919;
+$text-color: #252525;
+$transition: 0.25s;
+
+$primary: #d52833;
