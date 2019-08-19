@@ -1,0 +1,95 @@
+// В этом файле должны быть стили для БЭМ-блока .info , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+
+.info {
+	padding-top: 27px;
+	padding-bottom: 32px;
+	@media (min-width: $screen-md) {
+		padding-top: 54px;
+		padding-bottom: 55px;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 87px;
+		padding-bottom: 96px;
+	}
+	&__title {
+		margin-bottom: 25px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 47px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-bottom: 47px;
+			font-size: 30px;
+			letter-spacing: 1.2px;
+		}
+	}
+	&__button {
+		position: relative;
+		display: block;
+		width: 100%;
+		border: none;
+		padding: 20px 48px 19px 0;
+		border-bottom: 1px solid #ebebeb;
+		background-color: transparent;
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: 0.32px;
+		text-align: left;
+		color: #d52833;
+		cursor: pointer;
+		font-family: "Intro", sans-serif;
+		@media (min-width: $screen-md) {
+			font-size: 24px;
+			letter-spacing: 0.48px;
+			line-height: 24px;
+			padding-top: 19px;
+			padding-bottom: 19px;
+		}
+		@media(min-width: $screen-xl) {
+			padding-top: 27px;
+			padding-bottom: 28px;
+		}
+		&:first-of-type {
+			border-top: 1px solid #ebebeb;
+
+		}
+		&::before, &::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			height: 2px;
+			width: 10px;
+			transform: translateY(-50%);
+			right: 0;
+			background-color: #112538;
+			@media (min-width: $screen-md) {
+				right: 32px;
+			}
+			@media(min-width: $screen-xl) {
+				right: 29px;
+			}
+		}
+		&::after {
+			transform: translateY(-50%) rotate(-90deg);
+		}
+		&[aria-expanded="true"] {
+			color: $text-color;
+			border-color: transparent;
+			&::after {
+				display: none;
+			}
+		}
+		&:focus {
+			outline: none;
+		}
+	}
+	&__content {
+		p {
+			margin-bottom: 42px;
+			letter-spacing: 0.28px;
+		}
+		&.show {
+			border-bottom: 1px solid #ebebeb;
+		}
+	}
+}

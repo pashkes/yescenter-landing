@@ -1,0 +1,16 @@
+mixin request()
+	.request
+		.container
+			form.form.request__form#order
+				p.form__title Количество мест ограничено!
+				p.form__subtitle Отправьте заявку, прямо сейчас.
+				input(placeholder="Представьтесь, пожалуйста" name="NAME" required).form__field
+				input(type="tel" placeholder="Контактный телефон"  name="PHONE" required).form__field.js-phone-mask
+				input(placeholder="Название компании" name="COMPANY").form__field
+				p.form__conf Нажимая на кнопку «Отправить заявку», я даю согласие на обработку персональных данных и соглашаюсь c
+					a(href="#")  политикой конфиденциальности YES EDUCATION GROUP
+				button.btn.form__submit Отправить заявку
+		.request__map
+			.map#map
+
+

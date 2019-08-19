@@ -1,0 +1,24 @@
+mixin tours()
+	section.tours
+		.container
+			h2.tours__title Чем отличаются наши языковые туры от аналогичных?
+			.row
+				.col-xl-11
+					p.tours__subtitle
+						| Ваш ребенок получает самую лучшую мотивацию для изучения английского языка.
+						| Мы не просто посещаем множество экскурсий — каждый день ребятам выдаются самые разные задания на общение с местными жителями.
+						| Это отличный способ проверить свои языковые способности на практике, улучшить их и развить навыки коммуникаций.
+			.row
+				.col-md-6.order-md-2.pl-xl-4
+					.tours__video.embed-responsive.embed-responsive-16by9
+						iframe( class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/osgUTvL1bzU?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen)
+
+				.col-md-6.order-md-1
+					ul.tours__features
+						li.tours__featur
+							| Мы попадаем в самые интересные места, куда на бесплатных экскурсиях никогда не пустят.
+						li.tours__featur
+							| Билеты на все экскурсии оплачиваются заранее, так что стоять в очередях не придется.
+						li.tours__featur
+							| Программа составлена так, чтобы от души насладиться каждой достопримечательностью, а не «скакать галопом по Европам»
+					a(href="#order").btn.tours__submit.js-go-order Отправить заявку

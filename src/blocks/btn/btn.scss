@@ -1,0 +1,32 @@
+// В этом файле должны быть стили для БЭМ-блока .btn , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+@import "../../sass/settings/variables";
+
+.btn {
+	display: inline-block;
+	padding: 13px 32px 11px 32px;
+	width: 100%;
+	border: none;
+	vertical-align: top;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 20px;
+	font-family: "Intro", sans-serif;
+	background-color: #d52833;
+	color: #FFFFFF;
+	line-height: 1.5;
+	text-align: center;
+	font-size: 11px;
+	letter-spacing: 0.8px;
+	transition: .3s ease-in;
+	cursor: pointer;
+	&:hover {
+		background-color: #b82730;
+	}
+	&:active {
+		background-color: darken(#b82730, 5%);
+	}
+	@media (min-width: $screen-md) {
+		max-width: 240px;
+	}
+}
