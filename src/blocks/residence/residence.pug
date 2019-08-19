@@ -1,0 +1,46 @@
+mixin residence()
+	section.residence
+		.container
+			h2.residence__title Проживание
+			.row
+				.col-md-6
+					.residence__item.residence__item--first
+						.residence__photo
+							ul.residence__slider.js-residence-slider
+								li
+									picture
+										img(data-lazy="img/content/Ambassadors_01.jpg" height="184" alt="Ambassadors Earls Court Hotel")
+								li
+									picture
+										img(data-lazy="img/content/Ambassadors_02.jpg" height="184" alt="Ambassadors Earls Court Hotel")
+								li
+									picture
+										img(data-lazy="img/content/Ambassadors_03.jpg" height="184" alt="Ambassadors Earls Court Hotel")
+								li
+									picture
+										img(data-lazy="img/content/Ambassadors_04.jpg" height="184" alt="Ambassadors Earls Court Hotel")
+						h3.residence__subject Ambassadors Earls Court Hotel
+							span.residence__stars
+								span.residence__star
+								span.residence__star
+								span.residence__star
+						p.residence__desc
+							| Отель Ambassadors расположен
+							| в стильном районе Кенсингтон, недалеко от улицы Кромвель-роуд
+							| и знаменитой Музейной мили. Отель находится всего в 5 минутах ходьбы от станции метро Earl’s Court.
+							| Гайд-парк и Альберт-холл расположены всего в 15 минутах ходьбы от отеля.
+				.col-md-6
+					.residence__item.residence__item--last
+						.residence__photo
+							ul.residence__slider.js-residence-slider
+								li
+									img(data-lazy="img/content/Chancellor_01.jpg" height="184" alt="Chancellor’s Court at Pollock Halls")
+								li
+									img(data-lazy="img/content/Chancellor_02.jpg" height="184" alt="Chancellor’s Court at Pollock Halls")
+								li
+									img(data-lazy="img/content/Chancellor_03.jpg" height="184" alt="Chancellor’s Court at Pollock Halls")
+						h3.residence__subject Chancellor’s Court at Pollock Halls
+						p.residence__desc
+							| Кампус Pollock Halls находится недалеко от королевского Холирудского парка и холма Трон Артура, а также всего в 2,4 км
+							| от Эдинбургского железнодорожного вокзала Уэверли, Старого города
+							| и улицы Королевская миля, где проходит множество эдинбургских фестивалей.

@@ -1,0 +1,192 @@
+// В этом файле должны быть стили для БЭМ-блока .page-top , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+
+.header {
+	padding-top: 8px;
+	padding-bottom: 5px;
+	@media (min-width: $screen-md) {
+		padding-bottom: 8px;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 23px;
+		padding-bottom: 21px;
+	}
+	&__logo {
+		@media(min-width: $screen-xl) {
+			display: flex;
+			align-items: center;
+		}
+		img {
+			display: block;
+			@media (min-width: $screen-md) {
+				width: 57px;
+				height: 56px;
+			}
+			@media(min-width: $screen-xl) {
+				width: 76px;
+				height: 76px;
+				margin-right: 19px;
+			}
+		}
+	}
+	&__site-name {
+		display: none;
+		@media(min-width: $screen-xl) {
+			display: block;
+			max-width: 231px;
+			margin-bottom: 0;
+			font-size: 18px;
+			line-height: 1.33;
+			letter-spacing: 0.9px;
+			color: $text-color;
+			text-transform: uppercase;
+		}
+	}
+	&__contact {
+		text-align: right;
+		@media (min-width: $screen-md) {
+		}
+	}
+	&__tel {
+		display: block;
+		padding-top: 3px;
+		font-size: 16px;
+		line-height: 0.8;
+		letter-spacing: 0.3px;
+		color: #383838;
+		@media (min-width: $screen-md) {
+			display: inline-block;
+			padding-top: 0;
+			vertical-align: middle;
+			margin-right: 27px;
+			font-size: 24px;
+			line-height: 0.92;
+			letter-spacing: 0.5px;
+		}
+	}
+	&__order {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 10px;
+		line-height: 1;
+		letter-spacing: 0.5px;
+		color: #383838;
+		text-transform: uppercase;
+		border: none;
+		border-bottom: 1px dashed #383838;
+		background-color: transparent;
+		cursor: pointer;
+		@media (min-width: $screen-md) {
+			padding: 12px 32px 10px 32px;
+			border: solid 1px #d7d7d7;
+			border-radius: 20px;
+			font-size: 11px;
+			line-height: 1.5;
+			letter-spacing: 0.8px;
+			transition: .2s ease-in;
+			&:hover {
+				border-color: #d52833;
+				background-color: #b82730;
+				color: #fff;
+			}
+			&:focus {
+				outline: none;
+				border-color: #d52833;
+			}
+		}
+	}
+}
+
+.promo {
+	position: relative;
+	color: #fff;
+
+	&__bg {
+		width: 100%;
+		img {
+			width: 100%;
+			object-position: right bottom;
+			object-fit: cover;
+			height: auto;
+			min-height: 328px;
+			max-height: 328px;
+			@media (min-width: $screen-md) {
+			    min-height: 464px;
+			}
+			@media(min-width: $screen-xl) {
+				max-height: calc(100vh - 120px);
+				min-height: 552px;
+			}
+		}
+	}
+	&__inner {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+
+		padding-top: 75px;
+		padding-bottom: 32px;
+		@media (min-width: $screen-md) {
+			padding-top: 104px;
+			padding-bottom: 56px;
+		}
+		@media(min-width: $screen-xl) {
+			top: 50%;
+			transform: translateY(-50%);
+			padding-top: 87px;
+			padding-bottom: 91px;
+		}
+	}
+	&__title {
+		margin-bottom: 12px;
+		color: #fff;
+		letter-spacing: 0;
+		line-height: 1.15;
+		font-size: 26px;
+		text-transform: none;
+		font-family: "Intro", sans-serif;
+		span {
+			display: block;
+		}
+		@media (min-width: $screen-md) {
+			margin-bottom: 10px;
+			font-size: 48px;
+			line-height: 1.13;
+			max-width: 500px;
+		}
+		@media(min-width: $screen-xl) {
+			max-width: 568px;
+			margin-bottom: 24px;
+			font-size: 56px;
+			line-height: 1.14;
+		}
+	}
+	&__subtitle {
+		max-width: 206px;
+		margin: 0 0 28px;
+		color: #fff;
+		line-height: 1.29;
+		font-family: $open-sans;
+		@media (min-width: $screen-md) {
+			max-width: 100%;
+			margin-bottom: 32px;
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 1.5;
+			span {
+				display: block;
+			}
+		}
+		@media(min-width: $screen-xl) {
+			margin-bottom: 48px;
+			font-size: 20px;
+			line-height: 1.5;
+		}
+	}
+	&__order {
+		@media(min-width: $screen-xl) {
+			letter-spacing: 0.8px;
+		}
+	}
+}

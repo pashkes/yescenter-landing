@@ -1,0 +1,71 @@
+// В этом файле должны быть стили для БЭМ-блока .reviews , его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий... 
+
+.reviews {
+	padding-top: 26px;
+	padding-bottom: 26px;
+	@media (min-width: $screen-md) {
+		padding-top: 54px;
+		padding-bottom: 51px;
+	}
+	@media(min-width: $screen-xl) {
+		padding-top: 94px;
+		padding-bottom: 89px;
+	}
+	&__title {
+		margin-bottom: 28px;
+		line-height: 26px;
+		letter-spacing: 0.72px;
+		@media (min-width: $screen-md) {
+			margin-bottom: 38px;
+			letter-spacing: 1.12px;
+		}
+		@media(min-width: $screen-xl) {
+			margin-bottom: 39px;
+		}
+	}
+	&__slider {
+		margin-right: -24px;
+		margin-left: -12px;
+
+		@media (min-width: $screen-md) {
+			margin-right: -16px;
+			margin-left: -16px;
+		}
+		@media(min-width: $screen-xl) {
+			overflow: hidden;
+			margin-right: -24px;
+			margin-left: -24px;
+		}
+	}
+	&__arrows-wrap {
+		position: relative;
+		@media(min-width: $screen-xl) {
+			overflow: hidden;
+		}
+	}
+	.slick-slide {
+		width: calc(100vw - 24px - 24px);
+	}
+	&__slide {
+		padding-right: 12px;
+		padding-left: 12px;
+		@media (min-width: $screen-md) {
+			padding-right: 16px;
+			padding-left: 16px;
+		}
+		@media(min-width: $screen-xl) {
+			padding-right: 24px;
+			padding-left: 24px;
+		}
+	}
+	.slick-dots {
+		padding-top: 6px;
+		@media (min-width: $screen-md) {
+			padding-top: 12px;
+		}
+	}
+	.slick-next {
+		right: -15px;
+	}
+}
