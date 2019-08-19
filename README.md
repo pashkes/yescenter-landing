@@ -2,7 +2,7 @@
 
 **Pages of list:** 
 
- 1. [Home](https://pashkes.github.io/bosch/)
+ 1. [Home](https://pashkes.github.io/yescenter-landing)
  
 **How to start dev server?**  
  - you should install npm dependencies `npm i`
